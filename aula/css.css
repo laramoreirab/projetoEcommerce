@@ -483,10 +483,10 @@ span.size-20 {
 .linhaCompra{
     display: flex;
     justify-content: space-between;
-    padding: 1vw;
     width: 60vw;
-    height: 1vw;
+    height: 2vw;
     border-bottom: .1vw solid #ccc;
+    margin-left:2vw
 }
 
 .separamentoCompra{
@@ -496,14 +496,18 @@ span.size-20 {
     justify-content: space-around;
 }
 
+/* parte dos produtos dentro do carrinho */
+
 .produtoscarrinho{
+    margin-left:2vw;
     margin-top: .3vw;
     margin-bottom: 1vw;
-    height: 7vw;
-    width: 62vw;
-    background: rgb(255, 0, 0);
+    height: 8.5vw;
+    width: 60vw;
+    background: rgb(255, 255, 255);
     border-bottom: .1vw solid #ccc;
 }
+
 
 
 
