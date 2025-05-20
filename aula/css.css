@@ -143,6 +143,11 @@ span.size-20 {
     /*deixa o fundo das setas transparentes*/
     cursor: pointer;
     /*muda o cursor do mouse deixando a mão como selecionar*/
+    transition: .5s;
+}
+
+.botao:hover {
+    transform: scale(1.2);
 }
 
 .anuncio {
@@ -154,9 +159,7 @@ span.size-20 {
 
 }
 
-.anuncio:hover {
-    transform: scale(1.02);
-}
+
 
 .on {
     /*classe que liga as imagens do carrossel*/
@@ -201,6 +204,11 @@ span.size-20 {
     /*alinha os itens no centro*/
     display: flex;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.281);
+    transition: .5s;
+}
+
+.botaoComprarAnuncio:hover {
+    transform: scale(1.1);
 }
 
 .botaoComprarAnuncio a {
@@ -383,7 +391,13 @@ span.size-20 {
 
 /* ----------------------------------------------------------------------------------------------------------- */
 
+/* Produtos do carrossel home page */
 
+
+
+
+
+/*  Anuncio Samsung*/
 .anuncioSamsung {
     display: flex;
     align-items: center;
@@ -466,46 +480,13 @@ span.size-20 {
 }
 
 /* textos carrinho produtos*/
-.produtocarrinhotxt {
-    color: #191919;
-    display: flex;
-    padding-left: 90px;
-    margin-top: -2vw;
-    border-width: 1px;
-    font-size: 20px;
-}
-
-.precocarrinhotxt {
-    color: #191919;
-    padding-left: 700px;
-    margin-top: -2vw;
-    display: flex;
-    font-size: 20px;
-}
-
-.quantidadecarrinhotxt {
-    color: #191919;
-    padding-left: 850px;
-    margin-top: -2vw;
-    display: flex;
-    font-size: 20px;
-}
-
-.totalcarrinhotxt {
-    color: #191919;
-    padding-left: 1050px;
-    margin-top: -2vw;
-    display: flex;
-    font-size: 20px;
-}
-
 .linhaCompra{
     display: flex;
     justify-content: space-between;
     padding: 1vw;
     width: 60vw;
     height: 1vw;
-    border-bottom: 1px solid #ccc;
+    border-bottom: .1vw solid #ccc;
 }
 
 .separamentoCompra{
@@ -514,6 +495,52 @@ span.size-20 {
     display: flex;
     justify-content: space-around;
 }
+
+.produtoscarrinho{
+    margin-top: .3vw;
+    margin-bottom: 1vw;
+    height: 7vw;
+    width: 62vw;
+    background: rgb(255, 0, 0);
+    border-bottom: .1vw solid #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
