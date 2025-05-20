@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: rgb(122, 122, 122);
+    color: white;
+}
+
+.bloco{
+    height: 300px;
+    width: 900px;
+    border: solid black 1px;
+    overflow: hidden;
+
+}
+
+.active{
+    transform: translatex(0);
+}
+
+img{
+    transition: 2s;
+    transform: translatex(150%);
+    height: 200px;
+    width: 200px;
+}
+
+.botao{
+    width: 4vw;
+    height: 4vw;
+    background: black;
+}
+
+.tudo{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+

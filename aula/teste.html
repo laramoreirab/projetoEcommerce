@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="teste.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="tudo">
+        <div class="botao" id="botaov"></div>
+        <div class="bloco" id="bloco">
+            <table >
+                <td>
+                <tr><img src="anuncios/foneIOS.png" alt="" id="img"></tr>
+                <tr><img src="anuncios/foneIOS.png" alt="" id="img1"></tr>
+                <tr><img src="anuncios/foneIOS.png" alt="" id="img2"></tr>
+                </td>
+
+            </table>
+        </div>
+        <div class="botao" id="botao"></div>
+    </div>
+
+    <script>
+        const img = document.getElementById("img")
+        const img1 = document.getElementById("img1")
+        const img2 = document.getElementById("img2")
+        const botao = document.getElementById("botao")
+        const botaov = document.getElementById("botaov")
+        const imgs = ['img','img1','img2']
+        botao.addEventListener('click', function() {
+            imgs.classList.add('active');
+        })
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,537 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'TT-norms';
+    src: url(fonte/TT\ Norms-Pro-Regular.otf) format('opentype');
+}
+
+
+.body-h {
+    font-family: 'TT-norms', sans-serif;
+    ;
+    background: linear-gradient(93deg, #d8d8d8 30%, white 90%);
+    background-repeat: no-repeat;
+    height: 200vw;
+}
+
+.body-c {
+    font-family: 'TT-norms', sans-serif;
+    background-color: white;
+    background-repeat: no-repeat;
+    height: 200vw;
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+
+
+.box1 {
+    /*parte do header que está na frente*/
+    background: #ffffff;
+    width: 90%;
+    margin-left: 5%;
+    position: absolute;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    z-index: 1;
+    justify-content: space-between;
+    display: flex;
+
+
+}
+
+.box1 img {
+    width: 8vw;
+    padding-left: 2.1%
+}
+
+
+.box {
+    /*parte do header que está na atrás*/
+    padding-top: 4.2vw;
+    background: #cfcfcf;
+    width: 90%;
+    padding-bottom: 0.6%;
+    margin-left: 5%;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    transform: translateY(-30%);
+    transition: 0.5s;
+}
+
+.icones {
+    /*icones do header*/
+    margin-top: 1vw;
+    padding-right: 2.1%;
+    width: 9vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+span.size-20 {
+    /*modifica os icones (tamanho,cor)*/
+    font-size: 1.9vw;
+    color: black;
+}
+
+
+
+.box1:hover+.box {
+    /*quando colocar o mouse em cima do header superior, o header inferior... */
+    transform: translateY(0);
+    /*aparece na tela*/
+
+}
+
+.box:hover {
+    /*quando colocar o mouse em cima do header inferior...*/
+    transform: translateY(0);
+    /*ele continua na tela*/
+}
+
+
+
+.box ul {
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.box ul a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1vw;
+}
+
+.logo {
+    width: 10vw;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+.carrossel {
+    /*design do carrossel*/
+    display: flex;
+    justify-content: space-between;
+    /*deixa as setas no canto da tela e a imagem no centro*/
+    align-items: center;
+    margin-left: 2vw;
+    /*coloca um espaço na parte esquerda do carrossel*/
+    margin-right: 2vw;
+    /*coloca um espaço na parte direita do carrossel*/
+}
+
+.carrossel .imagens {
+    height: 50vw;
+    /*tamanho das imagens do carrossel*/
+}
+
+.botao {
+    border: none;
+    /*tira a borda padrão do botão deixando só as setas*/
+    background: transparent;
+    /*deixa o fundo das setas transparentes*/
+    cursor: pointer;
+    /*muda o cursor do mouse deixando a mão como selecionar*/
+}
+
+.anuncio {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    /*deixa as imagens do carrossel transparente*/
+    transition: opacity .5s ease;
+
+}
+
+.anuncio:hover {
+    transform: scale(1.02);
+}
+
+.on {
+    /*classe que liga as imagens do carrossel*/
+    opacity: 1;
+    pointer-events: auto;
+
+}
+
+.carrossel1 a {
+    text-decoration: none;
+    /*tira a decoração dos textos do carrossel*/
+    color: black;
+    /*coloca a cor preta em todas as letras do carrossel*/
+    font-size: 1.5vw;
+}
+
+.carrossel1 img {
+    height: 30vw;
+    /* tamanho da imagem do anuncio*/
+}
+
+
+.botaoComprarAnuncio {
+    /*toda modificação do botão do anuncio*/
+    height: 4.3vw;
+    /*define a altura do botão*/
+    width: 16vw;
+    /*define a largura do botão*/
+    border-radius: 20px;
+    /*coloca curvas nos cantos do botão*/
+    bottom: 7.5vw;
+    /*muda a posição do botão*/
+    left: 3vw;
+    /*muda a posição do botão para esquerda*/
+    background-color: #d9d9d9;
+    /*cor do botão*/
+    position: absolute;
+    /*tira o elemento do fluxo normal para posicionar dentro do elemento pai*/
+    justify-content: center;
+    /*centraliza*/
+    align-items: center;
+    /*alinha os itens no centro*/
+    display: flex;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.281);
+}
+
+.botaoComprarAnuncio a {
+    color: black;
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+.imagens {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundoDoAnuncio {
+    /*mexe com o fundo de trás de todos os anuncios*/
+    margin-top: 10vw;
+    background-color: rgb(255, 255, 255);
+    height: 35vw;
+    width: 89vw;
+    border-radius: 1.5vw;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.103);
+}
+
+.fundoDoAnuncio .tituloAnuncio {
+    /*mexe com o titulo do anuncio (Headset)*/
+    position: absolute;
+    margin-left: 3vw;
+    top: 12vw;
+    font-size: 5vw;
+    width: 40vw;
+}
+
+.fundoDoAnuncio p {
+    /*mexe com a descrição do produto do anuncio (Headset)*/
+    margin-left: 3.3vw;
+    padding-top: 15vw;
+    font-size: 1.2vw;
+}
+
+.fundoDoAnuncio img {
+    /*mexe com a imagem do anuncio (Headset)*/
+    position: absolute;
+    height: 48vw;
+    left: 41vw;
+    bottom: 1vw;
+}
+
+
+.fundoDoAnuncio .tituloAnuncio2 {
+    /*mexe com o titulo do anuncio (foneIOS)*/
+    position: absolute;
+    margin-left: 3vw;
+    top: 12vw;
+    font-size: 5vw;
+    width: 40vw;
+}
+
+
+
+
+.fundoDoAnuncio .p2 {
+    /*mexe com a descrição do produto do anuncio (foneIOS)*/
+    margin-left: 3.3vw;
+    width: 45vw;
+    padding-top: 15vw;
+    font-size: 1.2vw;
+}
+
+.fundoDoAnuncio .img2 {
+    /*mexe com a imagem do anuncio (foneIOS)*/
+    position: absolute;
+    height: 45vw;
+    left: 44vw;
+    bottom: 1vw;
+}
+
+.fundoDoAnuncio .tituloAnuncio3 {
+    /*mexe com o titulo do anuncio (EchoDotAlexa)*/
+    position: absolute;
+    margin-left: 3vw;
+    top: 12vw;
+    font-size: 5vw;
+    width: 30vw;
+}
+
+
+.fundoDoAnuncio .p3 {
+    /*mexe com a descrição do produto do anuncio (EchoDotAlexa)*/
+    margin-left: 3.3vw;
+    width: 40vw;
+    padding-top: 15vw;
+    font-size: 1.2vw;
+}
+
+.fundoDoAnuncio .img3 {
+    /*mexe com a imagem do anuncio (EchoDotAlexa)*/
+    position: absolute;
+    height: 43vw;
+    left: 46vw;
+    bottom: 3vw;
+}
+
+.fundoDoAnuncio .tituloAnuncio4 {
+    /*mexe com o titulo do anuncio (Smart Watch)*/
+    position: absolute;
+    margin-left: 3vw;
+    top: 12vw;
+    font-size: 5vw;
+    width: 40vw;
+}
+
+
+.fundoDoAnuncio .p4 {
+    /*mexe com a descrição do produto do anuncio (Smart Watch)*/
+    margin-left: 3.3vw;
+    width: 40vw;
+    padding-top: 10vw;
+    font-size: 1.2vw;
+}
+
+.fundoDoAnuncio .img4 {
+    /*mexe com a imagem do anuncio (Smart Watch)*/
+    position: absolute;
+    height: 45vw;
+    left: 42vw;
+}
+
+
+.fundoDoAnuncio .tituloAnuncio5 {
+    /*mexe com o titulo do anuncio (Iphone15)*/
+    position: absolute;
+    margin-left: 3vw;
+    top: 12vw;
+    font-size: 5vw;
+    width: 40vw;
+}
+
+
+.fundoDoAnuncio .p5 {
+    /*mexe com a descrição do produto do anuncio (Iphone15)*/
+    margin-left: 3.3vw;
+    width: 40vw;
+    padding-top: 10vw;
+    font-size: 1.2vw;
+}
+
+.fundoDoAnuncio .img5 {
+    /*mexe com a imagem do anuncio (Iphone15)*/
+    position: absolute;
+    height: 45vw;
+    left: 42vw;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+.tudo {
+    /*classe na div que seleciona todos os itens do body(menos o header)*/
+    transition: filter 1s ease;
+    /*coloca uma transição suave no filtro de borrar*/
+}
+
+.borrar {
+    filter: blur(5px);
+    /*efeito de borrar*/
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+.centralizarExplorar {
+    display: flex;
+    justify-content: center;
+    margin-top: 3vw;
+    font-size: 2vw;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+.anuncioSamsung {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fundoSamsungS24 {
+    margin-top: 10vw;
+    background-color: rgb(255, 255, 255);
+    height: 35vw;
+    width: 89vw;
+    border-radius: 1.5vw;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.103);
+}
+
+
+
+/*                     CARRINHO                   */
+
+/* texto carrinho */
+.carrinho {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+    font-size: 2vw;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    margin: 50px auto;
+    position: relative;
+}
+
+/* posicionamento da linha de progresso */
+.step {
+    text-align: center;
+    flex: 1;
+    position: relative;
+}
+
+/* linha de progresso */
+.step:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -50%;
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    z-index: 0;
+}
+
+.step:first-child:before {
+    content: none;
+}
+
+/* circulos de progresso */
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #a1a1a1;
+    margin: 0 auto 5px;
+    z-index: 1;
+    position: relative;
+}
+
+/* cor do circulo */
+.step.active .circle {
+    background-color: black;
+}
+
+/* textos: compra, endereço e pagamento */
+.label {
+    font-size: 18px;
+    color: #cfcfcf;
+}
+
+/* textos carrinho produtos*/
+.produtocarrinhotxt {
+    color: #191919;
+    display: flex;
+    padding-left: 90px;
+    margin-top: -2vw;
+    border-width: 1px;
+    font-size: 20px;
+}
+
+.precocarrinhotxt {
+    color: #191919;
+    padding-left: 700px;
+    margin-top: -2vw;
+    display: flex;
+    font-size: 20px;
+}
+
+.quantidadecarrinhotxt {
+    color: #191919;
+    padding-left: 850px;
+    margin-top: -2vw;
+    display: flex;
+    font-size: 20px;
+}
+
+.totalcarrinhotxt {
+    color: #191919;
+    padding-left: 1050px;
+    margin-top: -2vw;
+    display: flex;
+    font-size: 20px;
+}
+
+.linhaCompra{
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw;
+    width: 60vw;
+    height: 1vw;
+    border-bottom: 1px solid #ccc;
+}
+
+.separamentoCompra{
+    height: 1.5vw;
+    width: 25vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+.dark-mode-button {
+    /* Botão Dark Mode */
+    position: absolute;
+    top: 50px;
+    right: 80px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.dark-mode {
+    /*cor do dark e light mode*/
+    background-color: #222222;
+    color: #ffffff;
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="icon" type="image/png" href=""/>
+    <title>e-Tech</title>
+</head>
+
+<body class="body-h">
+    <header id="header" class="header1">
+        <nav class="box1" id="box1">
+            <img src="logo.png">
+            <div class="icones">
+                <div class="darkmode">
+                    <button id="darkModeToggle" class="dark-mode-button">
+                    </button>
+                    <span class="material-symbols-outlined size-20">
+                        dark_mode
+                    </span>
+                </div>
+                <a href="#">
+                    <span class="material-symbols-outlined size-20">
+                        search
+                    </span>
+                </a>
+                <a href="carrinhocompra.html">
+                    <span class="material-symbols-outlined size-20">
+                        shopping_cart
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined size-20">
+                        person
+                    </span>
+                </a>
+            </div>
+
+
+        </nav>
+        <nav class="box" id="box" class="header1">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Computadores</a></li>
+                <li><a href="#">Hardwares</a></li>
+                <li><a href="#">Celulares</a></li>
+                <li><a href="#">Tablets</a></li>
+                <li><a href="#">Fones</a></li>
+                <li><a href="#">Notebooks</a></li>
+                <li><a href="#">Periféricos</a></li>
+                <li><a href="#">Outros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="tudo" class="tudo">
+        <!------------------------------------------------------------------------------------------------------------------->
+        <div class="carrossel">
+            <button id="botaoVoltar" class="botao">
+                <span class="material-symbols-outlined size-20">
+                    arrow_back_ios
+                </span>
+            </button>
+            <div class="imagens"> <!--Imagens que vão passar no carrossel-->
+
+                <div class="anuncio on"> <!--Headset-->
+                    <div class="fundoDoAnuncio">
+                        <div class="tituloAnuncio">Fone de ouvido Oeste A56</div>
+                        <p>O melhor fone custo-benefício do mercado.</p>
+                        <img src="anuncios/Headset.png">
+                    </div>
+                    <div class="botaoComprarAnuncio"><a href="#">Compre Agora</a></div>
+                </div>
+
+
+                <div class="anuncio">
+                    <div class="fundoDoAnuncio"> <!--foneIOS-->
+                        <div class="tituloAnuncio2">Fone de ouvido Bluetooth</div>
+                        <p class="p2">Fone Bluetooth a prova d´água e aúdio incrível.</p>
+                        <img src="anuncios/foneIOS.png" class="img2">
+                    </div>
+                    <div class="botaoComprarAnuncio"><a href="#">Compre Agora</a></div>
+                </div>
+
+                <div class="anuncio">
+                    <div class="fundoDoAnuncio"> <!--Alexa-->
+                        <div class="tituloAnuncio3">Echo Dot Alexa</div>
+                        <p class="p3">Prepare-se para o dia com a previsão do tempo e as notícias. Não perca a hora com
+                            timers e
+                            lembretes. Mantenha contato com pessoas queridas fazendo chamadas. Tenha resposta para suas
+                            perguntas. Divirta-se com piadas. Tudo isso apenas com sua voz.</p>
+                        <img src="anuncios/EchoDotAlexa.png" class="img3">
+                    </div>
+                    <div class="botaoComprarAnuncio"><a href="#">Compre Agora</a></div>
+                </div>
+
+                <div class="anuncio">
+                    <div class="fundoDoAnuncio"> <!--SmartWatch-->
+                        <div class="tituloAnuncio4">Smart Watch</div>
+                        <p class="p4">Descubra o futuro no seu pulso com os novos Smart Watch!
+                            Design moderno, tecnologia de ponta e funcionalidades avançadas para saúde, fitness e
+                            conectividade. Escolha o modelo que combina com seu estilo e viva uma experiência
+                            inteligente todos os dias.</p>
+                        <img src="anuncios/SmartWatch.png" class="img4">
+                    </div>
+                    <div class="botaoComprarAnuncio"><a href="#">Compre Agora</a></div>
+                </div>
+
+                <div class="anuncio">
+                    <div class="fundoDoAnuncio"> <!--Iphone15-->
+                        <div class="tituloAnuncio5">Iphone 15 Pro</div>
+                        <p class="p5">Conheça o iPhone 15 — potência, elegância e inovação em cada detalhe.
+                            Com design sofisticado, câmera avançada e desempenho impressionante, ele eleva sua
+                            experiência ao próximo nível. Capture momentos com qualidade profissional e aproveite toda a
+                            velocidade do chip mais moderno da Apple.</p>
+                        <img src="anuncios/iphone15.png" class="img5">
+                    </div>
+                    <div class="botaoComprarAnuncio"><a href="#">Compre Agora</a></div>
+                </div>
+
+            </div>
+            <button id="botaoProximo" class="botao">
+                <span class="material-symbols-outlined size-20">
+                    arrow_forward_ios
+                </span>
+            </button>
+        </div>
+     
+        <!-----------------------------Anúncio Samsung--------------------------------------->
+        <h1 class="centralizarExplorar">Explorar</h1>
+        <div class="anuncioSamsung">
+            <div class="fundoSamsungS24"></div>
+        </div>
+
+
+    </div>
+</body>
+
+<script>  // script feito para borrar o fundo quando o mouse passar por cima do header
+
+    const box = document.getElementById("box")
+    const box1 = document.getElementById("box1")
+    const borrar = document.getElementById("tudo")
+
+
+    const boxs = [box, box1]
+    boxs.forEach((bx) => {
+
+        bx.addEventListener("mouseenter", () => {
+            borrar.classList.add("borrar");
+        });
+
+        bx.addEventListener("mouseleave", () => {
+            borrar.classList.remove("borrar")
+        })
+
+    })
+</script>
+<script> // script feito para trocar o anuncio da tela inicial
+
+    const botaoPro = document.getElementById("botaoProximo")
+    const botaoVol = document.getElementById("botaoVoltar")
+    const anuncio = document.querySelectorAll(".anuncio")
+
+    let contador = 0; 
+
+    const tempoTransicao = 6000; // quantidade de tempo entre cada transição dos slides
+
+    let intervalo = setInterval(proximaImagem, tempoTransicao); //Para iniciar o intervalo de tempo para a transição de slides
+
+    //paramos o intervalo de tempo quando o mouse passar sobre o carrossel
+    document.querySelector(".carrossel").addEventListener("mouseover", () => {
+        clearInterval(intervalo);
+    });
+
+    //Continuar o intervalo de tempo quando o mouse sair do carrossel
+    document.querySelector(".carrossel").addEventListener("mouseout", () => {
+        intervalo = setInterval(proximaImagem, tempoTransicao);
+    });
+
+    function esconderImagem() {
+        anuncio.forEach(item => item.classList.remove('on'))
+    }
+
+    function aparecerImagem() {
+        anuncio[contador].classList.add('on')
+    }
+
+    function proximaImagem() {
+        esconderImagem()
+        if (contador === anuncio.length - 1) {
+            contador = 0
+        } else {
+            contador++
+        }
+        aparecerImagem()
+    }
+
+    function voltarImagem() {
+        esconderImagem()
+        if (contador === 0) {
+            contador = anuncio.length - 1
+        } else {
+            contador--
+        }
+        aparecerImagem()
+    }
+
+    botaoPro.addEventListener('click', proximaImagem)
+    botaoVol.addEventListener('click', voltarImagem)
+</script>
+
+<script>
+    // Função para alternar o modo escuro no body do documento
+    function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode"); // Alterna a classe 'dark-mode' no elemento <body>
+        // Atualiza o ícone do botão conforme o modo ativado (escuro ou claro)
+        const darkModeButton = document.getElementById("darkModeToggle"); // Obtém o botão de alternância
+        if (document.body.classList.contains("dark-mode")) {
+            //  darkModeButton.innerHTML = ; // Imagem do sol no modo escuro
+        } else {
+            //   darkModeButton.innerHTML = ; // Imagem da lua no modo claro
+        }
+    }
+    // Adiciona um evento de clique ao botão que alterna o modo escuro
+    document
+        .getElementById("darkModeToggle")
+        .addEventListener("click", toggleDarkMode);
+
+</script>
+
+
+</html>
