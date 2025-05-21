@@ -419,15 +419,22 @@ img.prodCarrossel{
 
 p.precoProdutos{
     font-size: 1vw;
-    padding-top: 1vw;
+    padding-top: 1.1vw;
     padding-left: 2vw;
 }
 .avaliacao{
     display: flex;
     justify-content: end;
-    
+    padding-top: 0.5vw;
+    padding-right: 1vw;
 }
-
+.qtdAvaliacao{
+    font-size: 0.7vw;
+    color: #adb0b7;
+}
+.cimaProdutos{
+    transform: translateY(-20);
+}
 /*------------------------------------------------------------------------------------------------------------*/
 
 /*  Anuncio Samsung*/

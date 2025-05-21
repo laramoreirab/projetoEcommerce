@@ -1,28 +1,7 @@
 <?php
 session_start();
-// array com os produtos do site
-$items = array(['imagem'=>'','nome'=>'' 'preco'=>'3599.99', 'quantidade'=>'']
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-)
 
 function adicionarAoCarrinho($id, $nome, $preco, $quantidade){
     if (!isset($_SESSION['carrinho'])) {
