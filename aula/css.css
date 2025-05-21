@@ -432,8 +432,12 @@ p.precoProdutos{
     font-size: 0.7vw;
     color: #adb0b7;
 }
-.cimaProdutos{
-    transform: translateY(-20);
+.superiorProdutos{
+    position: absolute;
+    transform: translateY(-16vw);
+}
+.categoriaProduto{
+    display: inline-flex;
 }
 /*------------------------------------------------------------------------------------------------------------*/
 

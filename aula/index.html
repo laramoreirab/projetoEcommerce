@@ -67,6 +67,12 @@
             <div class="imagens"> <!--Imagens que vão passar no carrossel-->
 
                 <div class="anuncio on"> <!--Headset-->
+                    <form id="foneA56" action="adicionar.php" method="post" style="display: none;">
+                        <input type="hidden" name="img" value="anuncios/Headset.png" >
+                        <input type="hidden" name="nome" value="PS5 Slim Digital Edition">
+                        <input type="hidden" name="preco" value="R$ 3599,99">
+                        <input type="hidden" name="descricao" value="">
+                    </form>
                     <div class="fundoDoAnuncio">
                         <div class="tituloAnuncio">Fone de ouvido Oeste A56</div>
                         <p>O melhor fone custo-benefício do mercado.</p>
@@ -77,6 +83,12 @@
 
 
                 <div class="anuncio">
+                    <form id="foneios" action="adicionar.php" method="post" style="display: none;">
+                        <input type="hidden" name="img" value="anuncios/foneIOS.png" >
+                        <input type="hidden" name="nome" value="Fone IOS">
+                        <input type="hidden" name="preco" value="R$ 3599,99">
+                        <input type="hidden" name="descricao" value="">
+                    </form>
                     <div class="fundoDoAnuncio"> <!--foneIOS-->
                         <div class="tituloAnuncio2">Fone de ouvido Bluetooth</div>
                         <p class="p2">Fone Bluetooth a prova d´água e aúdio incrível.</p>
@@ -86,6 +98,12 @@
                 </div>
 
                 <div class="anuncio">
+                    <form id="echodot5" action="adicionar.php" method="post" style="display: none;">
+                        <input type="hidden" name="img" value="anuncios/EchoDotAlexa.png">
+                        <input type="hidden" name="nome" value="Echo Dot 5a geração Alexa">
+                        <input type="hidden" name="preco" value="R$ 249,99">
+                        <input type="hidden" name="descricao" value="">
+                    </form>
                     <div class="fundoDoAnuncio"> <!--Alexa-->
                         <div class="tituloAnuncio3">Echo Dot Alexa</div>
                         <p class="p3">Prepare-se para o dia com a previsão do tempo e as notícias. Não perca a hora com
@@ -98,6 +116,12 @@
                 </div>
 
                 <div class="anuncio">
+                    <form id="smartwatch" action="adicionar.php" method="post" style="display: none;">
+                        <input type="hidden" name="img" value="anuncios/SmartWatch.png" >
+                        <input type="hidden" name="nome" value="SmartWatch">
+                        <input type="hidden" name="preco" value="R$259,90">
+                        <input type="hidden" name="descricao" value="">
+                    </form>
                     <div class="fundoDoAnuncio"> <!--SmartWatch-->
                         <div class="tituloAnuncio4">Smart Watch</div>
                         <p class="p4">Descubra o futuro no seu pulso com os novos Smart Watch!
@@ -111,10 +135,13 @@
                     </a>
                 </div>
 
-                <div class="anuncio"><form method="post" action="">
-                    <input type="text" id="calendario" name="calendario">
-                    <input type="submit" value="enviar">
-                </form>
+                <div class="anuncio">
+                    <form id="iphone15" action="adicionar.php" method="post" style="display: none;">
+                        <input type="hidden" name="img" value="" >
+                        <input type="hidden" name="nome" value="iPhone15 Pro">
+                        <input type="hidden" name="preco" value="R$4999,99">
+                        <input type="hidden" name="descricao" value="">
+                    </form>
                     <div class="fundoDoAnuncio"> <!--Iphone15-->
                         <div class="tituloAnuncio5">Iphone 15 Pro</div>
                         <p class="p5">Conheça o iPhone 15 — potência, elegância e inovação em cada detalhe.
@@ -138,13 +165,19 @@
         <h1 class="centralizarExplorar">Explorar</h1>
 
         <!---------------------------Carrossel de produtos------------------------------------>
-        <div class="containerProdutos" id="ps5">
+        <div class="containerProdutos">
+            <form id="PS5" action="adicionar.php" method="post" style="display: none;">
+                <input type="hidden" name="img" value="ps5.png" >
+                <input type="hidden" name="nome" value="PS5 Slim Digital Edition">
+                <input type="hidden" name="preco" value="R$3599,99">
+                <input type="hidden" name="descricao" value="">
+            </form>
             <div class="fundoProdutos">
                 <img src="../aula/produtos/ps5.webp" alt="" class="prodCarrossel">
-                <div class="cimaProdutos">
-                <span class="material-symbols-outlined size-20"> shopping_cart</span>
-                <div class="categoriaProduto">Outros</div>
-                </div>
+                <div class="superiorProdutos">
+                    <span class="material-symbols-outlined size-20"> shopping_cart</span>
+                    <div class="categoriaProduto">Outros</div>
+                    </div>
                 <p class="nomeProdutos">PS5 Slim Digital Edition</p>
                 <div class="preco">
                     <p class="precoProdutos">R$3599,99</p>
