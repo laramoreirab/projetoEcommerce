@@ -392,12 +392,27 @@ span.size-20 {
 /* ----------------------------------------------------------------------------------------------------------- */
 
 /* Produtos do carrossel home page */
-.estrela{
-    width: 2vh;
+
+.containerProdutos{
+    display: flex;
+    justify-content: center;
+
+}
+.fundoProdutos{
+    background-color: rgb(255, 255, 255);
+    border-radius: 1.2vw;
+    height: 22vw;
+    width: 17vw;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.103);
+}
+img.prodCarrossel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16vw;
 }
 
-
-
+/*------------------------------------------------------------------------------------------------------------*/
 
 /*  Anuncio Samsung*/
 .anuncioSamsung {
@@ -506,7 +521,7 @@ span.size-20 {
     margin-bottom: 1vw;
     height: 8.5vw;
     width: 60vw;
-    background: rgb(255, 255, 255);
+    background: rgb(255, 0, 0);
     border-bottom: .1vw solid #ccc;
 }
 
