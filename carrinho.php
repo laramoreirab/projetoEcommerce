@@ -1,7 +1,7 @@
 <?php
 session_start();
 // array com os produtos do site
-$items = array(['imagem'=>'','nome'=>'' 'preco'=>'', 'quantidade'=>'']
+$items = array(['imagem'=>'','nome'=>'' 'preco'=>'3599.99', 'quantidade'=>'']
 
 
 
@@ -47,7 +47,7 @@ function removerDoCarrinho($id) {
     }
 }
 // altera a quantidade de itens no carrinho
-function atualizarQuantidade($id, $quantidade) {
+function atualizarQuantidade($id, $quantidade){
     if (isset($_SESSION['carrinho'][$id])) {
         if ($quantidade <= 0) {
             removerDoCarrinho($id);

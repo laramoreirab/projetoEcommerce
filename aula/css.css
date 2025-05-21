@@ -400,16 +400,32 @@ span.size-20 {
 }
 .fundoProdutos{
     background-color: rgb(255, 255, 255);
-    border-radius: 1.2vw;
-    height: 22vw;
-    width: 17vw;
+    border-radius: 1.5vw;
+    height: 23vw;
+    width: 18.5vw;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.103);
 }
 img.prodCarrossel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-left:1.6vw;
+    padding-top: 1vw;
     width: 16vw;
+    height: 16vw;
+}
+.nomeProdutos{
+    font-weight: 800;
+    padding-top: 0.2vw;
+    text-align: center;
+}
+
+p.precoProdutos{
+    font-size: 1vw;
+    padding-top: 1vw;
+    padding-left: 2vw;
+}
+.avaliacao{
+    display: flex;
+    justify-content: end;
+    
 }
 
 /*------------------------------------------------------------------------------------------------------------*/

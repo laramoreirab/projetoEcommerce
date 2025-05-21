@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="icon.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <link rel="icon" type="image/png" href=""/>
+    <link rel="icon" type="image/png" href="" />
     <title>e-Tech</title>
 </head>
 
@@ -38,7 +39,6 @@
                     </span>
                 </a>
             </div>
-
 
         </nav>
         <nav class="box" id="box" class="header1">
@@ -106,7 +106,9 @@
                             inteligente todos os dias.</p>
                         <img src="anuncios/SmartWatch.png" class="img4">
                     </div>
-                    <a href="#"><div class="botaoComprarAnuncio">Compre Agora</div></a>
+                    <a href="#">
+                        <div class="botaoComprarAnuncio">Compre Agora</div>
+                    </a>
                 </div>
 
                 <div class="anuncio">
@@ -128,22 +130,22 @@
                 </span>
             </button>
         </div>
-     
+
         <!-----------------------------Anúncio Samsung--------------------------------------->
         <h1 class="centralizarExplorar">Explorar</h1>
 
         <!---------------------------Carrossel de produtos------------------------------------>
-        <div class="containerProdutos">
+        <div class="containerProdutos" id="ps5">
             <div class="fundoProdutos">
                 <img src="../aula/produtos/ps5.webp" alt="" class="prodCarrossel">
-                <p class="nomeProdutos">Nome dos Produtos</p>
+                <p class="nomeProdutos">PS5 Slim Digital Edition</p>
                 <div class="preco">
-                <p class="precoProdutos">R$ ....</p>
+                    <p class="precoProdutos">R$3599,99</p>
                 </div>
                 <div class="avaliacao">
                     <span class="material-symbols-outlined">
                         star
-                        </span>
+                    </span>
                     <p class="qtdAvaliacao">5.0 Avaliaram</p>
                 </div>
             </div>
@@ -153,7 +155,7 @@
             <div class="fundoSamsungS24"></div>
         </div>
 
-    
+
 
     </div>
 </body>
@@ -184,7 +186,7 @@
     const botaoVol = document.getElementById("botaoVoltar")
     const anuncio = document.querySelectorAll(".anuncio")
 
-    let contador = 0; 
+    let contador = 0;
 
     const tempoTransicao = 6000; // quantidade de tempo entre cada transição dos slides
 
