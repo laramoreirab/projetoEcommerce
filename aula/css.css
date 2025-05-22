@@ -425,8 +425,7 @@ p.precoProdutos{
 .avaliacao{
     display: flex;
     justify-content: end;
-    padding-top: 0.5vw;
-    padding-right: 1vw;
+    padding-right: 2.3vw;
 }
 .qtdAvaliacao{
     font-size: 0.7vw;
@@ -435,9 +434,27 @@ p.precoProdutos{
 .superiorProdutos{
     position: absolute;
     transform: translateY(-16vw);
+    padding-left: 1vw;
+    display: flex;
+    align-items: center;
+
 }
 .categoriaProduto{
-    display: inline-flex;
+    background-color: #d9d9d9;
+    width: 4vw;
+    height: 1.5vw;
+    margin-left: 8.5vw;
+    border-radius: 2vw;
+}
+.categoria{
+    font-size: 0.8vw;
+    text-align: center;
+}
+.qtdAvaliacao{
+    padding-top: 0.2vw;
+}
+.estrela{
+    padding-right: 0.1vw;
 }
 /*------------------------------------------------------------------------------------------------------------*/
 
