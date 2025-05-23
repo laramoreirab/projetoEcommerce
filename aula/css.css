@@ -451,7 +451,7 @@ p.precoProdutos{
     border-radius: 1.5vw;
 }
 .categoria{
-    font-size: 0.65vw;
+    font-size: 0.63vw;
     font-weight: lighter;
     text-align: center;
     line-height: 1.5vw;
@@ -493,6 +493,13 @@ p.precoProdutos{
 }
 .conteinerTotal{
     padding-top: 2vw;
+}
+.categoriaProdutoPC{
+    background-color: #d9d9d9;
+    width: 5vw;
+    height: 1.5vw;
+    margin-left: 10vw;
+    border-radius: 1.5vw;
 }
 
 
