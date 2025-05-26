@@ -109,6 +109,11 @@ span.size-20 {
     color: #000000;
     font-size: 1vw;
 }
+.box ul a:hover {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1vw;
+}
 
 .logo {
     width: 10vw;
@@ -484,7 +489,7 @@ p.precoProdutos{
 
 .centralizarTitulo{
     text-align: center;
-    margin-top: 2vw;
+    margin-top: 1vw;
 }
 .conteinerlinha{
     display: flex;
@@ -492,7 +497,7 @@ p.precoProdutos{
     padding-top: 2vw;
 }
 .conteinerTotal{
-    padding-top: 2vw;
+    padding-top: 0.5vw;
 }
 .categoriaProdutoPC{
     background-color: #d9d9d9;
@@ -502,6 +507,8 @@ p.precoProdutos{
     border-radius: 1.5vw;
 }
 
+
+/*---------------------------------------pagina celulares-----------------------------------------------------*/
 
 
 /*                     CARRINHO                   */
@@ -574,8 +581,9 @@ p.precoProdutos{
     justify-content: space-between;
     width: 60vw;
     height: 2vw;
-    border-bottom: .1vw solid #ccc;
-    margin-left:2vw
+    border-bottom: 0.1vw solid #ccc;
+    margin-left: 2vw;
+    font-size: 1vw;
 }
 
 .separamentoCompra{
@@ -596,8 +604,150 @@ p.precoProdutos{
     background: rgb(255, 0, 0);
     border-bottom: .1vw solid #ccc;
 }
+/* div onde aparece a imagem dos produtos  */
+.imgprodutocarrinho{
+background-color: blue;
+width: 13vw;
+height: 13vw;
+border-radius: 1.2vw;
+margin-left: 2vw;
+margin-top: 1.5vw;
+}
+.nomeprodutocarrinho{
+    margin-left: 16.2vw;
+    display: flex;
+    margin-top: -7vw;
+    font-size: 1.1vw;
+}
+.precoprodutocarrinho{
+    margin-left: 38.2vw;
+    display: flex;
+    margin-top: -1.4vw;
+    font-size: 1.1vw;
+    align-items: center;
+}
+.quantidadeprodutocarrinho{
+    margin-left: 49.7vw;
+    display: flex;
+    margin-top: -1.4vw;
+    font-size: 1.1vw;
+    align-items: center;
+}
+.totalprodutocarrinho{
+    margin-left: 56vw;
+    display: flex;
+    margin-top: -1.4vw;
+    font-size: 1.1vw;
+    align-items: center;
+}
+.fundoresumodacompra{
+    background-color: #d9d9d9;
+    width: 26vw;
+    height: 20vw;
+    margin-left: 70vw;
+    margin-top: -9vw;
+    border-radius: 1vw;
+}
+.txtresumodacompra{
+    font-size: 1.6vw;
+    margin-left: 6.1vw;
+    padding-top: 1.5vw;
+}
+.linharesumo{
+     margin-left:0vw;
+    margin-top: 0.2vw;
+    margin-bottom: 1vw;
+    height: 1.5vw;
+    width: 26vw;
+    border-bottom: .1vw solid #000000;
+}
+.txtsubtotalresumocarrinho{
+    font-size: 1.4vw;
+    margin-left: 2vw;
+    padding-top: 1vw;
+}
+.subtotalresumocarrinho{
+    font-size: 1.4vw;
+    margin-left: 17vw;
+    margin-top: -1.7vw;
+}
 
 
+
+
+
+
+
+
+/* ---------------------------Footer------------------------- */
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+.footerNovosProdutos{
+    margin-top: 10vw;
+    background-color: #333333;
+    height: 25vw;
+    width: 89vw;
+    border-radius: 1.5vw;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.103);
+}
+
+.footerNovosProdutos h1{
+    padding: 2vw;
+    color: white;
+    font-size: 3vw;
+    width: 30vw;
+    height: 12vw;
+}
+
+.footerNovosProdutos input{
+    margin-top: 1vw;
+    margin-left: 2vw;
+    width: 30vw;
+    height: 3vw;
+    border-radius: 1.5vw;
+}
+.footerNovosProdutos input::placeholder{
+    padding-left:2vw;
+    font-size: 1vw;
+}
+
+.footerNovosProdutos button{
+    color: white;
+    background: #adb0b7;
+    position: absolute;
+    left: 31.5vw;
+    top:157vw;
+    width: 5vw;
+    height: 2vw;
+    border-radius: 1vw;
+    border: none;
+}
+
+.footerSobre{
+    display: flex;
+    height: 25vw;
+    width: 89vw;
+
+}
+
+.sobref{
+    width: 10vw;       
+    height: 12vw;
+    color:rgb(0, 0, 0);
+}
+
+.sobref li{
+    margin-top:1vw;
+    list-style: none;
+    font-size: 1.5vw;
+    margin-left:1vw;
+}
 
 
 

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="icon.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="css.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="icon" type="image/png" href="" />
     <title>e-Tech</title>
 </head>
@@ -28,7 +28,7 @@
                         search
                     </span>
                 </a>
-                <a href="carrinhocompra.html">
+                <a href="/aula/carrinhocompra.html">
                     <span class="material-symbols-outlined size-20">
                         shopping_cart
                     </span>
@@ -51,7 +51,7 @@
                 <li><a href="../aula/paginas_produtos/fones.html">Fones</a></li>
                 <li><a href="../aula/paginas_produtos/notebooks.html">Notebooks</a></li>
                 <li><a href="../aula/paginas_produtos/perifericos.html">Periféricos</a></li>
-                <li><a href="teste.html">Outros</a></li>
+                <li><a href="/aula/paginas_produtos/outros.html">Outros</a></li>
             </ul>
         </nav>
     </header>
@@ -68,7 +68,7 @@
 
                 <div class="anuncio on"> <!--Headset-->
                     <form id="foneA56" action="adicionar.php" method="post" style="display: none;">
-                        <input type="hidden" name="img" value="anuncios/Headset.png" >
+                        <input type="hidden" name="img" value="anuncios/Headset.png">
                         <input type="hidden" name="nome" value="PS5 Slim Digital Edition">
                         <input type="hidden" name="preco" value="R$ 3599,99">
                         <input type="hidden" name="descricao" value="">
@@ -84,7 +84,7 @@
 
                 <div class="anuncio">
                     <form id="foneios" action="adicionar.php" method="post" style="display: none;">
-                        <input type="hidden" name="img" value="anuncios/foneIOS.png" >
+                        <input type="hidden" name="img" value="anuncios/foneIOS.png">
                         <input type="hidden" name="nome" value="Fone IOS">
                         <input type="hidden" name="preco" value="R$ 3599,99">
                         <input type="hidden" name="descricao" value="">
@@ -117,7 +117,7 @@
 
                 <div class="anuncio">
                     <form id="smartwatch" action="adicionar.php" method="post" style="display: none;">
-                        <input type="hidden" name="img" value="anuncios/SmartWatch.png" >
+                        <input type="hidden" name="img" value="anuncios/SmartWatch.png">
                         <input type="hidden" name="nome" value="SmartWatch">
                         <input type="hidden" name="preco" value="R$259,90">
                         <input type="hidden" name="descricao" value="">
@@ -130,14 +130,14 @@
                             inteligente todos os dias.</p>
                         <img src="anuncios/SmartWatch.png" class="img4">
                     </div>
-                    <a href="#">
-                        <div class="botaoComprarAnuncio">Compre Agora</div>
-                    </a>
+
+                    <div class="botaoComprarAnuncio"> <a href="#">Compre Agora</a></div>
+
                 </div>
 
                 <div class="anuncio">
                     <form id="iphone15" action="adicionar.php" method="post" style="display: none;">
-                        <input type="hidden" name="img" value="" >
+                        <input type="hidden" name="img" value="">
                         <input type="hidden" name="nome" value="iPhone15 Pro">
                         <input type="hidden" name="preco" value="R$4999,99">
                         <input type="hidden" name="descricao" value="">
@@ -167,7 +167,7 @@
         <!---------------------------Carrossel de produtos------------------------------------>
         <div class="containerProdutos">
             <form id="PS5" action="adicionar.php" method="post" style="display: none;">
-                <input type="hidden" name="img" value="ps5.png" >
+                <input type="hidden" name="img" value="ps5.png">
                 <input type="hidden" name="nome" value="PS5 Slim Digital Edition">
                 <input type="hidden" name="preco" value="R$3599,99">
                 <input type="hidden" name="descricao" value="">
@@ -179,7 +179,7 @@
                     <div class="categoriaProduto">
                         <p class="categoria">Outros</p>
                     </div>
-                    </div>
+                </div>
                 <p class="nomeProdutos">PS5 Slim Digital Edition</p>
                 <div class="preco">
                     <p class="precoProdutos">R$3599,99</p>
@@ -293,6 +293,24 @@
 
 </script>
 
+
+
 <footer>
+    <div class="footerNovosProdutos">
+        <h1>Pronto para receber nossos novos produtos?</h1>
+        <input type="email" name="emailfooter" placeholder="Seu Email">
+        <button type="submit">Enviar</button>
+    </div>
+    <div class="footerSobre">
+        <div class="sobref">
+            <li>Sobre</li>
+            <li>Blog</li>
+            <li>Sobre Nós</li>
+            <li>Contate-nos</li>
+        </div>
+    </div>
+    <div class="footerCurriculo"></div>
+    <div class="footerRedes"></div>
 </footer>
+
 </html>
