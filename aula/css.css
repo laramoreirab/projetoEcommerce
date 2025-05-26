@@ -643,7 +643,7 @@ margin-top: 1.5vw;
 .fundoresumodacompra{
     background-color: #d9d9d9;
     width: 26vw;
-    height: 20vw;
+    height: 22vw;
     margin-left: 70vw;
     margin-top: -9vw;
     border-radius: 1vw;
@@ -671,10 +671,30 @@ margin-top: 1.5vw;
     margin-left: 17vw;
     margin-top: -1.7vw;
 }
-
-
-
-
+.txtfreteresumocarrinho{
+    font-size: 1.4vw;
+    margin-left: 2vw;
+    padding-top: 1vw;
+}
+.txtgratisresumocarrinho{
+    font-size: 1.4vw;
+    margin-left: 17vw;
+    margin-top: -1.7vw;
+}
+.txtcupomresumocarrinho{
+  font-size: 1.4vw;
+    margin-left: 2vw;
+    padding-top: 1vw;
+}
+.espacocupom input{
+    margin-left: 17vw;
+    margin-top: -1.7vw;
+    bor
+     border: 0vw solid #ccc;
+     height: 1.5vw;
+     width: 8vw;
+    
+}
 
 
 
@@ -731,25 +751,72 @@ footer{
 
 .footerSobre{
     display: flex;
-    height: 25vw;
+    height: 16vw;
     width: 89vw;
 
 }
 
 .sobref{
-    width: 10vw;       
+    margin-top:1vw;
+    width: 11vw;       
     height: 12vw;
-    color:rgb(0, 0, 0);
+    color:#0f1415
 }
 
 .sobref li{
     margin-top:1vw;
     list-style: none;
     font-size: 1.5vw;
-    margin-left:1vw;
+}
+
+.sobref li a{
+    text-decoration: none;
+    color:#0f1415;
+    margin-left:.5vw;
+}  
+
+.sobref li .negritosobre{
+    font-size: 2vw;
+    font-weight: 900;
+    margin-left:.5vw;
+    color: #333333;
 }
 
 
+.suportef{
+    margin-left:5vw;
+    margin-top:1vw;
+    width: 11vw;       
+    height: 12vw;
+    color:#0f1415
+}
+
+.suportef li{
+    margin-top:1vw;
+    list-style: none;
+    font-size: 1.5vw;
+}
+
+.suportef li a{
+    text-decoration: none;
+    color:#0f1415;
+    margin-left:.5vw;
+}  
+
+.suportef li .negritosuporte{
+    font-size: 2vw;
+    font-weight: 900;
+    margin-left:.5vw;
+    color: #333333;
+}
+
+
+.footerCurriculo{
+    background: black;
+    height:10vw;
+    width: 20vw;
+    border-radius: 1vw;
+}
 
 
 
