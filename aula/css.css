@@ -535,7 +535,9 @@ p.precoProdutos{
 }
 .linhas-circulos-progresso{
     display: flex;
-    margin: 2.5vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    margin-top: 1.2vw;
     justify-content: space-between;
 }
 /* circulos de progresso */
@@ -576,9 +578,16 @@ p.precoProdutos{
 }
 
 /* textos: compra, endereço e pagamento */
-.texxtoscarrinho {
-    font-size: 18px;
+.textos-carrinho{
+    width: 20vw;
+    margin-left: 40vw;
+    display: flex;
+    justify-content: space-between;
+}
+.textos-carrinho p{
+    font-size: 1vw;
     color: #cfcfcf;
+
 }
 /* textos carrinho produtos*/
 .linhaCompra{
@@ -1036,12 +1045,12 @@ footer{
 }
 
 .imgbloco{
-    display: fle;
+    display: flex;
 }
 
 .imgbloco img{
-    width: 3vw;
-    height: 3vw;
+    width: 5vw;
+    height: 5vw;
 }
 
 
