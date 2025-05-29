@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="icon" type="image/png" href="" />
+    <!-- teste -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <title>e-Tech</title>
 </head>
 
@@ -221,7 +224,7 @@
                         style="color: #adb0b7;">S24</span></div>
                 <p>O Samsung Galaxy S24 é um smartphone topo de linha com tela AMOLED, câmera avançada, desempenho
                     rápido com o Snapdragon 8 Gen 3 e design elegante.</p>
-                    <img src="anuncios/samsungS24.png">
+                <img src="anuncios/samsungS24.png">
                 <div class="botaoComprarAnuncio1"><a href="#">Compre Agora</a></div>
             </div>
         </div>
@@ -286,6 +289,48 @@
             </div>
 
         </div>
+
+
+        <div>
+            <div class="splide" aria-label="Splide Carousel">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="fundoProdutos">
+                                <img src="produtos/ps5.webp" alt="" class="prodCarrossel">
+                                    <div class="superiorProdutos">
+                                        <span class="material-symbols-outlined"> shopping_cart</span>
+                                        <div class="categoriaProduto">
+                                            <p class="categoria">Outros</p>
+                                        </div>
+                                    </div>
+                                <p class="nomeProdutos">PS5 Slim Digital Edition</p>
+                                    <div class="preco">
+                                        <p class="precoProdutos">R$3599,99</p>
+                                    </div>
+                                <div class="avaliacao">
+                                    <img src="icones/star.png" alt="estrela" class="estrela">
+                                    <p class="qtdAvaliacao">5.0 Avaliaram</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">02</li>
+                        <li class="splide__slide">03</li>
+                        <li class="splide__slide">04</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script>
+            var splide = new Splide('.splide', {
+                perPage: 3,
+                rewind: true, // volta para o começo quando chega no final
+                gap: '1rem',  // espaço entre os slides (opcional)
+            });
+
+            splide.mount();
+        </script>
+
 
         <footer>
             <div class="footerNovosProdutos">
@@ -416,6 +461,7 @@
     botaoPro.addEventListener('click', proximaImagem)
     botaoVol.addEventListener('click', voltarImagem)
 </script>
+
 
 
 
