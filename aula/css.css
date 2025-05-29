@@ -13,7 +13,7 @@
     ;
     background: linear-gradient(93deg, #d8d8d8 30%, white 90%);
     background-repeat: no-repeat;
-    height: 200vw;
+    height: 100%;
 }
 
 .body-c {
@@ -116,6 +116,7 @@ span.size-20 {
     color: #000000;
     font-size: 1vw;
 }
+
 .box ul a:hover {
     text-decoration: none;
     color: #ffffff;
@@ -282,7 +283,6 @@ span.size-20 {
 
 
 
-
 .fundoDoAnuncio .p2 {
     /*mexe com a descrição do produto do anuncio (foneIOS)*/
     margin-left: 3.3vw;
@@ -405,49 +405,59 @@ span.size-20 {
 
 /* Produtos do carrossel home page */
 
-.containerProdutos{
+.containerProdutos {
+    margin-top: 5vw;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: 5%;
 
 }
-.fundoProdutos{
+
+.fundoProdutos {
     background-color: rgb(255, 255, 255);
     border-radius: 1.5vw;
     height: 23vw;
     width: 18.5vw;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.103);
 }
-.fundoProdutos:hover{
+
+.fundoProdutos:hover {
     transform: scale(1.1);
     transition: .6s;
 }
-img.prodCarrossel{
-    padding-left:1.6vw;
+
+img.prodCarrossel {
+    padding-left: 1.6vw;
     padding-top: 1vw;
     width: 16vw;
     height: 16vw;
 }
-p.nomeProdutos{
+
+p.nomeProdutos {
     font-weight: 800;
     padding-top: 0.2vw;
     text-align: center;
 }
 
-p.precoProdutos{
+p.precoProdutos {
     font-size: 1vw;
     padding-top: 1vw;
     padding-left: 2vw;
 }
-.avaliacao{
+
+.avaliacao {
     display: flex;
     justify-content: end;
     padding-right: 2.3vw;
 }
-.qtdAvaliacao{
+
+.qtdAvaliacao {
     font-size: 0.7vw;
     color: #adb0b7;
 }
-.superiorProdutos{
+
+.superiorProdutos {
     position: absolute;
     transform: translateY(-16.4vw);
     padding-left: 1vw;
@@ -455,25 +465,30 @@ p.precoProdutos{
     align-items: center;
 
 }
-.categoriaProduto{
+
+.categoriaProduto {
     background-color: #d9d9d9;
     width: 3.8vw;
     height: 1.5vw;
     margin-left: 11vw;
     border-radius: 1.5vw;
 }
-.categoria{
+
+.categoria {
     font-size: 0.63vw;
     font-weight: lighter;
     text-align: center;
     line-height: 1.5vw;
 }
-.qtdAvaliacao{
+
+.qtdAvaliacao {
     padding-top: 0.2vw;
 }
-.estrela{
+
+.estrela {
     padding-right: 0.1vw;
 }
+
 /*------------------------------------------------------------------------------------------------------------*/
 
 /*  Anuncio Samsung*/
@@ -494,19 +509,22 @@ p.precoProdutos{
 
 /*----------------------------------------Página Computadores---------------------------------------------------*/
 
-.centralizarTitulo{
+.centralizarTitulo {
     text-align: center;
     margin-top: 1vw;
 }
-.conteinerlinha{
+
+.conteinerlinha {
     display: flex;
     justify-content: space-evenly;
     padding-top: 2vw;
 }
-.conteinerTotal{
+
+.conteinerTotal {
     padding-top: 0.5vw;
 }
-.categoriaProdutoPC{
+
+.categoriaProdutoPC {
     background-color: #d9d9d9;
     width: 5vw;
     height: 1.5vw;
@@ -517,29 +535,116 @@ p.precoProdutos{
 
 /*---------------------------------------pagina celulares-----------------------------------------------------*/
 
+/* ---------------Página dos produtos ------------- */
 
-/*                     CARRINHO                   */
+.alinharimg-nome {
+    display: flex;
+    position: absolute;
+}
+
+.imgprodutopagina {
+    background-color: #696969;
+    border-radius: 0.6vw;
+    width: 40vw;
+    height: 32vw;
+    margin-top: 2vw;
+    margin-left: 7vw;
+}
+
+.nomeprodutopagina {
+    font-size: 2.2vw;
+    font-weight: 900;
+    margin-bottom: -4vw;
+    margin-left: 17vw;
+    margin-top: 5vw;
+    height: 3vw;
+}
+
+.alinhar.avaliacao {
+    display: flex;
+    position: absolute;
+    margin-left: 65vw;
+    padding-top: 9vw;
+    justify-content: space-between;
+}
+
+.estrela-produto img {
+    height: 1.5vw;
+    width: 1.5vw;
+    margin-left: -23.2vw;
+    padding-top: 9vw;
+    position: absolute;
+}
+
+.txtavaliacao {
+    font-size: 1vw;
+    padding-top: 9.15vw;
+    color: #adb0b7;
+    margin-left: -21.4vw;
+    position: absolute;
+}
+
+.preco-pagina-produto {
+    font-size: 3.3vw;
+    position: absolute;
+    font-weight: 1000;
+    margin-left: 63.7vw;
+    margin-top: 12vw;
+}
+.txtquantidade-produto{
+    font-size: 1vw;
+    font-weight: 1000;
+    margin-left: -15vw;
+    margin-top: 18vw;
+}
+.botao-adicionar{
+    margin-top: 21vw;
+    margin-left: -6vw; 
+    
+}
+.botao-adicionar button{
+   border-radius: 20vw;
+   border: none;
+   background-color:#696969 ;
+   color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------CARRINHO--------------------- */
 
 /* texto carrinho */
-.carrinhotitle{
+.carrinhotitle {
     display: flex;
     justify-content: center;
     margin-top: 1vw;
     font-size: 2vw;
 }
-.alinhar-tudo{
+
+.alinhar-tudo {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 1vw;
 }
-.linhas-circulos-progresso{
+
+.linhas-circulos-progresso {
     display: flex;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
     margin-top: 1.2vw;
     justify-content: space-between;
 }
+
 /* circulos de progresso */
 .circulo1 {
     width: 1vw;
@@ -548,49 +653,57 @@ p.precoProdutos{
     background-color: #000000;
     margin-right: 0.6vw;
 }
-.linha1{
+
+.linha1 {
     width: 5vw;
     height: 0.1vw;
     background-color: #e6e6e6;
     margin-top: 0.5vw;
-     margin-right: 0.6vw;
+    margin-right: 0.6vw;
 }
-.circulo2{
+
+.circulo2 {
     width: 1vw;
     height: 1vw;
     border-radius: 50%;
     background-color: #a1a1a1;
-     margin-right: 0.6vw;
+    margin-right: 0.6vw;
 }
-.linha2{
+
+.linha2 {
     width: 5vw;
     height: 0.1vw;
     background-color: #e6e6e6;
     margin-top: 0.5vw;
-     margin-right: 0.6vw;
+    margin-right: 0.6vw;
 }
-.circulo3{
+
+.circulo3 {
     width: 1vw;
     height: 1vw;
     border-radius: 50%;
-     margin-right: 0.6vw;
+    margin-right: 0.6vw;
     background-color: #9e9e9e;
 }
 
 /* textos: compra, endereço e pagamento */
-.textos-carrinho{
+.textos-carrinho {
     width: 20vw;
-    margin-left: 40vw;
+    margin-left: 40.6vw;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 2.5vw;
+    margin-top: 0.3vw;
 }
-.textos-carrinho p{
+
+.textos-carrinho p {
     font-size: 1vw;
     color: #cfcfcf;
 
 }
+
 /* textos carrinho produtos*/
-.linhaCompra{
+.linhaCompra {
     display: flex;
     justify-content: space-between;
     width: 60vw;
@@ -600,7 +713,7 @@ p.precoProdutos{
     font-size: 1vw;
 }
 
-.separamentoCompra{
+.separamentoCompra {
     height: 1.5vw;
     width: 25vw;
     display: flex;
@@ -609,8 +722,8 @@ p.precoProdutos{
 
 /* parte dos produtos dentro do carrinho */
 
-.produtoscarrinho{
-    margin-left:2vw;
+.produtoscarrinho {
+    margin-left: 2vw;
     margin-top: .3vw;
     margin-bottom: 1vw;
     height: 8.5vw;
@@ -618,43 +731,49 @@ p.precoProdutos{
     background: rgb(255, 0, 0);
     border-bottom: .1vw solid #ccc;
 }
+
 /* div onde aparece a imagem dos produtos  */
-.imgprodutocarrinho{
-background-color: rgb(81, 255, 0);
-width: 13vw;
-height: 13vw;
-border-radius: 1.2vw;
-margin-left: 2vw;
-margin-top: 1.5vw;
+.imgprodutocarrinho {
+    background-color: rgb(81, 255, 0);
+    width: 13vw;
+    height: 13vw;
+    border-radius: 1.2vw;
+    margin-left: 2vw;
+    margin-top: 1.5vw;
 }
-.nomeprodutocarrinho{
+
+.nomeprodutocarrinho {
     margin-left: 16.2vw;
     display: flex;
     margin-top: -7vw;
     font-size: 1.1vw;
 }
-.precoprodutocarrinho{
+
+.precoprodutocarrinho {
     margin-left: 38.2vw;
     display: flex;
     margin-top: -1.4vw;
     font-size: 1.1vw;
     align-items: center;
 }
-.quantidadeprodutocarrinho{
+
+.quantidadeprodutocarrinho {
     margin-left: 49.7vw;
     display: flex;
     margin-top: -1.4vw;
     font-size: 1.1vw;
     align-items: center;
 }
-.totalprodutocarrinho{
+
+.totalprodutocarrinho {
     margin-left: 56vw;
     display: flex;
     margin-top: -1.4vw;
     font-size: 1.1vw;
     align-items: center;
 }
-.fundoresumodacompra{
+
+.fundoresumodacompra {
     background-color: #d9d9d9;
     width: 26vw;
     height: 22vw;
@@ -662,53 +781,63 @@ margin-top: 1.5vw;
     margin-top: -9vw;
     border-radius: 1vw;
 }
-.txtresumodacompra{
+
+.txtresumodacompra {
     font-size: 1.6vw;
     margin-left: 6.1vw;
     padding-top: 1.5vw;
 }
-.linharesumo{
-     margin-left:0vw;
+
+.linharesumo {
+    margin-left: 0vw;
     margin-top: 0.2vw;
     margin-bottom: 1vw;
     height: 1.5vw;
     width: 26vw;
     border-bottom: .1vw solid #000000;
 }
-.txtsubtotalresumocarrinho{
+
+.txtsubtotalresumocarrinho {
     font-size: 1.4vw;
     margin-left: 2vw;
     padding-top: 1vw;
 }
-.subtotalresumocarrinho{
+
+.subtotalresumocarrinho {
     font-size: 1.4vw;
     margin-left: 17vw;
     margin-top: -1.7vw;
 }
-.txtfreteresumocarrinho{
+
+.txtfreteresumocarrinho {
     font-size: 1.4vw;
     margin-left: 2vw;
     padding-top: 1vw;
 }
-.txtgratisresumocarrinho{
+
+.txtgratisresumocarrinho {
     font-size: 1.4vw;
     margin-left: 17vw;
     margin-top: -1.7vw;
 }
-.txtcupomresumocarrinho{
-  font-size: 1.4vw;
+
+.txtcupomresumocarrinho {
+    font-size: 1.4vw;
     margin-left: 2vw;
     display: flex;
     align-items: center;
 }
-.espacocupom input{
+
+.espacocupom input {
     border-radius: 1vw;
-     border: 0vw solid #ccc;
-     height: 1.5vw;
-     width: 7vw;
-     text-align: center;
+    border: 0vw solid #ccc;
+    height: 1.5vw;
+    width: 7vw;
+    text-align: center;
+    font-size: 1vw;
 }
-.cupomalinhadocarrinho{
+
+.cupomalinhadocarrinho {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -716,17 +845,20 @@ margin-top: 1.5vw;
     height: 2vw;
     margin-top: 0.9vw;
 }
-.txttotalcarrinho{
-     font-size: 2vw;
+
+.txttotalcarrinho {
+    font-size: 2vw;
     margin-left: 2vw;
     padding-top: 0.6vw;
 }
-.valortotalcarrinho{
+
+.valortotalcarrinho {
     font-size: 2vw;
     margin-left: 14vw;
     margin-top: -2.3vw;
 }
-.botaocomprarcarrinho button{
+
+.botaocomprarcarrinho button {
     background-color: #cfcfcf;
     font-size: 1.4vw;
     width: 26vw;
@@ -739,23 +871,26 @@ margin-top: 1.5vw;
     align-items: center;
     border: 0vw solid #ccc;
 }
-.botaocomprarcarrinho button:hover{
+
+.botaocomprarcarrinho button:hover {
     background-color: #a1a1a1;
     transition: .5s;
     cursor: pointer;
 }
-.botaocomprarcarrinho a{
-    text-decoration: none;   
+
+.botaocomprarcarrinho a {
+    text-decoration: none;
 }
 
 /* ------------------------ENDEREÇO-------------------------- */
 
-.enderecotitle{
-        display: flex;
+.enderecotitle {
+    display: flex;
     justify-content: center;
     margin-top: 1vw;
     font-size: 2vw;
 }
+
 .progress-container-endereco {
     display: flex;
     justify-content: space-between;
@@ -809,7 +944,8 @@ margin-top: 1.5vw;
     font-size: 18px;
     color: #cfcfcf;
 }
-.circle{
+
+.circle {
     background-color: #000000;
 }
 
@@ -818,21 +954,24 @@ margin-top: 1.5vw;
 
 
 /*-------------------------------Pagamento----------------------------------*/
-.body-pagamento{
+.body-pagamento {
     background-color: #f8f8f8;
-     font-family: 'TT-norms', sans-serif;
+    font-family: 'TT-norms', sans-serif;
     height: 200vw;
 }
-.tituloPagamento{
+
+.tituloPagamento {
     text-align: center;
     margin-top: 1vw;
     font-size: 2vw;
 }
-.subtitulo{
+
+.subtitulo {
     color: #878787;
     margin-left: 5%;
 }
-input[type=radio]:before{
+
+input[type=radio]:before {
     appearance: none;
     content: "";
     background-color: transparent;
@@ -848,13 +987,14 @@ input[type=radio]:before{
 /* ---------------------------Footer------------------------- */
 
 
-footer{
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction:column;
+    flex-direction: column;
 }
-.footerNovosProdutos{
+
+.footerNovosProdutos {
     margin-top: 10vw;
     background-color: #333333;
     height: 25vw;
@@ -863,7 +1003,7 @@ footer{
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.103);
 }
 
-.footerNovosProdutos h1{
+.footerNovosProdutos h1 {
     padding: 2vw;
     color: white;
     font-size: 3vw;
@@ -871,111 +1011,114 @@ footer{
     height: 12vw;
 }
 
-.footerNovosProdutos input{
+.footerNovosProdutos input {
     margin-top: 1vw;
     margin-left: 2vw;
-    width: 30vw;
+    width: 27vw;
     height: 3vw;
     border-radius: 1.5vw;
-}
-.footerNovosProdutos input::placeholder{
-    padding-left:2vw;
+    padding-left: 3vw;
     font-size: 1vw;
 }
 
-.footerNovosProdutos button{
+.footerNovosProdutos input::placeholder {
+    font-size: 1vw;
+}
+
+.footerNovosProdutos button {
     color: white;
     background: #adb0b7;
     position: absolute;
     left: 31.5vw;
-    top:157vw;
+    margin-top: 1.7vw;
     width: 5vw;
     height: 2vw;
     border-radius: 1vw;
     border: none;
+    cursor: pointer;
 }
 
-.footerSobre{
+.footerSobre {
     display: flex;
     height: 16vw;
     width: 89vw;
 
 }
 
-.sobref{
+.sobref {
     margin-left: 1vw;
-    margin-top:1vw;
-    width: 11vw;       
+    margin-top: 1vw;
+    width: 11vw;
     height: 12vw;
-    color:#0f1415
+    color: #0f1415
 }
 
-.sobref li{
-    margin-top:1vw;
+.sobref li {
+    margin-top: 1vw;
     list-style: none;
     font-size: 1.5vw;
 }
 
-.sobref li a{
+.sobref li a {
     text-decoration: none;
-    color:#0f1415;
-    margin-left:.5vw;
-}  
+    color: #0f1415;
+    margin-left: .5vw;
+}
 
-.sobref li .negritosobre{
+.sobref li .negritosobre {
     font-size: 2vw;
     font-weight: 900;
-    margin-left:.5vw;
+    margin-left: .5vw;
     color: #333333;
 }
 
 
-.suportef{
-    margin-left:5vw;
-    margin-top:1vw;
-    width: 11vw;       
+.suportef {
+    margin-left: 5vw;
+    margin-top: 1vw;
+    width: 11vw;
     height: 12vw;
-    color:#0f1415
+    color: #0f1415
 }
 
-.suportef li{
-    margin-top:1vw;
+.suportef li {
+    margin-top: 1vw;
     list-style: none;
     font-size: 1.5vw;
 }
 
-.suportef li a{
+.suportef li a {
     text-decoration: none;
-    color:#0f1415;
-    margin-left:.5vw;
-}  
+    color: #0f1415;
+    margin-left: .5vw;
+}
 
-.suportef li .negritosuporte{
+.suportef li .negritosuporte {
     font-size: 2vw;
     font-weight: 900;
-    margin-left:.5vw;
+    margin-left: .5vw;
     color: #333333;
 }
 
 
-.footerCurriculo{
+.footerCurriculo {
     display: flex;
     justify-content: center;
-    margin-top:3vw;
+    margin-top: 3vw;
     background: #333333;
-    height:12vw;
+    height: 12vw;
     width: 37vw;
     border-radius: 4vw;
 }
 
-.footerCurriculo a{
+.footerCurriculo a {
     text-decoration: none;
     color: white;
     font-size: 1.5vw;
 }
 
 
-.footerCurriculo .botaocurriculo{
+.footerCurriculo .botaocurriculo {
     display: flex;
     background: #adb0b7;
     width: 25vw;
@@ -983,17 +1126,17 @@ footer{
     justify-content: center;
     align-items: center;
     border-radius: 2vw;
-    position:absolute;
+    position: absolute;
     margin-top: 6vw;
 }
 
-.footerCurriculo p{
-    color:white;
+.footerCurriculo p {
+    color: white;
     font-size: 2.5vw;
     margin-top: 1.5vw;
 }
 
-.mexerCurriculo{
+.mexerCurriculo {
     display: flex;
     width: 62vw;
     height: 100%;
@@ -1002,12 +1145,13 @@ footer{
 }
 
 
-.footerf{
+.footerf {
     display: flex;
     align-items: end;
     height: 20vw;
 }
-.footerredes{
+
+.footerredes {
     display: flex;
     justify-content: center;
     border-top-left-radius: 2vw;
@@ -1017,26 +1161,28 @@ footer{
     background: #333333;
 }
 
-.footerredes a{
+.footerredes a {
     color: white;
     text-decoration: none;
+    font-size: 1.5vw;
+    height: 3.2vw;
 }
 
-.footerredes .espacoblocos{
+.footerredes .espacoblocos {
     position: absolute;
     margin-top: 3vw;
 }
 
 
-.blocosfooter{
+.blocosfooter {
     padding-top: 2vw;
     display: flex;
     justify-content: center;
-    width: 12vw;
+    width: 15vw;
     height: 8vw;
 }
 
-.footerf .tamanhof{
+.footerf .tamanhof {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1044,65 +1190,61 @@ footer{
     width: 80vw;
 }
 
-.imgbloco{
+.imgbloco {
+    margin-top: 3vw;
+    position: absolute;
     display: flex;
-}
-
-.imgbloco img{
-    width: 5vw;
+    justify-content: space-around;
+    width: 14vw;
     height: 5vw;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.dark-mode-button {
-    /* Botão Dark Mode */
-    position: absolute;
-    top: 50px;
-    right: 80px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 50px;
+.imgbloco img {
+    width: 3.2vw;
+    height: 3.2vw;
 }
 
-.dark-mode {
-    /*cor do dark e light mode*/
-    background-color: #222222;
-    color: #ffffff;
+.fundoSamsungS24 .tituloAnuncio{
+    margin-left: 3vw;
+    top: 12vw;
+    font-size: 5vw;
+    width: 50vw;
+}
+
+.fundoSamsungS24 p{
+    margin-left: 3.3vw;
+    padding-top: 3vw;
+    font-size: 1.2vw;
+    width: 35vw;
+}
+
+.fundoSamsungS24 .botaoComprarAnuncio1{
+    /*toda modificação do botão do anuncio*/
+    height: 4.3vw;
+    /*define a altura do botão*/
+    width: 16vw;
+    /*define a largura do botão*/
+    border-radius: 20px;
+    /* coloca borda no botão */
+    margin-top: 2vw;
+    margin-left:2vw;
+    background-color: #d9d9d9;
+    /*cor do botão*/
+    justify-content: center;
+    /*centraliza*/
+    align-items: center;
+    /*alinha os itens no centro*/
+    display: flex;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.281);
+    transition: .5s;
+}
+
+.fundoSamsungS24 .botaoComprarAnuncio1:hover{
+    transform: scale(1.1);
+}
+
+.fundoSamsungS24 .botaoComprarAnuncio1 a{
+    color: black;
+    text-decoration: none;
+    font-size: 1vw;
 }
