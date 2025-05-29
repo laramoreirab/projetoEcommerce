@@ -244,7 +244,7 @@ span.size-20 {
     height: 35vw;
     width: 89vw;
     border-radius: 1.5vw;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.103);
+    box-shadow: 3px 3px 40px rgba(0, 0, 0, 0.425);
 }
 
 .fundoDoAnuncio .tituloAnuncio {
@@ -419,7 +419,7 @@ span.size-20 {
     border-radius: 1.5vw;
     height: 23vw;
     width: 18.5vw;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.103);
+    box-shadow: 3px 3px 40px rgba(0, 0, 0, 0.425);
 }
 
 .fundoProdutos:hover {
@@ -493,6 +493,7 @@ p.precoProdutos {
 
 /*  Anuncio Samsung*/
 .anuncioSamsung {
+    margin-top:3vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -504,7 +505,60 @@ p.precoProdutos {
     height: 35vw;
     width: 89vw;
     border-radius: 1.5vw;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.103);
+    box-shadow: 10px px 10px rgba(0, 0, 0, 0.425);
+}
+
+
+.fundoSamsungS24 .tituloAnuncio{
+    margin-left: 3vw;
+    top: 12vw;
+    font-size: 5vw;
+    width: 50vw;
+}
+
+.fundoSamsungS24 p{
+    margin-left: 3.3vw;
+    padding-top: 3vw;
+    font-size: 1.2vw;
+    width: 35vw;
+}
+
+.fundoSamsungS24 .botaoComprarAnuncio1{
+    /*toda modificação do botão do anuncio*/
+    height: 4.3vw;
+    /*define a altura do botão*/
+    width: 16vw;
+    /*define a largura do botão*/
+    border-radius: 20px;
+    /* coloca borda no botão */
+    margin-top: 2vw;
+    margin-left:2vw;
+    background-color: #d9d9d9;
+    /*cor do botão*/
+    justify-content: center;
+    /*centraliza*/
+    align-items: center;
+    /*alinha os itens no centro*/
+    display: flex;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.281);
+    transition: .5s;
+}
+
+.fundoSamsungS24 .botaoComprarAnuncio1:hover{
+    transform: scale(1.1);
+}
+
+.fundoSamsungS24 .botaoComprarAnuncio1 a{
+    color: black;
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+.fundoSamsungS24 img{
+    position:absolute;
+    width: 42vw;
+    left: 55vw;
+    top:95vw;
 }
 
 /*----------------------------------------Página Computadores---------------------------------------------------*/
@@ -545,8 +599,8 @@ p.precoProdutos {
 .imgprodutopagina {
     background-color: #696969;
     border-radius: 0.6vw;
-    width: 40vw;
-    height: 32vw;
+    width: 45vw;
+    height: 35vw;
     margin-top: 2vw;
     margin-left: 7vw;
 }
@@ -555,7 +609,7 @@ p.precoProdutos {
     font-size: 2.2vw;
     font-weight: 900;
     margin-bottom: -4vw;
-    margin-left: 17vw;
+    margin-left: 12vw;
     margin-top: 5vw;
     height: 3vw;
 }
@@ -571,8 +625,8 @@ p.precoProdutos {
 .estrela-produto img {
     height: 1.5vw;
     width: 1.5vw;
-    margin-left: -23.2vw;
-    padding-top: 9vw;
+    margin-left: -23.1vw;
+    padding-top: 8.9vw;
     position: absolute;
 }
 
@@ -588,32 +642,57 @@ p.precoProdutos {
     font-size: 3.3vw;
     position: absolute;
     font-weight: 1000;
-    margin-left: 63.7vw;
+    margin-left: 63.8vw;
     margin-top: 12vw;
 }
 .txtquantidade-produto{
     font-size: 1vw;
     font-weight: 1000;
-    margin-left: -15vw;
+    margin-left: -23.04vw;
     margin-top: 18vw;
 }
-.botao-adicionar{
-    margin-top: 21vw;
-    margin-left: -6vw; 
-    
-}
+
 .botao-adicionar button{
-   border-radius: 20vw;
+    margin-top: 20vw;
+    margin-left: -5.4vw; 
+    font-size: 1vw;
+   border-radius: 5vw;
    border: none;
    background-color:#696969 ;
    color: white;
+   width: 1.4vw;
+   height: 1.4vw;
 }
-
-
-
-
-
-
+.quantidade-itens-produto{
+    font-size: 1.2vw;
+    margin-left:-2.8vw;
+    margin-top: 19.97vw;
+}
+.botao-diminuir button{
+    margin-left: 1.1vw;
+    font-size: 1vw;
+    border-radius: 5vw;
+    border: none;
+    background-color:#696969 ;
+    color: white;
+    width: 1.4vw;
+    height: 1.4vw;
+    margin-top: 20vw;
+}
+.descricao-pagina-produto{
+    position: absolute;
+    font-size: 0.8vw;
+    color: #878787;
+    margin-left: 64vw;
+    margin-top: 23vw;
+    width: 30vw;
+}
+.botao-adicionar-ao-carrinho button{
+    font-size: 1.5vw;
+    border-radius: 1vw;
+    width: 25vw;
+    height: 3vw;
+}
 
 
 
@@ -970,19 +1049,46 @@ p.precoProdutos {
     color: #878787;
     margin-left: 5%;
 }
-
-input[type=radio]:before {
-    appearance: none;
-    content: "";
+.metodo-pagamento{
+    margin-left: 5%;
+    padding-top: 1.5%;
+}
+.contCartoes{
+    display: inline;
+    padding-right: 3%;
+}
+img.cartao{
+    width: 15%;
+}
+.input-cartoes{
+    margin-right: 0.8%;
+    position: ;
+    transform: translateY()
+}
+.circulo1pagamento {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    background-color: #a1a1a1;
+    margin-right: 0.6vw;
+}
+.circulo2pagamento {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    background-color: #a1a1a1;
+    margin-right: 0.6vw;
+}
+.circulo3pagamento {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    background-color: #000000;
+    margin-right: 0.6vw;
+}
+input[type="radio" ]::before {
     background-color: transparent;
 }
-
-
-
-
-
-
-
 
 /* ---------------------------Footer------------------------- */
 
@@ -1204,47 +1310,3 @@ footer {
     height: 3.2vw;
 }
 
-.fundoSamsungS24 .tituloAnuncio{
-    margin-left: 3vw;
-    top: 12vw;
-    font-size: 5vw;
-    width: 50vw;
-}
-
-.fundoSamsungS24 p{
-    margin-left: 3.3vw;
-    padding-top: 3vw;
-    font-size: 1.2vw;
-    width: 35vw;
-}
-
-.fundoSamsungS24 .botaoComprarAnuncio1{
-    /*toda modificação do botão do anuncio*/
-    height: 4.3vw;
-    /*define a altura do botão*/
-    width: 16vw;
-    /*define a largura do botão*/
-    border-radius: 20px;
-    /* coloca borda no botão */
-    margin-top: 2vw;
-    margin-left:2vw;
-    background-color: #d9d9d9;
-    /*cor do botão*/
-    justify-content: center;
-    /*centraliza*/
-    align-items: center;
-    /*alinha os itens no centro*/
-    display: flex;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.281);
-    transition: .5s;
-}
-
-.fundoSamsungS24 .botaoComprarAnuncio1:hover{
-    transform: scale(1.1);
-}
-
-.fundoSamsungS24 .botaoComprarAnuncio1 a{
-    color: black;
-    text-decoration: none;
-    font-size: 1vw;
-}

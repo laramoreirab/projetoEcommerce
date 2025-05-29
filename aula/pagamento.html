@@ -16,13 +16,6 @@
         <nav class="box1" id="box1">
             <img src="logo.png">
             <div class="icones">
-                <div class="darkmode">
-                    <button id="darkModeToggle" class="dark-mode-button">
-                    </button>
-                    <span class="material-symbols-outlined size-20">
-                        dark_mode
-                    </span>
-                </div>
                 <a href="#">
                     <span class="material-symbols-outlined size-20">
                         search
@@ -57,11 +50,33 @@
     </header>
     <h1 class="tituloPagamento">Pagamento</h1>
 
+    <div class="alinhar-tudo">
+        <div class="linhas-circulos-progresso">
+         <div class="circulo1pagamento"></div>
+         <div class="linha1"></div>
+         <div class="circulo2pagamento"></div>
+         <div class="linha2"></div>
+          <div class="circulo3pagamento"></div>
+        </div>
+    </div>
+    <div class="textos-carrinho">
+     <p class="txt1cart">Compra</p>
+     <p class="txt2cart">Endereço</p>
+     <p class="txt3cart">Pagamento</p>
+    </div>
+
     <h2 class="subtitulo">Selecione o método de pagamento:</h2>
-    <input type="radio" class="cartoes">
+
+    <div class="metodo-pagamento">
+    <div class="contCartoes"> 
+    <input type="radio" class="input-cartoes">
     <img src="../aula/icones/cartao1.png" class="cartao">
-    <input type="radio" class="cartoes">
+    </div>
+    <div class="contCartoes">
+    <input type="radio" class="input-cartoes">
     <img src="../aula/icones/cartao2.png" class="cartao">
+    </div>
+    </div>
 
      <h2 class="subtitulo">Adicionar cartão</h2>
 </body>
