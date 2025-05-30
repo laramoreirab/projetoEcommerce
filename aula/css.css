@@ -1147,8 +1147,120 @@ img.cartao{
     width: 2%;
     height: 20px;
 }
-
-
+.form-container{
+    margin-left: 5%;
+    margin-top: 1vw;
+}
+.superiorCartao{
+    display: flex;
+    gap: 5%; /* espaçamento entre tipo e bandeira */
+}
+label{
+    font-family: 'TT-norms', sans-serif;
+    font-size: 1.2vw;
+    color: #858484;
+}
+.bandeira {
+  min-width: 30%;
+}
+#my-select{
+    width: 27vh;
+}
+select{
+    margin-top: 0.5vw;
+    width: 27vh;
+    height: 5vh;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    font-size: 1vw;
+    border-color: #858484;
+    color: #858484;
+    font-family: 'TT-norms', sans-serif;
+    padding-left: 10px;
+}
+.select2-container--default .select2-selection--single {
+    background-color: transparent !important;
+    margin-top: 0.5vw !important;
+    height: 5.1vh !important;
+    display: flex !important ;
+    align-items: center !important;
+    border-radius: 0.5rem !important;
+    border-color: #858484 !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 15px !important;
+}
+.dadosCartao{
+     margin-top: 1%;
+}
+.input-box{
+    background-color: transparent;
+    margin-top: 0.5vw;
+    border-radius: 0.6rem;
+    height: 5vh;
+    font-size: 1vw;
+    width: 18%;
+    border-color: #858484;
+    color: #858484;
+    font-family: 'TT-norms', sans-serif;
+    padding-left: 10px;
+}
+.asterisco{
+    font-size: 0.7vw;
+    font-weight: 800;
+}
+.validade{
+    border-color: #858484;
+    color: #858484;
+    font-family: 'TT-norms', sans-serif;
+    background-color: transparent;
+    border-radius: 0.6rem;
+    height: 5vh;
+    width: 5%;
+    font-size: 1vw;
+    margin-top: 0.8vw;
+    text-align: center;
+}
+#cvv{
+    border-color: #858484;
+    color: #858484;
+    font-family: 'TT-norms', sans-serif;
+    background-color: transparent;
+    border-radius: 0.6rem;
+    height: 5vh;
+    width: 5%;
+    font-size: 1vw;
+    margin-top: 0.8vw;
+    text-align: center;
+}
+.btt{
+    margin-top: 1vw;
+    border-color: transparent;
+    color: #858484;
+    font-family: 'TT-norms', sans-serif;
+    background-color: #cfcfcf;
+    border-radius: 0.6rem;
+    width: 16%;
+    height: 5vh;
+    font-size: 1vw;
+    margin-left: 8%;
+    margin-bottom: 1vw;
+}
+.caminhao{
+    width: 2%;
+}
+.caixa{
+    width: 1.5%;
+}
+.legendaEnvio{
+    font-size: 1vw;
+    display: inline;
+}
+.box-envio{
+    margin-top: 1vw;
+    border-radius: 0.6rem;
+    height: 2vh;
+}
 /* ---------------------------Footer------------------------- */
 
 
