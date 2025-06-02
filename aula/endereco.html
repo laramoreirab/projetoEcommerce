@@ -75,8 +75,8 @@
                     <p class="txtcelular">Número de Celular</p>
                 </div>
                 <div class="alinhar-box-nome-endereco">
-                    <input class="box-nomecompleto" type="text">
-                    <input class="box-numerocelular" type="number">
+                    <input class="box-nomecompleto" type="text" required>
+                    <input class="box-numerocelular" type="number" required>
                 </div>
 
                 <div class="alinhar-txt-cpf-email">
@@ -84,22 +84,47 @@
                     <p class="txtemail-endereco">Email</p>
                 </div>
                 <div class="alinhar-box-nome-endereco">
-                    <input class="box-cpf-endereco" type="number" minlength="11" maxlength="11">
-                    <input class="box-email-endereco" type="email">
+                    <input class="box-cpf-endereco" type="number" minlength="11" maxlength="11" required>
+                    <input class="box-email-endereco" type="email" required>
                 </div>
             </div>
             <p class="txt-endereco-padrao">Endereço Padrão</p>
             <input class="box-rua-endereco" type="text" placeholder="Rua ou logadouro">
             <div class="alinhar-bairro-numero">
-                <input class="box-bairro" type="text" placeholder="Bairro">
-                <input class="box-numero" type="number" placeholder="Número" maxlength="5">
+                <input class="box-bairro" type="text" placeholder="Bairro" required>
+                <input class="box-numero" type="number" placeholder="Número" maxlength="5" required>
             </div>
             <div class="alinhar-cidade-estado">
-                <input class="box-cidade" type="text" placeholder="Cidade">
-                <input class="box-estado" type="text" placeholder="Estado">
+                <input class="box-cidade" type="text" placeholder="Cidade" required>
+                <input class="box-estado" type="text" placeholder="Estado" required>
             </div>
-            <input class="box-cep" type="number" placeholder="CEP" minlength="8" maxlength="8">
-            <a href="pagamento.html"><input class="botao-salvar-endereco" value="Salvar" type="submit"></a>
+            <input class="box-cep" type="number" placeholder="CEP" minlength="8" maxlength="8" required>
+            <input class="botao-salvar-endereco" value="Salvar"   onclick="alert('Seu endereço foi salvo com sucesso!')" id="salvarEndereco" type="button">
+            <div class="fundoresumodacompra">
+                <div class="txtresumodacompra"><b>
+                        Resumo da compra
+                    </b>
+                </div>
+                <div class="linharesumo"></div>
+                <div class="txtsubtotalresumocarrinho">Subtotal</div>
+                <div class="subtotalresumocarrinho"><b>R$3669,99</b></div>
+                <div class="txtfreteresumocarrinho">Frete</div>
+                <div class="txtgratisresumocarrinho"><b>Grátis</b></div>
+                <div class="cupomalinhadocarrinho">
+                    <div class="txtcupomresumocarrinho">Cupom</div>
+                    <div class="espacocupom"><input placeholder="#SEMFRETE" type="text"></div>
+                </div>
+                <div class="linharesumo"></div>
+                <div class="txttotalcarrinho">Total</div>
+                <div class="valortotalcarrinho"><b>R$3669,99</b></div>
+            </div>
+            <div class="botaocomprarcarrinho"><a href="endereco.html">
+                <button>Continuar</button>
+            </a></div>
 
-
+            <script>
+                document.getElementById("salvarEndereco").addEventListener("click", function(event){
+                    event.preventDefault();
+                });
+            </script>
         </body>
