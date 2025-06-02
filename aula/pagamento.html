@@ -15,7 +15,7 @@
     <title>e-Tech</title>
 </head>
 
-<body class="body-pagamento">
+<body class="bodyendereco">
     <header id="header" class="header1">
         <nav class="box1" id="box1">
             <img src="logo.png">
@@ -66,7 +66,7 @@
     <div class="textos-carrinho">
      <p class="txt1cart">Compra</p>
      <p class="txt2cart">Endereço</p>
-     <p class="txt3cart">Pagamento</p>
+     <p class="txt3cartPay">Pagamento</p>
     </div>
 
     <h2 class="subtitulo">Selecione o método de pagamento:</h2>
@@ -111,19 +111,23 @@
                 <p class="asterisco">*Escrever com as mesmas abreviações do cartão</p>
                 <input type="text"  placeholder="Número do cartão"   class="input-box" pattern="[0-9]{4}.[0-9]{4}.[0-9]{4}.[0-9]{4}"><br>
                 <input type="tex" class="validade" placeholder="mm/aa" pattern="[0-9]{2}/[0-9]{2}" maxlength="5">
-                <input type="tex" placeholder="CVV" id="cvv" maxlength="3" size="3"><br>
+                <input type="tex" placeholder="cvv" id="cvv" maxlength="3" size="3"><br>
                 <button type="submit" class="btt">Salvar</button>
             </div>
             <div class="entrega">
                 <div class="box-envio"> 
+                    <div class="correios">
                     <input type="radio" name="envio" class="radio-entrega">
                     <img src="icones/caminhao.webp" class="caminhao">
                     <p class="legendaEnvio">Envio padrão pelo Correios</p>
+                    </div>
                 </div>
                 <div class="box-envio">
+                    <div class="privado">
                     <input type="radio" name="envio" class="radio-entrega">
                     <img src="icones/caixa.webp" class="caixa">
                     <p class="legendaEnvio">Envio privado</p>
+                    </div>
                 </div>
             </div>
         </form>

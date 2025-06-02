@@ -1,1493 +1,1658 @@
 :root{
---sombra-divs: 5px 5px 50px rgba(0, 0, 0, 0.404); /*variavel sombra das divs do home*/
-}
-
-
-* {
-    margin: 0;
-}
-
-@font-face {
-    font-family: 'TT-norms';
-    src: url(fonte/TT\ Norms-Pro-Regular.otf) format('opentype');
-}
-
-
-.body-h {
-    font-family: 'TT-norms', sans-serif;
-    ;
-    background: linear-gradient(93deg, #d8d8d8 30%, white 90%);
-    background-repeat: no-repeat;
-    height: 100%;
-}
-
-.body-c {
-    font-family: 'TT-norms', sans-serif;
-    background-color: white;
-    background-repeat: no-repeat;
-    height: 200vw;
-}
-
-.bodyendereco {
-    font-family: 'TT-norms', sans-serif;
-    background: white;
-    background-repeat: no-repeat;
-    height: 200vw;
-}
-
-/* ----------------------------------------------------------------------------------------------------------- */
-
-
-
-
-.box1 {
-    /*parte do header que está na frente*/
-    background: #ffffff;
-    width: 90%;
-    margin-left: 5%;
-    position: absolute;
-    border-bottom-left-radius: 1vw;
-    border-bottom-right-radius: 1vw;
-    z-index: 1;
-    justify-content: space-between;
-    display: flex;
-
-
-}
-
-.box1 img {
-    width: 8vw;
-    padding-left: 2.1%
-}
-
-
-.box {
-    /*parte do header que está na atrás*/
-    padding-top: 4.2vw;
-    background: #cfcfcf;
-    width: 90%;
-    padding-bottom: 0.6%;
-    margin-left: 5%;
-    border-bottom-left-radius: 1vw;
-    border-bottom-right-radius: 1vw;
-    transform: translateY(-30%);
-    transition: 0.5s;
-}
-
-.icones {
-    /*icones do header*/
-    margin-top: 1vw;
-    padding-right: 2.1%;
-    width: 9vw;
-    display: flex;
-    justify-content: space-around;
-}
-
-span.size-20 {
-    /*modifica os icones (tamanho,cor)*/
-    font-size: 1.9vw;
-    color: black;
-}
-
-
-
-.box1:hover+.box {
-    /*quando colocar o mouse em cima do header superior, o header inferior... */
-    transform: translateY(0);
-    /*aparece na tela*/
-
-}
-
-.box:hover {
-    /*quando colocar o mouse em cima do header inferior...*/
-    transform: translateY(0);
-    /*ele continua na tela*/
-}
-
-
-
-.box ul {
-    width: 70%;
-    padding-left: 15%;
-    padding-right: 15%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-}
-
-.box ul a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 1vw;
-}
-
-.box ul a:hover {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 1vw;
-}
-
-.logo {
-    width: 10vw;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-}
-
-/* ----------------------------------------------------------------------------------------------------------- */
-
-.carrossel {
-    /*design do carrossel*/
-    display: flex;
-    justify-content: space-between;
-    /*deixa as setas no canto da tela e a imagem no centro*/
-    align-items: center;
-    margin-left: 2vw;
-    /*coloca um espaço na parte esquerda do carrossel*/
-    margin-right: 2vw;
-    /*coloca um espaço na parte direita do carrossel*/
-}
-
-.carrossel .imagens {
-    height: 50vw;
-    /*tamanho das imagens do carrossel*/
-}
-
-.botao {
-    border: none;
-    /*tira a borda padrão do botão deixando só as setas*/
-    background: transparent;
-    /*deixa o fundo das setas transparentes*/
-    cursor: pointer;
-    /*muda o cursor do mouse deixando a mão como selecionar*/
-    transition: .5s;
-}
-
-.botao:hover {
-    transform: scale(1.2);
-}
-
-.anuncio {
-    position: absolute;
-    pointer-events: none;
-    opacity: 0;
-    /*deixa as imagens do carrossel transparente*/
-    transition: opacity .5s ease;
-
-}
-
-
-
-.on {
-    /*classe que liga as imagens do carrossel*/
-    opacity: 1;
-    pointer-events: auto;
-
-}
-
-.carrossel1 a {
-    text-decoration: none;
-    /*tira a decoração dos textos do carrossel*/
-    color: black;
-    /*coloca a cor preta em todas as letras do carrossel*/
-    font-size: 1.5vw;
-}
-
-.carrossel1 img {
-    height: 30vw;
-    /* tamanho da imagem do anuncio*/
-}
-
-
-.botaoComprarAnuncio {
-    /*toda modificação do botão do anuncio*/
-    height: 4.3vw;
-    /*define a altura do botão*/
-    width: 16vw;
-    /*define a largura do botão*/
-    border-radius: 20px;
-    /*coloca curvas nos cantos do botão*/
-    bottom: 7.5vw;
-    /*muda a posição do botão*/
-    left: 3vw;
-    /*muda a posição do botão para esquerda*/
-    background-color: #d9d9d9;
-    /*cor do botão*/
-    position: absolute;
-    /*tira o elemento do fluxo normal para posicionar dentro do elemento pai*/
-    justify-content: center;
-    /*centraliza*/
-    align-items: center;
-    /*alinha os itens no centro*/
-    display: flex;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.281);
-    transition: .5s;
-}
-
-.botaoComprarAnuncio:hover {
-    transform: scale(1.1);
-}
-
-.botaoComprarAnuncio a {
-    color: black;
-    text-decoration: none;
-    font-size: 1vw;
-}
-
-.imagens {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.fundoDoAnuncio {
-    /*mexe com o fundo de trás de todos os anuncios*/
-    margin-top: 10vw;
-    background-color: rgb(255, 255, 255);
-    height: 35vw;
-    width: 89vw;
-    border-radius: 1.5vw;
-    box-shadow: var(--sombra-divs)
-}
-
-.fundoDoAnuncio .tituloAnuncio {
-    /*mexe com o titulo do anuncio (Headset)*/
-    position: absolute;
-    margin-left: 3vw;
-    top: 12vw;
-    font-size: 5vw;
-    width: 40vw;
-}
-
-.fundoDoAnuncio p {
-    /*mexe com a descrição do produto do anuncio (Headset)*/
-    margin-left: 3.3vw;
-    padding-top: 15vw;
-    font-size: 1.2vw;
-}
-
-.fundoDoAnuncio img {
-    /*mexe com a imagem do anuncio (Headset)*/
-    position: absolute;
-    height: 48vw;
-    left: 41vw;
-    bottom: 1vw;
-}
-
-
-.fundoDoAnuncio .tituloAnuncio2 {
-    /*mexe com o titulo do anuncio (foneIOS)*/
-    position: absolute;
-    margin-left: 3vw;
-    top: 12vw;
-    font-size: 5vw;
-    width: 40vw;
-}
-
-
-
-.fundoDoAnuncio .p2 {
-    /*mexe com a descrição do produto do anuncio (foneIOS)*/
-    margin-left: 3.3vw;
-    width: 45vw;
-    padding-top: 15vw;
-    font-size: 1.2vw;
-}
-
-.fundoDoAnuncio .img2 {
-    /*mexe com a imagem do anuncio (foneIOS)*/
-    position: absolute;
-    height: 45vw;
-    left: 44vw;
-    bottom: 1vw;
-}
-
-.fundoDoAnuncio .tituloAnuncio3 {
-    /*mexe com o titulo do anuncio (EchoDotAlexa)*/
-    position: absolute;
-    margin-left: 3vw;
-    top: 12vw;
-    font-size: 5vw;
-    width: 30vw;
-}
-
-
-.fundoDoAnuncio .p3 {
-    /*mexe com a descrição do produto do anuncio (EchoDotAlexa)*/
-    margin-left: 3.3vw;
-    width: 40vw;
-    padding-top: 15vw;
-    font-size: 1.2vw;
-}
-
-.fundoDoAnuncio .img3 {
-    /*mexe com a imagem do anuncio (EchoDotAlexa)*/
-    position: absolute;
-    height: 43vw;
-    left: 46vw;
-    bottom: 3vw;
-}
-
-.fundoDoAnuncio .tituloAnuncio4 {
-    /*mexe com o titulo do anuncio (Smart Watch)*/
-    position: absolute;
-    margin-left: 3vw;
-    top: 12vw;
-    font-size: 5vw;
-    width: 40vw;
-}
-
-
-.fundoDoAnuncio .p4 {
-    /*mexe com a descrição do produto do anuncio (Smart Watch)*/
-    margin-left: 3.3vw;
-    width: 40vw;
-    padding-top: 10vw;
-    font-size: 1.2vw;
-}
-
-.fundoDoAnuncio .img4 {
-    /*mexe com a imagem do anuncio (Smart Watch)*/
-    position: absolute;
-    height: 45vw;
-    left: 42vw;
-}
-
-
-.fundoDoAnuncio .tituloAnuncio5 {
-    /*mexe com o titulo do anuncio (Iphone15)*/
-    position: absolute;
-    margin-left: 3vw;
-    top: 12vw;
-    font-size: 5vw;
-    width: 40vw;
-}
-
-
-.fundoDoAnuncio .p5 {
-    /*mexe com a descrição do produto do anuncio (Iphone15)*/
-    margin-left: 3.3vw;
-    width: 40vw;
-    padding-top: 10vw;
-    font-size: 1.2vw;
-}
-
-.fundoDoAnuncio .img5 {
-    /*mexe com a imagem do anuncio (Iphone15)*/
-    position: absolute;
-    height: 45vw;
-    left: 42vw;
-}
-
-
-
-/* ----------------------------------------------------------------------------------------------------------- */
-
-.tudo {
-    /*classe na div que seleciona todos os itens do body(menos o header)*/
-    transition: filter 1s ease;
-    /*coloca uma transição suave no filtro de borrar*/
-}
-
-.borrar {
-    filter: blur(5px);
-    /*efeito de borrar*/
-}
-
-/* ----------------------------------------------------------------------------------------------------------- */
-
-.centralizarExplorar {
-    display: flex;
-    justify-content: center;
-    margin-top: 3vw;
-    font-size: 2vw;
-}
-
-
-/* ----------------------------------------------------------------------------------------------------------- */
-
-/* Produtos do carrossel home page */
-
-.containerProdutos {
-    margin-top: 5vw;
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
-    margin-left: 5%;
-
-}
-
-.fundoProdutos {
-    background-color: rgb(255, 255, 255);
-    border-radius: 1.5vw;
-    height: 23vw;
-    width: 18.5vw;
-    box-shadow: var(--sombra-divs);
-    transition: .6s;
-    z-index: 2;
-}
-
-.fundoProdutos:hover {
-    transform: scale(1.1);
-}
-
-img.prodCarrossel {
-    padding-left: 1.6vw;
-    padding-top: 1vw;
-    width: 16vw;
-    height: 16vw;
-}
-
-p.nomeProdutos {
-    font-weight: 800;
-    padding-top: 0.2vw;
-    text-align: center;
-}
-
-p.precoProdutos {
-    font-size: 1vw;
-    padding-top: 1vw;
-    padding-left: 2vw;
-}
-
-.avaliacao {
-    display: flex;
-    justify-content: end;
-    padding-right: 2.3vw;
-}
-
-.qtdAvaliacao {
-    font-size: 0.7vw;
-    color: #adb0b7;
-}
-
-.superiorProdutos {
-    position: absolute;
-    transform: translateY(-16.4vw);
-    padding-left: 1vw;
-    display: flex;
-    align-items: center;
-
-}
-
-.categoriaProduto {
-    background-color: #d9d9d9;
-    width: 3.8vw;
-    height: 1.5vw;
-    margin-left: 11vw;
-    border-radius: 1.5vw;
-}
-
-.categoria {
-    font-size: 0.63vw;
-    font-weight: lighter;
-    text-align: center;
-    line-height: 1.5vw;
-}
-
-.qtdAvaliacao {
-    padding-top: 0.2vw;
-}
-
-.estrela {
-    padding-right: 0.1vw;
-}
-
-/*------------------------------------------------------------------------------------------------------------*/
-
-/*  Anuncio Samsung*/
-.anuncioSamsung {
-    margin-top:3vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.fundoSamsungS24 {
-    margin-top: 10vw;
-    background-color: rgb(255, 255, 255);
-    height: 35vw;
-    width: 89vw;
-    border-radius: 1.5vw;
-    box-shadow: var(--sombra-divs)
-}
-
-
-.fundoSamsungS24 .tituloAnuncio{
-    margin-left: 3vw;
-    top: 12vw;
-    font-size: 5vw;
-    width: 50vw;
-}
-
-.fundoSamsungS24 p{
-    margin-left: 3.3vw;
-    padding-top: 3vw;
-    font-size: 1.2vw;
-    width: 35vw;
-}
-
-.fundoSamsungS24 .botaoComprarAnuncio1{
-    /*toda modificação do botão do anuncio*/
-    height: 4.3vw;
-    /*define a altura do botão*/
-    width: 16vw;
-    /*define a largura do botão*/
-    border-radius: 20px;
-    /* coloca borda no botão */
-    margin-top: 2vw;
-    margin-left:2vw;
-    background-color: #d9d9d9;
-    /*cor do botão*/
-    justify-content: center;
-    /*centraliza*/
-    align-items: center;
-    /*alinha os itens no centro*/
-    display: flex;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.281);
-    transition: .5s;
-}
-
-.fundoSamsungS24 .botaoComprarAnuncio1:hover{
-    transform: scale(1.1);
-}
-
-.fundoSamsungS24 .botaoComprarAnuncio1 a{
-    color: black;
-    text-decoration: none;
-    font-size: 1vw;
-}
-
-.fundoSamsungS24 img{
-    position:absolute;
-    width: 42vw;
-    left: 55vw;
-    top:95vw;
-}
-
-/*----------------------------------------Página Computadores---------------------------------------------------*/
-
-.centralizarTitulo {
-    text-align: center;
-    margin-top: 1vw;
-}
-
-.conteinerlinha {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 2vw;
-}
-
-.conteinerTotal {
-    padding-top: 0.5vw;
-}
-
-.categoriaProdutoPC {
-    background-color: #d9d9d9;
-    width: 5vw;
-    height: 1.5vw;
-    margin-left: 10vw;
-    border-radius: 1.5vw;
-}
-
-
-/*---------------------------------------pagina celulares-----------------------------------------------------*/
-
-/* ---------------Página dos produtos ------------- */
-
-.alinharimg-nome {
-    display: flex;
-    position: absolute;
-}
-
-.imgprodutopagina {
-    background-color: #696969;
-    border-radius: 0.6vw;
-    width: 45vw;
-    height: 35vw;
-    margin-top: 2vw;
-    margin-left: 7vw;
-}
-
-.nomeprodutopagina {
-    font-size: 2.2vw;
-    font-weight: 900;
-    margin-bottom: -4vw;
-    margin-left: 12vw;
-    margin-top: 5vw;
-    height: 3vw;
-}
-
-.alinhar.avaliacao {
-    display: flex;
-    position: absolute;
-    margin-left: 65vw;
-    padding-top: 9vw;
-    justify-content: space-between;
-}
-
-.estrela-produto img {
-    height: 1.5vw;
-    width: 1.5vw;
-    margin-left: -23.1vw;
-    padding-top: 8.9vw;
-    position: absolute;
-}
-
-.txtavaliacao {
-    font-size: 1vw;
-    padding-top: 9.15vw;
-    color: #adb0b7;
-    margin-left: -21.4vw;
-    position: absolute;
-}
-
-.preco-pagina-produto {
-    font-size: 3.3vw;
-    position: absolute;
-    font-weight: 1000;
-    margin-left: 63.8vw;
-    margin-top: 12vw;
-}
-.txtquantidade-produto{
-    font-size: 1vw;
-    font-weight: 1000;
-    margin-left: -23.04vw;
-    margin-top: 18vw;
-}
-
-.botao-adicionar button{
-    margin-top: 20vw;
-    margin-left: -5.4vw; 
-    font-size: 1vw;
-   border-radius: 5vw;
-   border: none;
-   background-color:#cfcfcf ;
-   color: #000000;
-   width: 1.4vw;
-   height: 1.4vw;
-}
-.quantidade-itens-produto{
-    font-size: 1.2vw;
-    margin-left:-2.8vw;
-    margin-top: 19.97vw;
-}
-.botao-diminuir button{
-    margin-left: 1.1vw;
-    font-size: 1vw;
-    border-radius: 5vw;
-    border: none;
-    background-color:#cfcfcf ;
-    color: rgb(0, 0, 0);
-    width: 1.4vw;
-    height: 1.4vw;
-    margin-top: 20vw;
-}
-.descricao-pagina-produto{
-    position: absolute;
-    font-size: 0.8vw;
-    color: #878787;
-    margin-left: 64vw;
-    margin-top: 23vw;
-    width: 30vw;
-}
-.botao-adicionar-ao-carrinho p{
-    margin-left: 2vw;
-}
-.botao-adicionar-ao-carrinho button{
-    background-color: #cfcfcf;
-    font-size: 1.2vw;
-    border-radius: 0.7vw;
-    width: 18vw;
-    height: 3.2vw;
-    margin-top: 29vw;
-    margin-left: -5.7vw;
-    border: none;
-    text-align: center;
-    position: absolute;
-}
-.imgaddcarrinho{
-    margin-top: 29.5vw;
-    margin-left: -4vw;
-position: absolute;
-z-index: 1;
-}
-.img-frete{
-    position: absolute;
-    z-index: 1;
-    margin-left: 65vw;
-    margin-top: 34.8vw;
-}
-.calcularfrete{
-    margin-left: 68.5vw;
-    margin-top: 35vw;
-    font-size: 1vw;
-}
-.alinharimg123{
-display: flex;
-justify-content: space-between;
-margin-top: 2vw;
-width: 25vw;
-margin-left: 16.6vw;
-}
-.imgprodutopagina2{
-background-color: green;
-width: 5vw;
-height: 5vw;
-border-radius: 0.5vw;
-}
-.imgprodutopagina3{
-background-color: red;
-width: 5vw;
-height: 5vw;
-border-radius: 0.5vw;
-}
-.imgprodutopagina4{
-background-color: blue;
-width: 5vw;
-height: 5vw;
-border-radius: 0.5vw;
-}
-
-
-/* -------------------CARRINHO--------------------- */
-
-/* texto carrinho */
-.carrinhotitle {
-    display: flex;
-    justify-content: center;
-    margin-top: 1vw;
-    font-size: 2vw;
-}
-
-.alinhar-tudo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 1vw;
-}
-
-.linhas-circulos-progresso {
-    display: flex;
-    margin-left: 2.5vw;
-    margin-right: 2.5vw;
-    margin-top: 1.2vw;
-    justify-content: space-between;
-}
-
-/* circulos de progresso */
-.circulo1 {
-    width: 1vw;
-    height: 1vw;
-    border-radius: 50%;
-    background-color: #000000;
-    margin-right: 0.6vw;
-}
-
-.linha1 {
-    width: 5vw;
-    height: 0.1vw;
-    background-color: #e6e6e6;
-    margin-top: 0.5vw;
-    margin-right: 0.6vw;
-}
-
-.circulo2 {
-    width: 1vw;
-    height: 1vw;
-    border-radius: 50%;
-    background-color: #a1a1a1;
-    margin-right: 0.6vw;
-}
-
-.linha2 {
-    width: 5vw;
-    height: 0.1vw;
-    background-color: #e6e6e6;
-    margin-top: 0.5vw;
-    margin-right: 0.6vw;
-}
-
-.circulo3 {
-    width: 1vw;
-    height: 1vw;
-    border-radius: 50%;
-    margin-right: 0.6vw;
-    background-color: #9e9e9e;
-}
-
-/* textos: compra, endereço e pagamento */
-.textos-carrinho {
-    width: 20vw;
-    margin-left: 40.6vw;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2.5vw;
-    margin-top: 0.3vw;
-}
-
-.textos-carrinho p {
-    font-size: 1vw;
-    color: #cfcfcf;
-
-}
-
-/* textos carrinho produtos*/
-.linhaCompra {
-    display: flex;
-    justify-content: space-between;
-    width: 60vw;
-    height: 2vw;
-    border-bottom: 0.1vw solid #ccc;
-    margin-left: 2vw;
-    font-size: 1vw;
-}
-
-.separamentoCompra {
-    height: 1.5vw;
-    width: 25vw;
-    display: flex;
-    justify-content: space-around;
-}
-
-/* parte dos produtos dentro do carrinho */
-
-.produtoscarrinho {
-    margin-left: 2vw;
-    margin-top: .3vw;
-    margin-bottom: 1vw;
-    height: 8.5vw;
-    width: 60vw;
-    background: rgb(255, 0, 0);
-    border-bottom: .1vw solid #ccc;
-}
-
-/* div onde aparece a imagem dos produtos  */
-.imgprodutocarrinho {
-    background-color: rgb(81, 255, 0);
-    width: 13vw;
-    height: 13vw;
-    border-radius: 1.2vw;
-    margin-left: 2vw;
-    margin-top: 1.5vw;
-}
-
-.nomeprodutocarrinho {
-    margin-left: 16.2vw;
-    display: flex;
-    margin-top: -7vw;
-    font-size: 1.1vw;
-}
-
-.precoprodutocarrinho {
-    margin-left: 38.2vw;
-    display: flex;
-    margin-top: -1.4vw;
-    font-size: 1.1vw;
-    align-items: center;
-}
-
-.quantidadeprodutocarrinho {
-    margin-left: 49.7vw;
-    display: flex;
-    margin-top: -1.4vw;
-    font-size: 1.1vw;
-    align-items: center;
-}
-
-.totalprodutocarrinho {
-    margin-left: 56vw;
-    display: flex;
-    margin-top: -1.4vw;
-    font-size: 1.1vw;
-    align-items: center;
-}
-
-.fundoresumodacompra {
-    background-color: #d9d9d9;
-    width: 26vw;
-    height: 22vw;
-    margin-left: 70vw;
-    margin-top: -9vw;
-    border-radius: 1vw;
-}
-
-.txtresumodacompra {
-    font-size: 1.6vw;
-    margin-left: 6.1vw;
-    padding-top: 1.5vw;
-}
-
-.linharesumo {
-    margin-left: 0vw;
-    margin-top: 0.2vw;
-    margin-bottom: 1vw;
-    height: 1.5vw;
-    width: 26vw;
-    border-bottom: .1vw solid #000000;
-}
-
-.txtsubtotalresumocarrinho {
-    font-size: 1.4vw;
-    margin-left: 2vw;
-    padding-top: 1vw;
-}
-
-.subtotalresumocarrinho {
-    font-size: 1.4vw;
-    margin-left: 17vw;
-    margin-top: -1.7vw;
-}
-
-.txtfreteresumocarrinho {
-    font-size: 1.4vw;
-    margin-left: 2vw;
-    padding-top: 1vw;
-}
-
-.txtgratisresumocarrinho {
-    font-size: 1.4vw;
-    margin-left: 17vw;
-    margin-top: -1.7vw;
-}
-
-.txtcupomresumocarrinho {
-    font-size: 1.4vw;
-    margin-left: 2vw;
-    display: flex;
-    align-items: center;
-}
-
-.espacocupom input {
-    border-radius: 1vw;
-    border: 0vw solid #ccc;
-    height: 1.5vw;
-    width: 7vw;
-    text-align: center;
-    font-size: 1vw;
-}
-
-.cupomalinhadocarrinho {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 24vw;
-    height: 2vw;
-    margin-top: 0.9vw;
-}
-
-.txttotalcarrinho {
-    font-size: 2vw;
-    margin-left: 2vw;
-    padding-top: 0.6vw;
-}
-
-.valortotalcarrinho {
-    font-size: 2vw;
-    margin-left: 14vw;
-    margin-top: -2.3vw;
-}
-
-.botaocomprarcarrinho button {
-    background-color: #cfcfcf;
-    font-size: 1.4vw;
-    width: 26vw;
-    height: 4vw;
-    border-radius: 1vw;
-    margin-left: 70vw;
-    margin-top: 1.5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 0vw solid #ccc;
-}
-
-.botaocomprarcarrinho button:hover {
-    background-color: #a1a1a1;
-    transition: .5s;
-    cursor: pointer;
-}
-
-.botaocomprarcarrinho a {
-    text-decoration: none;
-}
-
-/* ------------------------ENDEREÇO-------------------------- */
-
-.enderecotitle {
-    display: flex;
-    justify-content: center;
-    margin-top: 1vw;
-    font-size: 2vw;
-}
-
-.progress-container-endereco {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 400px;
-    margin: 50px auto;
-    position: relative;
-}
-
-/* posicionamento da linha de progresso */
-.step-endereco {
-    text-align: center;
-    flex: 1;
-    position: relative;
-}
-
-/* linha de progresso */
-.step:before {
-    content: '';
-    position: absolute;
-    top: 10px;
-    left: -50%;
-    width: 100%;
-    height: 2px;
-    background-color: #e6e6e6;
-    z-index: 0;
-}
-
-.step:first-child:before {
-    content: none;
-}
-
-/* circulos de progresso */
-.circle-endereco {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #a1a1a1;
-    margin: 0 auto 5px;
-    z-index: 1;
-    position: relative;
-}
-
-/* cor do circulo */
-.step.active .circle {
-    background-color: rgb(0, 0, 0);
-}
-
-/* textos: compra, endereço e pagamento */
-.label-endereco {
-    font-size: 18px;
-    color: #cfcfcf;
-}
-
-.circle {
-    background-color: #000000;
-}
-
-
-
-
-
-/*-------------------------------Pagamento----------------------------------*/
-.body-pagamento {
-    background-color: #f8f8f8;
-    font-family: 'TT-norms', sans-serif;
-    height: 200vw;
-}
-
-.tituloPagamento {
-    text-align: center;
-    margin-top: 1vw;
-    font-size: 2vw;
-}
-
-.subtitulo {
-    color: #878787;
-    margin-left: 5%;
-}
-.metodo-pagamento{
-    margin-left: 5%;
-    padding-top: 1.6%;
-    padding-bottom: 2.5%;
-}
-.contCartoes{
-    display: inline;
-    padding-right: 3%;
-}
-img.cartao{
-    width: 15%;
-}
-.input-cartoes {
-    margin-right: 0.5%;
-    position: relative;
-    transform: translateY(-6.7vw)
-}
-
-.circulo1pagamento {
-    width: 1vw;
-    height: 1vw;
-    border-radius: 50%;
-    background-color: #a1a1a1;
-    margin-right: 0.6vw;
-}
-.circulo2pagamento {
-    width: 1vw;
-    height: 1vw;
-    border-radius: 50%;
-    background-color: #a1a1a1;
-    margin-right: 0.6vw;
-}
-.circulo3pagamento {
-    width: 1vw;
-    height: 1vw;
-    border-radius: 50%;
-    background-color: #000000;
-    margin-right: 0.6vw;
-}
-
-  input[type="radio"] {
-    border: none;
-    width: 2%;
-    height: 20px;
-}
-.form-container{
-    margin-left: 5%;
-    margin-top: 1vw;
-}
-.superiorCartao{
-    display: flex;
-    gap: 5%; /* espaçamento entre tipo e bandeira */
-}
-label{
-    font-family: 'TT-norms', sans-serif;
-    font-size: 1.2vw;
-    color: #858484;
-}
-.bandeira {
-  min-width: 30%;
-}
-#my-select{
-    width: 27vh;
-}
-select{
-    margin-top: 0.5vw;
-    width: 27vh;
-    height: 5vh;
-    background-color: transparent;
-    border-radius: 0.5rem;
-    font-size: 1vw;
-    border-color: #858484;
-    color: #858484;
-    font-family: 'TT-norms', sans-serif;
-    padding-left: 10px;
-}
-.select2-container--default .select2-selection--single {
-    background-color: transparent !important;
-    margin-top: 0.5vw !important;
-    height: 5.1vh !important;
-    display: flex !important ;
-    align-items: center !important;
-    border-radius: 0.5rem !important;
-    border-color: #858484 !important;
-}
-.select2-container--default .select2-selection--single .select2-selection__arrow {
-    top: 15px !important;
-}
-.dadosCartao{
-     margin-top: 1%;
-}
-.input-box{
-    background-color: transparent;
-    margin-top: 0.5vw;
-    border-radius: 0.6rem;
-    height: 5vh;
-    font-size: 1vw;
-    width: 18%;
-    border-color: #858484;
-    color: #858484;
-    font-family: 'TT-norms', sans-serif;
-    padding-left: 10px;
-}
-.asterisco{
-    font-size: 0.7vw;
-    font-weight: 800;
-}
-.validade{
-    border-color: #858484;
-    color: #858484;
-    font-family: 'TT-norms', sans-serif;
-    background-color: transparent;
-    border-radius: 0.6rem;
-    height: 5vh;
-    width: 5%;
-    font-size: 1vw;
-    margin-top: 0.8vw;
-    text-align: center;
-}
-#cvv{
-    border-color: #858484;
-    color: #858484;
-    font-family: 'TT-norms', sans-serif;
-    background-color: transparent;
-    border-radius: 0.6rem;
-    height: 5vh;
-    width: 5%;
-    font-size: 1vw;
-    margin-top: 0.8vw;
-    text-align: center;
-}
-.btt{
-    margin-top: 1vw;
-    border-color: transparent;
-    color: #858484;
-    font-family: 'TT-norms', sans-serif;
-    background-color: #cfcfcf;
-    border-radius: 0.6rem;
-    width: 16%;
-    height: 5vh;
-    font-size: 1vw;
-    margin-left: 8%;
-    margin-bottom: 1vw;
-}
-.caminhao{
-    width: 2%;
-}
-.caixa{
-    width: 1.5%;
-}
-.legendaEnvio{
-    font-size: 1vw;
-    display: inline;
-}
-.box-envio{
-    margin-top: 1vw;
-    border-radius: 0.6rem;
-    height: 2vh;
-}
-/* ---------------------------Footer------------------------- */
-
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.footerNovosProdutos {
-    margin-top: 10vw;
-    background-color: #333333;
-    height: 25vw;
-    width: 89vw;
-    border-radius: 1.5vw;
-    box-shadow: var(--sombra-divs)
-}
-
-.footerNovosProdutos h1 {
-    padding: 2vw;
-    color: white;
-    font-size: 3vw;
-    width: 30vw;
-    height: 12vw;
-}
-
-.footerNovosProdutos input {
-    margin-top: 1vw;
-    margin-left: 2vw;
-    width: 27vw;
-    height: 3vw;
-    border-radius: 1.5vw;
-    padding-left: 3vw;
-    font-size: 1vw;
-}
-
-.footerNovosProdutos input::placeholder {
-    font-size: 1vw;
-}
-
-.footerNovosProdutos button {
-    color: white;
-    background: #adb0b7;
-    position: absolute;
-    left: 31.5vw;
-    margin-top: 1.7vw;
-    width: 5vw;
-    height: 2vw;
-    border-radius: 1vw;
-    border: none;
-    cursor: pointer;
-}
-
-.footerSobre {
-    display: flex;
-    height: 16vw;
-    width: 89vw;
-
-}
-
-.sobref {
-    margin-left: 1vw;
-    margin-top: 1vw;
-    width: 11vw;
-    height: 12vw;
-    color: #0f1415
-}
-
-.sobref li {
-    margin-top: 1vw;
-    list-style: none;
-    font-size: 1.5vw;
-}
-
-.sobref li a {
-    text-decoration: none;
-    color: #0f1415;
-    margin-left: .5vw;
-}
-
-.sobref li .negritosobre {
-    font-size: 2vw;
-    font-weight: 900;
-    margin-left: .5vw;
-    color: #333333;
-}
-
-
-.suportef {
-    margin-left: 5vw;
-    margin-top: 1vw;
-    width: 11vw;
-    height: 12vw;
-    color: #0f1415
-}
-
-.suportef li {
-    margin-top: 1vw;
-    list-style: none;
-    font-size: 1.5vw;
-}
-
-.suportef li a {
-    text-decoration: none;
-    color: #0f1415;
-    margin-left: .5vw;
-}
-
-.suportef li .negritosuporte {
-    font-size: 2vw;
-    font-weight: 900;
-    margin-left: .5vw;
-    color: #333333;
-}
-
-
-.footerCurriculo {
-    display: flex;
-    justify-content: center;
-    margin-top: 3vw;
-    background: #333333;
-    height: 12vw;
-    width: 37vw;
-    border-radius: 4vw;
-    box-shadow: var(--sombra-divs)
+    --sombra-divs: 5px 5px 50px rgba(0, 0, 0, 0.404); /*variavel sombra das divs do home*/
+    }
     
-}
-
-.footerCurriculo a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5vw;
-}
-
-
-.footerCurriculo .botaocurriculo {
-    display: flex;
-    background: #adb0b7;
-    width: 25vw;
-    height: 3.5vw;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2vw;
+    
+    * {
+        margin: 0;
+    }
+    
+    @font-face {
+        font-family: 'TT-norms';
+        src: url(fonte/TT\ Norms-Pro-Regular.otf) format('opentype');
+    }
+    
+    
+    .body-h {
+        font-family: 'TT-norms', sans-serif;
+        ;
+        background: linear-gradient(93deg, #d8d8d8 30%, white 90%);
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+    
+    .body-c {
+        font-family: 'TT-norms', sans-serif;
+        background-color: white;
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+    
+    .bodyendereco {
+        font-family: 'TT-norms', sans-serif;
+        background: #f8f8f8;
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+    
+    /* ----------------------------------------------------------------------------------------------------------- */
+    
+    
+    
+    
+    .box1 {
+        /*parte do header que está na frente*/
+        background: #ffffff;
+        width: 90%;
+        margin-left: 5%;
+        position: absolute;
+        border-bottom-left-radius: 1vw;
+        border-bottom-right-radius: 1vw;
+        z-index: 1;
+        justify-content: space-between;
+        display: flex;
+    
+    
+    }
+    
+    .box1 img {
+        width: 8vw;
+        padding-left: 2.1%
+    }
+    
+    
+    .box {
+        /*parte do header que está na atrás*/
+        padding-top: 4.2vw;
+        background: #cfcfcf;
+        width: 90%;
+        padding-bottom: 0.6%;
+        margin-left: 5%;
+        border-bottom-left-radius: 1vw;
+        border-bottom-right-radius: 1vw;
+        transform: translateY(-30%);
+        transition: 0.5s;
+    }
+    
+    .icones {
+        /*icones do header*/
+        margin-top: 1vw;
+        padding-right: 2.1%;
+        width: 9vw;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    span.size-20 {
+        /*modifica os icones (tamanho,cor)*/
+        font-size: 1.9vw;
+        color: black;
+    }
+    
+    
+    
+    .box1:hover+.box {
+        /*quando colocar o mouse em cima do header superior, o header inferior... */
+        transform: translateY(0);
+        /*aparece na tela*/
+    
+    }
+    
+    .box:hover {
+        /*quando colocar o mouse em cima do header inferior...*/
+        transform: translateY(0);
+        /*ele continua na tela*/
+    }
+    
+    
+    
+    .box ul {
+        width: 70%;
+        padding-left: 15%;
+        padding-right: 15%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+    }
+    
+    .box ul a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 1vw;
+    }
+    
+    .box ul a:hover {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1vw;
+    }
+    
+    .logo {
+        width: 10vw;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+    }
+    
+    /* ----------------------------------------------------------------------------------------------------------- */
+    
+    .carrossel {
+        /*design do carrossel*/
+        display: flex;
+        justify-content: space-between;
+        /*deixa as setas no canto da tela e a imagem no centro*/
+        align-items: center;
+        margin-left: 2vw;
+        /*coloca um espaço na parte esquerda do carrossel*/
+        margin-right: 2vw;
+        /*coloca um espaço na parte direita do carrossel*/
+    }
+    
+    .carrossel .imagens {
+        height: 50vw;
+        /*tamanho das imagens do carrossel*/
+    }
+    
+    .botao {
+        border: none;
+        /*tira a borda padrão do botão deixando só as setas*/
+        background: transparent;
+        /*deixa o fundo das setas transparentes*/
+        cursor: pointer;
+        /*muda o cursor do mouse deixando a mão como selecionar*/
+        transition: .5s;
+    }
+    
+    .botao:hover {
+        transform: scale(1.2);
+    }
+    
+    .anuncio {
+        position: absolute;
+        pointer-events: none;
+        opacity: 0;
+        /*deixa as imagens do carrossel transparente*/
+        transition: opacity .5s ease;
+    
+    }
+    
+    
+    
+    .on {
+        /*classe que liga as imagens do carrossel*/
+        opacity: 1;
+        pointer-events: auto;
+    
+    }
+    
+    .carrossel1 a {
+        text-decoration: none;
+        /*tira a decoração dos textos do carrossel*/
+        color: black;
+        /*coloca a cor preta em todas as letras do carrossel*/
+        font-size: 1.5vw;
+    }
+    
+    .carrossel1 img {
+        height: 30vw;
+        /* tamanho da imagem do anuncio*/
+    }
+    
+    
+    .botaoComprarAnuncio {
+        /*toda modificação do botão do anuncio*/
+        height: 4.3vw;
+        /*define a altura do botão*/
+        width: 16vw;
+        /*define a largura do botão*/
+        border-radius: 20px;
+        /*coloca curvas nos cantos do botão*/
+        bottom: 7.5vw;
+        /*muda a posição do botão*/
+        left: 3vw;
+        /*muda a posição do botão para esquerda*/
+        background-color: #d9d9d9;
+        /*cor do botão*/
+        position: absolute;
+        /*tira o elemento do fluxo normal para posicionar dentro do elemento pai*/
+        justify-content: center;
+        /*centraliza*/
+        align-items: center;
+        /*alinha os itens no centro*/
+        display: flex;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.281);
+        transition: .5s;
+    }
+    
+    .botaoComprarAnuncio:hover {
+        transform: scale(1.1);
+    }
+    
+    .botaoComprarAnuncio a {
+        color: black;
+        text-decoration: none;
+        font-size: 1vw;
+    }
+    
+    .imagens {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .fundoDoAnuncio {
+        /*mexe com o fundo de trás de todos os anuncios*/
+        margin-top: 10vw;
+        background-color: rgb(255, 255, 255);
+        height: 35vw;
+        width: 89vw;
+        border-radius: 1.5vw;
+        box-shadow: var(--sombra-divs)
+    }
+    
+    .fundoDoAnuncio .tituloAnuncio {
+        /*mexe com o titulo do anuncio (Headset)*/
+        position: absolute;
+        margin-left: 3vw;
+        top: 12vw;
+        font-size: 5vw;
+        width: 40vw;
+    }
+    
+    .fundoDoAnuncio p {
+        /*mexe com a descrição do produto do anuncio (Headset)*/
+        margin-left: 3.3vw;
+        padding-top: 15vw;
+        font-size: 1.2vw;
+    }
+    
+    .fundoDoAnuncio img {
+        /*mexe com a imagem do anuncio (Headset)*/
+        position: absolute;
+        height: 48vw;
+        left: 41vw;
+        bottom: 1vw;
+    }
+    
+    
+    .fundoDoAnuncio .tituloAnuncio2 {
+        /*mexe com o titulo do anuncio (foneIOS)*/
+        position: absolute;
+        margin-left: 3vw;
+        top: 12vw;
+        font-size: 5vw;
+        width: 40vw;
+    }
+    
+    
+    
+    .fundoDoAnuncio .p2 {
+        /*mexe com a descrição do produto do anuncio (foneIOS)*/
+        margin-left: 3.3vw;
+        width: 45vw;
+        padding-top: 15vw;
+        font-size: 1.2vw;
+    }
+    
+    .fundoDoAnuncio .img2 {
+        /*mexe com a imagem do anuncio (foneIOS)*/
+        position: absolute;
+        height: 45vw;
+        left: 44vw;
+        bottom: 1vw;
+    }
+    
+    .fundoDoAnuncio .tituloAnuncio3 {
+        /*mexe com o titulo do anuncio (EchoDotAlexa)*/
+        position: absolute;
+        margin-left: 3vw;
+        top: 12vw;
+        font-size: 5vw;
+        width: 30vw;
+    }
+    
+    
+    .fundoDoAnuncio .p3 {
+        /*mexe com a descrição do produto do anuncio (EchoDotAlexa)*/
+        margin-left: 3.3vw;
+        width: 40vw;
+        padding-top: 15vw;
+        font-size: 1.2vw;
+    }
+    
+    .fundoDoAnuncio .img3 {
+        /*mexe com a imagem do anuncio (EchoDotAlexa)*/
+        position: absolute;
+        height: 43vw;
+        left: 46vw;
+        bottom: 3vw;
+    }
+    
+    .fundoDoAnuncio .tituloAnuncio4 {
+        /*mexe com o titulo do anuncio (Smart Watch)*/
+        position: absolute;
+        margin-left: 3vw;
+        top: 12vw;
+        font-size: 5vw;
+        width: 40vw;
+    }
+    
+    
+    .fundoDoAnuncio .p4 {
+        /*mexe com a descrição do produto do anuncio (Smart Watch)*/
+        margin-left: 3.3vw;
+        width: 40vw;
+        padding-top: 10vw;
+        font-size: 1.2vw;
+    }
+    
+    .fundoDoAnuncio .img4 {
+        /*mexe com a imagem do anuncio (Smart Watch)*/
+        position: absolute;
+        height: 45vw;
+        left: 42vw;
+    }
+    
+    
+    .fundoDoAnuncio .tituloAnuncio5 {
+        /*mexe com o titulo do anuncio (Iphone15)*/
+        position: absolute;
+        margin-left: 3vw;
+        top: 12vw;
+        font-size: 5vw;
+        width: 40vw;
+    }
+    
+    
+    .fundoDoAnuncio .p5 {
+        /*mexe com a descrição do produto do anuncio (Iphone15)*/
+        margin-left: 3.3vw;
+        width: 40vw;
+        padding-top: 10vw;
+        font-size: 1.2vw;
+    }
+    
+    .fundoDoAnuncio .img5 {
+        /*mexe com a imagem do anuncio (Iphone15)*/
+        position: absolute;
+        height: 45vw;
+        left: 42vw;
+    }
+    
+    
+    
+    /* ----------------------------------------------------------------------------------------------------------- */
+    
+    .tudo {
+        /*classe na div que seleciona todos os itens do body(menos o header)*/
+        transition: filter 1s ease;
+        /*coloca uma transição suave no filtro de borrar*/
+    }
+    
+    .borrar {
+        filter: blur(5px);
+        /*efeito de borrar*/
+    }
+    
+    /* ----------------------------------------------------------------------------------------------------------- */
+    
+    .centralizarExplorar {
+        display: flex;
+        justify-content: center;
+        margin-top: 3vw;
+        font-size: 2vw;
+    }
+    
+    
+    /* ----------------------------------------------------------------------------------------------------------- */
+    
+    /* Produtos do carrossel home page */
+    
+    .containerProdutos {
+        margin-top: 5vw;
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        margin-left: 5%;
+    
+    }
+    
+    .fundoProdutos {
+        background-color: rgb(255, 255, 255);
+        border-radius: 1.5vw;
+        height: 23vw;
+        width: 18.5vw;
+        box-shadow: var(--sombra-divs);
+        transition: .6s;
+        z-index: 2;
+    }
+    
+    .fundoProdutos:hover {
+        transform: scale(1.1);
+    }
+    
+    img.prodCarrossel {
+        padding-left: 1.6vw;
+        padding-top: 1vw;
+        width: 16vw;
+        height: 16vw;
+    }
+    
+    p.nomeProdutos {
+        font-weight: 800;
+        padding-top: 0.2vw;
+        text-align: center;
+    }
+    
+    p.precoProdutos {
+        font-size: 1vw;
+        padding-top: 1vw;
+        padding-left: 2vw;
+    }
+    
+    .avaliacao {
+        display: flex;
+        justify-content: end;
+        padding-right: 2.3vw;
+    }
+    
+    .qtdAvaliacao {
+        font-size: 0.7vw;
+        color: #adb0b7;
+    }
+    
+    .superiorProdutos {
+        position: absolute;
+        transform: translateY(-16.4vw);
+        padding-left: 1vw;
+        display: flex;
+        align-items: center;
+    
+    }
+    
+    .categoriaProduto {
+        background-color: #d9d9d9;
+        width: 3.8vw;
+        height: 1.5vw;
+        margin-left: 11vw;
+        border-radius: 1.5vw;
+    }
+    
+    .categoria {
+        font-size: 0.63vw;
+        font-weight: lighter;
+        text-align: center;
+        line-height: 1.5vw;
+    }
+    
+    .qtdAvaliacao {
+        padding-top: 0.2vw;
+    }
+    
+    .estrela {
+        padding-right: 0.1vw;
+    }
+    
+    /*------------------------------------------------------------------------------------------------------------*/
+    
+    /*  Anuncio Samsung*/
+    .anuncioSamsung {
+        margin-top:3vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .fundoSamsungS24 {
+        margin-top: 10vw;
+        background-color: rgb(255, 255, 255);
+        height: 35vw;
+        width: 89vw;
+        border-radius: 1.5vw;
+        box-shadow: var(--sombra-divs)
+    }
+    
+    
+    .fundoSamsungS24 .tituloAnuncio{
+        margin-left: 3vw;
+        top: 12vw;
+        font-size: 5vw;
+        width: 50vw;
+    }
+    
+    .fundoSamsungS24 p{
+        margin-left: 3.3vw;
+        padding-top: 3vw;
+        font-size: 1.2vw;
+        width: 35vw;
+    }
+    
+    .fundoSamsungS24 .botaoComprarAnuncio1{
+        /*toda modificação do botão do anuncio*/
+        height: 4.3vw;
+        /*define a altura do botão*/
+        width: 16vw;
+        /*define a largura do botão*/
+        border-radius: 20px;
+        /* coloca borda no botão */
+        margin-top: 2vw;
+        margin-left:2vw;
+        background-color: #d9d9d9;
+        /*cor do botão*/
+        justify-content: center;
+        /*centraliza*/
+        align-items: center;
+        /*alinha os itens no centro*/
+        display: flex;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.281);
+        transition: .5s;
+    }
+    
+    .fundoSamsungS24 .botaoComprarAnuncio1:hover{
+        transform: scale(1.1);
+    }
+    
+    .fundoSamsungS24 .botaoComprarAnuncio1 a{
+        color: black;
+        text-decoration: none;
+        font-size: 1vw;
+    }
+    
+    .fundoSamsungS24 img{
+        position:absolute;
+        width: 42vw;
+        left: 55vw;
+        top:95vw;
+    }
+    
+    /*----------------------------------------Página Computadores---------------------------------------------------*/
+    
+    .centralizarTitulo {
+        text-align: center;
+        margin-top: 1vw;
+    }
+    
+    .conteinerlinha {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 2vw;
+    }
+    
+    .conteinerTotal {
+        padding-top: 0.5vw;
+    }
+    
+    .categoriaProdutoPC {
+        background-color: #d9d9d9;
+        width: 5vw;
+        height: 1.5vw;
+        margin-left: 10vw;
+        border-radius: 1.5vw;
+    }
+    
+    
+    /*---------------------------------------pagina celulares-----------------------------------------------------*/
+    
+    /* ---------------Página dos produtos ------------- */
+    
+    .alinharimg-nome {
+        display: flex;
+        position: absolute;
+    }
+    
+    .imgprodutopagina {
+        background-color: #696969;
+        border-radius: 0.6vw;
+        width: 45vw;
+        height: 35vw;
+        margin-top: 2vw;
+        margin-left: 7vw;
+    }
+    
+    .nomeprodutopagina {
+        font-size: 2.2vw;
+        font-weight: 900;
+        margin-bottom: -4vw;
+        margin-left: 12vw;
+        margin-top: 5vw;
+        height: 3vw;
+    }
+    
+    .alinhar.avaliacao {
+        display: flex;
+        position: absolute;
+        margin-left: 65vw;
+        padding-top: 9vw;
+        justify-content: space-between;
+    }
+    
+    .estrela-produto img {
+        height: 1.5vw;
+        width: 1.5vw;
+        margin-left: -23.1vw;
+        padding-top: 8.9vw;
+        position: absolute;
+    }
+    
+    .txtavaliacao {
+        font-size: 1vw;
+        padding-top: 9.15vw;
+        color: #adb0b7;
+        margin-left: -21.4vw;
+        position: absolute;
+    }
+    
+    .preco-pagina-produto {
+        font-size: 3.3vw;
+        position: absolute;
+        font-weight: 1000;
+        margin-left: 63.8vw;
+        margin-top: 12vw;
+    }
+    .txtquantidade-produto{
+        font-size: 1vw;
+        font-weight: 1000;
+        margin-left: -23.04vw;
+        margin-top: 18vw;
+    }
+    
+    .botao-adicionar button{
+        margin-top: 20vw;
+        margin-left: -5.4vw; 
+        font-size: 1vw;
+       border-radius: 5vw;
+       border: none;
+       background-color:#cfcfcf ;
+       color: #000000;
+       width: 1.4vw;
+       height: 1.4vw;
+    }
+    .quantidade-itens-produto{
+        font-size: 1.2vw;
+        margin-left:-2.8vw;
+        margin-top: 19.97vw;
+    }
+    .botao-diminuir button{
+        margin-left: 1.1vw;
+        font-size: 1vw;
+        border-radius: 5vw;
+        border: none;
+        background-color:#cfcfcf ;
+        color: rgb(0, 0, 0);
+        width: 1.4vw;
+        height: 1.4vw;
+        margin-top: 20vw;
+    }
+    .botao-diminuir{
+         width: 1.4vw;
+        height: 1.4vw;
+    }
+    .descricao-pagina-produto{
+        position: absolute;
+        font-size: 0.8vw;
+        color: #878787;
+        margin-left: 64vw;
+        margin-top: 23vw;
+        width: 30vw;
+    }
+    .botao-adicionar-ao-carrinho p{
+        margin-left: 2vw;
+    }
+    .botao-adicionar-ao-carrinho button{
+        background-color: #cfcfcf;
+        font-size: 1.2vw;
+        border-radius: 0.7vw;
+        width: 18vw;
+        height: 3.2vw;
+        margin-top: 29vw;
+        margin-left: -4.7vw;
+        border: none;
+        text-align: center;
+        position: absolute;
+    }
+    .imgaddcarrinho{
+        margin-top: 29.5vw;
+        margin-left: -3vw;
     position: absolute;
-    margin-top: 6vw;
-}
-
-.footerCurriculo p {
-    color: white;
-    font-size: 2.5vw;
-    margin-top: 1.5vw;
-}
-
-.mexerCurriculo {
-    display: flex;
-    width: 62vw;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.footerf {
-    display: flex;
-    align-items: end;
-    height: 20vw;
-}
-
-.footerredes {
-    display: flex;
-    justify-content: center;
-    border-top-left-radius: 2vw;
-    border-top-right-radius: 2vw;
-    width: 89vw;
-    height: 10vw;
-    background: #333333;
-    box-shadow: var(--sombra-divs)
-}
-
-.footerredes a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5vw;
-    height: 3.2vw;
-}
-
-.footerredes .espacoblocos {
-    position: absolute;
-    margin-top: 3vw;
-}
-
-
-.blocosfooter {
-    padding-top: 2vw;
-    display: flex;
-    justify-content: center;
-    width: 15vw;
-    height: 8vw;
-}
-
-.footerf .tamanhof {
+    z-index: 1;
+    }
+    .img-frete{
+        position: absolute;
+        z-index: 1;
+        margin-left: 65vw;
+        margin-top: 34.8vw;
+    }
+    .calcularfrete{
+        margin-left: 68.5vw;
+        margin-top: 35vw;
+        font-size: 1vw;
+    }
+    .alinharimg123{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    width: 80vw;
-}
-
-.imgbloco {
-    margin-top: 3vw;
-    position: absolute;
-    display: flex;
-    justify-content: space-around;
-    width: 14vw;
+    margin-top: 2vw;
+    width: 30vw;
+    margin-left: 14.5vw;
+    }
+    .imgprodutopagina2{
+    background-color: green;
+    width: 5vw;
     height: 5vw;
-}
+    border-radius: 0.5vw;
+    }
+    .imgprodutopagina3{
+    background-color: red;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 0.5vw;
+    }
+    .imgprodutopagina4{
+    background-color: blue;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 0.5vw;
+    }
+    .imgprodutopagina5{
+    background-color: yellow;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 0.5vw;
+    }
+    .caixa-avaliacao input{
+        background-color: white;
+        width: 50vw;
+        height: 10vw;
+        margin-left: 25%;
+        margin-top: 5vw;
+        border-radius: 0.7vw;
+        border: none;
+        font-size: 1vw;
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.281);
+    }
+    .caixa-avaliacao ::placeholder{
+        margin-top: -3.5vw;
+        margin-left: 0.8vw;
+        position: absolute;
+        color: black;
+    }
+    .botao-enviar-avaliacao{
+        width: 2.6vw;
+        height: 2.6vw;
+        margin-left: 71vw;
+        margin-top: 4vw;
+        background-color: #ffffff;
+        border: none;
+        position: absolute;
+        font-size: 1.5vw ;
+    }
+    .txt-deixe-aqui-sua-avaliacao{
+        margin-left: 26vw;
+        margin-top: -9vw;
+        font-size: 1.2vw;
+    }
+    .txtprodutos-que-voce-pode-gostar{
+        font-weight: 1000;
+        margin-top: 12vw;
+        margin-left: 36vw;
+        font-size: 2vw;
+    }
+    .alinhar-recomendacoes{
+        display: flex;
+        justify-content: space-between;
+        width: 70vw;
+        margin-left: 15vw;
+        margin-top: 4vw;
+    }
+    .recomendacao1{
+     background-color: orange;
+     width: 18vw;
+     height: 18vw;
+    }
+    .recomendacao2{
+     background-color: purple;
+     width: 18vw;
+     height: 18vw;
+    }
+    .recomendacao3{
+     background-color: chartreuse;
+     width: 18vw;
+     height: 18vw;
+    }
+    
+    
+    
+    /* -------------------CARRINHO--------------------- */
+    
+    /* texto carrinho */
+    .carrinhotitle {
+        display: flex;
+        justify-content: center;
+        margin-top: 1vw;
+        font-size: 2vw;
+    }
+    
+    .alinhar-tudo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1vw;
+    }
+    
+    .linhas-circulos-progresso {
+        display: flex;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+        margin-top: 1.2vw;
+        justify-content: space-between;
+    }
+    
+    /* circulos de progresso */
+    .circulo1 {
+        width: 1vw;
+        height: 1vw;
+        border-radius: 50%;
+        background-color: #000000;
+        margin-right: 0.6vw;
+    }
+    
+    .linha1 {
+        width: 5vw;
+        height: 0.1vw;
+        background-color: #a1a1a1;
+        margin-top: 0.5vw;
+        margin-right: 0.6vw;
+    }
+    
+    .circulo2 {
+        width: 1vw;
+        height: 1vw;
+        border-radius: 50%;
+        background-color: #a1a1a1;
+        margin-right: 0.6vw;
+    }
+    
+    .linha2 {
+        width: 5vw;
+        height: 0.1vw;
+        background-color: #a1a1a1;
+        margin-top: 0.5vw;
+        margin-right: 0.6vw;
+    }
+    
+    .circulo3 {
+        width: 1vw;
+        height: 1vw;
+        border-radius: 50%;
+        margin-right: 0.6vw;
+        background-color: #a1a1a1;
+    }
+    
+    /* textos: compra, endereço e pagamento */
+    .textos-carrinho {
+        width: 20vw;
+        margin-left: 40.6vw;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2.5vw;
+        margin-top: 0.3vw;
+    }
+    
+    .textos-carrinho p {
+        font-size: 1vw;
+        color: #a1a1a1;
+    }
+    
+    /* textos carrinho produtos*/
+    .linhaCompra {
+        display: flex;
+        justify-content: space-between;
+        width: 60vw;
+        height: 2vw;
+        border-bottom: 0.1vw solid #ccc;
+        margin-left: 2vw;
+        font-size: 1vw;
+    }
+    
+    .separamentoCompra {
+        height: 1.5vw;
+        width: 25vw;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    /* parte dos produtos dentro do carrinho */
+    
+    .produtoscarrinho {
+        margin-left: 2vw;
+        margin-top: .3vw;
+        margin-bottom: 1vw;
+        height: 8.5vw;
+        width: 60vw;
+        background: rgb(255, 0, 0);
+        border-bottom: .1vw solid #ccc;
+    }
+    
+    /* div onde aparece a imagem dos produtos  */
+    .imgprodutocarrinho {
+        background-color: rgb(81, 255, 0);
+        width: 13vw;
+        height: 13vw;
+        border-radius: 1.2vw;
+        margin-left: 2vw;
+        margin-top: 1.5vw;
+    }
+    
+    .nomeprodutocarrinho {
+        margin-left: 16.2vw;
+        display: flex;
+        margin-top: -7vw;
+        font-size: 1.1vw;
+    }
+    
+    .precoprodutocarrinho {
+        margin-left: 38.2vw;
+        display: flex;
+        margin-top: -1.4vw;
+        font-size: 1.1vw;
+        align-items: center;
+    }
+    
+    .quantidadeprodutocarrinho {
+        margin-left: 49.7vw;
+        display: flex;
+        margin-top: -1.4vw;
+        font-size: 1.1vw;
+        align-items: center;
+    }
+    
+    .totalprodutocarrinho {
+        margin-left: 56vw;
+        display: flex;
+        margin-top: -1.4vw;
+        font-size: 1.1vw;
+        align-items: center;
+    }
+    
+    .fundoresumodacompra {
+        background-color: #d9d9d9;
+        width: 26vw;
+        height: 22vw;
+        margin-left: 70vw;
+        margin-top: -9vw;
+        border-radius: 1vw;
+    }
+    
+    .txtresumodacompra {
+        font-size: 1.6vw;
+        margin-left: 6.1vw;
+        padding-top: 1.5vw;
+    }
+    
+    .linharesumo {
+        margin-left: 0vw;
+        margin-top: 0.2vw;
+        margin-bottom: 1vw;
+        height: 1.5vw;
+        width: 26vw;
+        border-bottom: .1vw solid #000000;
+    }
+    
+    .txtsubtotalresumocarrinho {
+        font-size: 1.4vw;
+        margin-left: 2vw;
+        padding-top: 1vw;
+    }
+    
+    .subtotalresumocarrinho {
+        font-size: 1.4vw;
+        margin-left: 17vw;
+        margin-top: -1.7vw;
+    }
+    
+    .txtfreteresumocarrinho {
+        font-size: 1.4vw;
+        margin-left: 2vw;
+        padding-top: 1vw;
+    }
+    
+    .txtgratisresumocarrinho {
+        font-size: 1.4vw;
+        margin-left: 17vw;
+        margin-top: -1.7vw;
+    }
+    
+    .txtcupomresumocarrinho {
+        font-size: 1.4vw;
+        margin-left: 2vw;
+        display: flex;
+        align-items: center;
+    }
+    
+    .espacocupom input {
+        border-radius: 1vw;
+        border: 0vw solid #ccc;
+        height: 1.5vw;
+        width: 7vw;
+        text-align: center;
+        font-size: 1vw;
+    }
+    
+    .cupomalinhadocarrinho {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 24vw;
+        height: 2vw;
+        margin-top: 0.9vw;
+    }
+    
+    .txttotalcarrinho {
+        font-size: 2vw;
+        margin-left: 2vw;
+        padding-top: 0.6vw;
+    }
+    
+    .valortotalcarrinho {
+        font-size: 2vw;
+        margin-left: 14vw;
+        margin-top: -2.3vw;
+    }
+    
+    .botaocomprarcarrinho button {
+        background-color: #cfcfcf;
+        font-size: 1.4vw;
+        width: 26vw;
+        height: 4vw;
+        border-radius: 1vw;
+        margin-left: 70vw;
+        margin-top: 1.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0vw solid #ccc;
+    }
+    
+    .botaocomprarcarrinho button:hover {
+        background-color: #a1a1a1;
+        transition: .5s;
+        cursor: pointer;
+    }
+    
+    .botaocomprarcarrinho a {
+        text-decoration: none;
+    }
+    
+    /* ------------------------ENDEREÇO-------------------------- */
+    
+    .enderecotitle {
+        display: flex;
+        justify-content: center;
+        margin-top: 1vw;
+        font-size: 2vw;
+    }
+    .alinhar-tudo-endereco{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 40vw;
+    }
+    .linhas-circulos-progresso-endereco{
+         display: flex;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+        margin-top: 1.2vw;
+        justify-content: space-between;
+    }
+    .circulo1endereco{
+       width: 1vw;
+        height: 1vw;
+        border-radius: 50%;
+        background-color: #a1a1a1;
+        margin-right: 0.6vw;
+    }
+    .circulo2endereco{
+       width: 1vw;
+        height: 1vw;
+        border-radius: 50%;
+        background-color: #000000;
+        margin-right: 0.6vw;
+    }
+    .circulo3endereco{
+       width: 1vw;
+        height: 1vw;
+        border-radius: 50%;
+        background-color: #a1a1a1;
+        margin-right: 0.6vw;
+    }
+    .textos-endereco{
+        width: 20vw;
+        margin-left: 1vw;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4vw;
+        position: absolute;
+    }
+    .textos-endereco p {
+        font-size: 1vw;
+        color: #a1a1a1;
+    }
+    .alinhar-box-nome-endereco{
+        display: flex;
+        justify-content: space-between;
+        width: 60vw;
+        margin-top: 10vw;
+        margin-left: 2vw;
+    }
+    .alinhar-box-nome-endereco input{
+        width: 25vw;
+        height: 2.5vw;
+        border-radius: 0.5rem;
+        font-size: 1vw;
+        border: 1px solid black;
+    }
+    .alinhar-txt-nome-endereco{
+        display: flex;
+        justify-content: space-between;
+        width: 42vw;
+        margin-top: -2vw;
+        margin-left: 2vw;
+        position: absolute;
+    }
+    .alinhar-txt-nome-endereco p{
+        color: #191919;
+    }
+    .alinhar-txt-cpf-email{
+        display: flex;
+        justify-content: space-between;
+        width: 37vw;
+        margin-top: 3vw;
+        margin-left: 2vw;
+    }
+    .alinhar-txt-cpf-email p{
+        color: #191919;
+    }
+    .alinhar-box-nome-endereco{
+        display: flex;
+        justify-content: space-between;
+        width: 60vw;
+        margin-top: 1vw;
+        margin-left: 2vw;
+    }
+    .alinhar-box-nome-endereco input{
+        width: 25vw;
+        height: 2.5vw;
+        border-radius: 0.5rem;
+        font-size: 1vw;
+        border: 1px solid black;
+        background-color: #f8f8f8;
+    }
+    .todos-inputs-endereco{
+        margin-top: 6vw;
+    }
+    .txt-endereco-padrao{
+        margin-top: 3vw;
+        margin-left: 2vw;
+        font-size: 1vw;
+        color: #191919;
+    }
+    .box-rua-endereco{
+        width: 25vw;
+        height: 2.5vw;
+        border-radius: 0.5rem;
+        margin-left: 2vw;
+        margin-top: 1vw;
+        font-size: 1vw;
+        border: 1px solid black;
+        background-color: #f8f8f8; 
+    }
+    .alinhar-bairro-numero{
+    margin-top: 3vw;
+    margin-left: 2vw;
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    }
+    .alinhar-bairro-numero input{
+        width: 25vw;
+        height: 2.5vw;
+        border-radius: 0.5rem;
+        font-size: 1vw;
+        border: 1px solid black;
+        background-color: #f8f8f8;
+    }
+    .box-numero input{
 
-.imgbloco img {
-    width: 3.2vw;
-    height: 3.2vw;
-}
+    }
+    
+    /*-------------------------------Pagamento----------------------------------*/
 
-.splide__slide {
-  height: 25vw; 
-}
-.splide {
-    overflow: visible;
-}
-
+    .tituloPagamento {
+        text-align: center;
+        margin-top: 1vw;
+        font-size: 2vw;
+    }
+    
+    .subtitulo {
+        color: #878787;
+        margin-left: 5%;
+    }
+    .metodo-pagamento{
+        margin-left: 5%;
+        padding-top: 1.6%;
+        padding-bottom: 2.5%;
+    }
+    .contCartoes{
+        display: inline;
+        padding-right: 3%;
+    }
+    img.cartao{
+        width: 15%;
+    }
+    .input-cartoes {
+        margin-right: 0.5%;
+        position: relative;
+        transform: translateY(-6.7vw)
+    }
+    .circulo1pagamento {
+        width: 1vw;
+        height: 1vw;
+        border-radius: 50%;
+        background-color: #a1a1a1;
+        margin-right: 0.6vw;
+    }
+    .circulo2pagamento {
+        width: 1vw;
+        height: 1vw;
+        border-radius: 50%;
+        background-color: #a1a1a1;
+        margin-right: 0.6vw;
+    }
+    .circulo3pagamento {
+        width: 1vw;
+        height: 1vw;
+        border-radius: 50%;
+        background-color: #000000;
+        margin-right: 0.6vw;
+    }
+    
+      input[type="radio"] {
+        border: none;
+        width: 2%;
+        height: 20px;
+    }
+    .form-container{
+        margin-left: 5%;
+        margin-top: 1vw;
+    }
+    .superiorCartao{
+        display: flex;
+        gap: 5%; /* espaçamento entre tipo e bandeira */
+    }
+    label{
+        font-family: 'TT-norms', sans-serif;
+        font-size: 1.2vw;
+        color: #858484;
+    }
+    .bandeira {
+      min-width: 30%;
+    }
+    #my-select{
+        width: 27vh;
+    }
+    select{
+        margin-top: 0.5vw;
+        width: 27vh;
+        height: 5vh;
+        background-color: transparent;
+        border-radius: 0.5rem;
+        font-size: 1vw;
+        border-color: #858484;
+        color: #858484;
+        font-family: 'TT-norms', sans-serif;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+    .select2-container--default .select2-selection--single {
+        background-color: transparent !important;
+        margin-top: 0.5vw !important;
+        height: 5.1vh !important;
+        display: flex !important ;
+        align-items: center !important;
+        border-radius: 0.5rem !important;
+        border-color: #858484 !important;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__arrow {
+        top: 2vh !important;
+    }
+    .dadosCartao{
+         margin-top: 1%;
+    }
+    input.input-box{
+        background-color: transparent;
+        border-style: solid;
+        margin-top: 1vw;
+        border-radius: 0.5rem;
+        height: 5vh;
+        font-size: 1vw;
+        width: 18%;
+        color: #858484;
+        font-family: 'TT-norms', sans-serif;
+        padding-left: 10px;
+        border-color: #858484 !important;
+        border-width: thin;
+    }
+    .asterisco{
+        font-size: 0.7vw;
+        font-weight: 800;
+        padding-top: 0.5vh;
+    }
+    .validade{
+        border-color: #858484;
+        color: #858484;
+        font-family: 'TT-norms', sans-serif;
+        background-color: transparent;
+        border-radius: 0.6rem;
+        height: 5vh;
+        width: 5%;
+        font-size: 1vw;
+        margin-top: 1vw;
+        text-align: center;
+        margin-right: 2vh;
+        border-width: thin;
+    }
+    #cvv{
+        border-color: #858484;
+        color: #858484;
+        font-family: 'TT-norms', sans-serif;
+        background-color: transparent;
+        border-radius: 0.6rem;
+        height: 5vh;
+        width: 5%;
+        font-size: 1vw;
+        margin-top: 1vw;
+        text-align: center;
+        border-width: thin;
+    }
+    .btt{
+        margin-top: 1.5vw;
+        border-color: transparent;
+        color: #858484;
+        font-family: 'TT-norms', sans-serif;
+        background-color: #cfcfcf;
+        border-radius: 0.6rem;
+        width: 16%;
+        height: 5vh;
+        font-size: 1vw;
+        margin-left: 8%;
+        margin-bottom: 1vw;
+        cursor:pointer;
+    }
+    .caminhao{
+        width: 4vh;
+    }
+    .caixa{
+        width: 3vh;
+    }
+    .legendaEnvio{
+        font-size: 0.9vw;
+        display: inline;
+    }
+    .box-envio {
+        margin-top: 1vw;
+        border-style: solid;
+        border-width: thin;
+        border-radius: 0.6rem;
+        border-color: #858484;
+        height: 5vh;
+        width: 50vh;
+        display: flex;
+        align-items: center;
+    }
+    input.radio-entrega[type="radio"] {
+        border: none;
+        width: 1.8vh;
+        height: 20px;
+        margin-right: 1vh;
+    }
+    .correios{
+        display: flex;
+        align-items: center;
+        padding-left: 1vh;
+        
+    }
+    .privado{
+        display: flex;
+        align-items: center;
+        padding-left: 1vh;
+    }
+    /* ---------------------------Footer------------------------- */
+    
+    
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .footerNovosProdutos {
+        margin-top: 10vw;
+        background-color: #333333;
+        height: 25vw;
+        width: 89vw;
+        border-radius: 1.5vw;
+        box-shadow: var(--sombra-divs)
+    }
+    
+    .footerNovosProdutos h1 {
+        padding: 2vw;
+        color: white;
+        font-size: 3vw;
+        width: 30vw;
+        height: 12vw;
+    }
+    
+    .footerNovosProdutos input {
+        margin-top: 1vw;
+        margin-left: 2vw;
+        width: 27vw;
+        height: 3vw;
+        border-radius: 1.5vw;
+        padding-left: 3vw;
+        font-size: 1vw;
+    }
+    
+    .footerNovosProdutos input::placeholder {
+        font-size: 1vw;
+    }
+    
+    .footerNovosProdutos button {
+        color: white;
+        background: #adb0b7;
+        position: absolute;
+        left: 31.5vw;
+        margin-top: 1.7vw;
+        width: 5vw;
+        height: 2vw;
+        border-radius: 1vw;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .footerSobre {
+        display: flex;
+        height: 16vw;
+        width: 89vw;
+    
+    }
+    
+    .sobref {
+        margin-left: 1vw;
+        margin-top: 1vw;
+        width: 11vw;
+        height: 12vw;
+        color: #0f1415
+    }
+    
+    .sobref li {
+        margin-top: 1vw;
+        list-style: none;
+        font-size: 1.5vw;
+    }
+    
+    .sobref li a {
+        text-decoration: none;
+        color: #0f1415;
+        margin-left: .5vw;
+    }
+    
+    .sobref li .negritosobre {
+        font-size: 2vw;
+        font-weight: 900;
+        margin-left: .5vw;
+        color: #333333;
+    }
+    
+    
+    .suportef {
+        margin-left: 5vw;
+        margin-top: 1vw;
+        width: 11vw;
+        height: 12vw;
+        color: #0f1415
+    }
+    
+    .suportef li {
+        margin-top: 1vw;
+        list-style: none;
+        font-size: 1.5vw;
+    }
+    
+    .suportef li a {
+        text-decoration: none;
+        color: #0f1415;
+        margin-left: .5vw;
+    }
+    
+    .suportef li .negritosuporte {
+        font-size: 2vw;
+        font-weight: 900;
+        margin-left: .5vw;
+        color: #333333;
+    }
+    
+    
+    .footerCurriculo {
+        display: flex;
+        justify-content: center;
+        margin-top: 3vw;
+        background: #333333;
+        height: 12vw;
+        width: 37vw;
+        border-radius: 4vw;
+        box-shadow: var(--sombra-divs)
+        
+    }
+    
+    .footerCurriculo a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5vw;
+    }
+    
+    
+    .footerCurriculo .botaocurriculo {
+        display: flex;
+        background: #adb0b7;
+        width: 25vw;
+        height: 3.5vw;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2vw;
+        position: absolute;
+        margin-top: 6vw;
+    }
+    
+    .footerCurriculo p {
+        color: white;
+        font-size: 2.5vw;
+        margin-top: 1.5vw;
+    }
+    
+    .mexerCurriculo {
+        display: flex;
+        width: 62vw;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .footerf {
+        display: flex;
+        align-items: end;
+        height: 20vw;
+    }
+    
+    .footerredes {
+        display: flex;
+        justify-content: center;
+        border-top-left-radius: 2vw;
+        border-top-right-radius: 2vw;
+        width: 89vw;
+        height: 10vw;
+        background: #333333;
+        box-shadow: var(--sombra-divs)
+    }
+    
+    .footerredes a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5vw;
+        height: 3.2vw;
+    }
+    
+    .footerredes .espacoblocos {
+        position: absolute;
+        margin-top: 3vw;
+    }
+    
+    
+    .blocosfooter {
+        padding-top: 2vw;
+        display: flex;
+        justify-content: center;
+        width: 15vw;
+        height: 8vw;
+    }
+    
+    .footerf .tamanhof {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 80vw;
+    }
+    
+    .imgbloco {
+        margin-top: 3vw;
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        width: 14vw;
+        height: 5vw;
+    }
+    
+    .imgbloco img {
+        width: 3.2vw;
+        height: 3.2vw;
+    }
+    
+    .splide__slide {
+      height: 25vw; 
+    }
+    .splide {
+        overflow: visible;
+    }

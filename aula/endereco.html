@@ -16,13 +16,6 @@
         <nav class="box1" id="box1">
             <img src="logo.png">
             <div class="icones">
-                <div class="darkmode">
-                    <button id="darkModeToggle" class="dark-mode-button">
-                    </button>
-                    <span class="material-symbols-outlined size-20">
-                        dark_mode
-                    </span>
-                </div>
                 <a href="#">
                     <span class="material-symbols-outlined size-20">
                         search
@@ -62,33 +55,47 @@
 
         <body>
             <!-- Barra de progresso -->
-            <div class="progress-container-endereco">
-                <!-- Etapa compra -->
-                <div class="step-endereco">
-                    <div class="circle-endereco"></div>
-                    <div class="label-endereco">Compra</div>
+            <div class="alinhar-tudo-endereco">
+                <div class="linhas-circulos-progresso-endereco">
+                    <div class="circulo1endereco"></div>
+                    <div class="linha1"></div>
+                    <div class="circulo2endereco"></div>
+                    <div class="linha2"></div>
+                    <div class="circulo3endereco"></div>
                 </div>
-                <!-- Etapa Endereço -->
-                <div class="step active-endereco">
-                    <div class="circle"></div>
-                    <div class="label-endereco">Endereço</div>
-                </div>
-                <!-- Etapa Pagamento -->
-                <div class="step active-endereco">
-                    <div class="circle-endereco"></div>
-                    <div class="label-endereco">Pagamento</div>
+                <div class="textos-endereco">
+                    <p class="txt1cart">Compra</p>
+                    <p class="txt2cart">Endereço</p>
+                    <p class="txt3cart">Pagamento</p>
                 </div>
             </div>
-
-            <div class="alinhar-nome-e-celular">
-                <div class="nome-endereco">
-                    <p>Nome Completo</p>
-                    <input type="text">
+            <div class="todos-inputs-endereco">
+                <div class="alinhar-txt-nome-endereco">
+                    <p class="txtnomecompleto">Nome Completo</p>
+                    <p class="txtcelular">Número de Celular</p>
                 </div>
-                <div class="numero-celula">
-                    <p>Número de Celular</p>
-                    <input type="text">
+                <div class="alinhar-box-nome-endereco">
+                    <input class="box-nomecompleto" type="text">
+                    <input class="box-numerocelular" type="number">
+                </div>
+
+                <div class="alinhar-txt-cpf-email">
+                    <p class="txtcpf-endereco">CPF</p>
+                    <p class="txtemail-endereco">Email</p>
+                </div>
+                <div class="alinhar-box-nome-endereco">
+                    <input class="box-cpf-endereco" type="number" minlength="11" maxlength="11">
+                    <input class="box-email-endereco" type="email">
                 </div>
             </div>
+            <p class="txt-endereco-padrao">Endereço Padrão</p>
+            <input class="box-rua-endereco" type="text" placeholder="Rua ou logadouro">
+            <div class="alinhar-bairro-numero">
+                <input type="text" placeholder="Bairro">
+                <input class="box-numero" type="number" placeholder="Número" maxlength="5">
+            </div>
 
-    </div>
+
+
+
+        </body>
