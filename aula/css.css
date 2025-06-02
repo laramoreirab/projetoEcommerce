@@ -1141,7 +1141,7 @@
     .alinhar-box-nome-endereco{
         display: flex;
         justify-content: space-between;
-        width: 60vw;
+        width: 10vw;
         margin-top: 10vw;
         margin-left: 2vw;
     }
@@ -1155,7 +1155,7 @@
     .alinhar-txt-nome-endereco{
         display: flex;
         justify-content: space-between;
-        width: 42vw;
+        width: 35vw;
         margin-top: -2vw;
         margin-left: 2vw;
         position: absolute;
@@ -1167,7 +1167,7 @@
         display: flex;
         justify-content: space-between;
         width: 37vw;
-        margin-top: 3vw;
+        margin-top: 1.5vw;
         margin-left: 2vw;
     }
     .alinhar-txt-cpf-email p{
@@ -1192,7 +1192,7 @@
         margin-top: 6vw;
     }
     .txt-endereco-padrao{
-        margin-top: 3vw;
+        margin-top: 2vw;
         margin-left: 2vw;
         font-size: 1vw;
         color: #191919;
@@ -1208,13 +1208,13 @@
         background-color: #f8f8f8; 
     }
     .alinhar-bairro-numero{
-    margin-top: 3vw;
+    margin-top: 1.5vw;
     margin-left: 2vw;
     display: flex;
     justify-content: space-between;
-    width: 50vw;
+    width: 37vw;
     }
-    .alinhar-bairro-numero input{
+    .box-bairro{
         width: 25vw;
         height: 2.5vw;
         border-radius: 0.5rem;
@@ -1222,9 +1222,68 @@
         border: 1px solid black;
         background-color: #f8f8f8;
     }
-    .box-numero input{
-
+    .box-numero{
+        width: 10vw;
+        height: 2.5vw;
+        border-radius: 0.5rem;
+        font-size: 1vw;
+        border: 1px solid black;
+        background-color: #f8f8f8;
     }
+    .alinhar-cidade-estado{
+        margin-top: 1.5vw;
+        margin-left: 2vw;
+        display: flex;
+        justify-content: space-between;
+        width: 37vw;
+    }
+    .box-cidade{
+        width: 25vw;
+        height: 2.5vw;
+        border-radius: 0.5rem;
+        font-size: 1vw;
+        border: 1px solid black;
+        background-color: #f8f8f8;
+    }
+    .box-estado{
+        width: 10vw;
+        height: 2.5vw;
+        border-radius: 0.5rem;
+        font-size: 1vw;
+        border: 1px solid black;
+        background-color: #f8f8f8;
+    }
+    .box-cep{
+        width: 10vw;
+        height: 2.5vw;
+        margin-top: 1.5vw;
+        margin-left: 2vw;
+        border-radius: 0.5rem;
+        font-size: 1vw;
+        border: 1px solid black;
+        background-color: #f8f8f8;
+    }
+    .botao-salvar-endereco{
+        margin-top: 5vw;
+        margin-left: -10.4vw;
+        width: 15vw;
+        height: 3.5vw;
+        background-color: #cfcfcf;
+        border: none;
+        border-radius: 0.5rem;
+        position: absolute;
+    }
+
+
+
+
+
+
+
+
+
+
+    
     
     /*-------------------------------Pagamento----------------------------------*/
 
@@ -1242,13 +1301,14 @@
         margin-left: 5%;
         padding-top: 1.6%;
         padding-bottom: 2.5%;
+        dis
     }
     .contCartoes{
         display: inline;
         padding-right: 3%;
     }
     img.cartao{
-        width: 15%;
+        width: 18%;
     }
     .input-cartoes {
         margin-right: 0.5%;
@@ -1275,6 +1335,14 @@
         border-radius: 50%;
         background-color: #000000;
         margin-right: 0.6vw;
+    }
+    
+    .fundoresumodacompraPay {
+        background-color: #d9d9d9;
+        width: 26vw;
+        height: 22vw;
+        margin-left: 70vw;
+        border-radius: 1vw;
     }
     
       input[type="radio"] {
@@ -1398,6 +1466,7 @@
     .legendaEnvio{
         font-size: 0.9vw;
         display: inline;
+        padding-left: 0.8vh;
     }
     .box-envio {
         margin-top: 1vw;
@@ -1406,7 +1475,7 @@
         border-radius: 0.6rem;
         border-color: #858484;
         height: 5vh;
-        width: 50vh;
+        width: 62vh;
         display: flex;
         align-items: center;
     }

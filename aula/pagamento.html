@@ -69,6 +69,28 @@
      <p class="txt3cartPay">Pagamento</p>
     </div>
 
+    <div class="fundoresumodacompraPay">
+        <div class="txtresumodacompra"><b>
+                Resumo da compra
+            </b>
+        </div>
+        <div class="linharesumo"></div>
+        <div class="txtsubtotalresumocarrinho">Subtotal</div>
+        <div class="subtotalresumocarrinho"><b>R$3669,99</b></div>
+        <div class="txtfreteresumocarrinho">Frete</div>
+        <div class="txtgratisresumocarrinho"><b>Grátis</b></div>
+        <div class="cupomalinhadocarrinho">
+            <div class="txtcupomresumocarrinho">Cupom</div>
+            <div class="espacocupom"><input type="text"></div>
+        </div>
+        <div class="linharesumo"></div>
+        <div class="txttotalcarrinho">Total</div>
+        <div class="valortotalcarrinho"><b>R$3669,99</b></div>
+    </div>
+    <div class="botaocomprarcarrinho"><a href="endereco.html">
+            <button>Comprar</button>
+        </a></div>
+
     <h2 class="subtitulo">Selecione o método de pagamento:</h2>
 
     <div class="metodo-pagamento">
@@ -112,7 +134,7 @@
                 <input type="text"  placeholder="Número do cartão"   class="input-box" pattern="[0-9]{4}.[0-9]{4}.[0-9]{4}.[0-9]{4}"><br>
                 <input type="tex" class="validade" placeholder="mm/aa" pattern="[0-9]{2}/[0-9]{2}" maxlength="5">
                 <input type="tex" placeholder="cvv" id="cvv" maxlength="3" size="3"><br>
-                <button type="submit" class="btt">Salvar</button>
+                <button type="button" id="botaoSalvar" onclick="alert('As informações do seu cartão foram salvas com sucesso!')" class="btt">Salvar</button>
             </div>
             <div class="entrega">
                 <div class="box-envio"> 
@@ -146,5 +168,10 @@
     const img = $(option.element).data('img');
     return $('<span><img src="' + img + '" style="width:30%; vertical-align:middle; margin-right:10px;">' + option.text + '</span>');
   }
+</script>
+<script>
+    document.getElementById("botaoSalvar").addEventListener("click", function(event){
+        event.preventDefault();
+    });
 </script>
 </html>
