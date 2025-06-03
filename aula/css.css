@@ -451,18 +451,24 @@ p.nomeProdutos {
     font-weight: 800;
     padding-top: 0.2vw;
     text-align: center;
+    width: 18vw;
+    position: absolute;
 }
 
 p.precoProdutos {
     font-size: 1vw;
-    padding-top: 1vw;
     padding-left: 2vw;
+    margin-top: 3vw;
+    position: absolute;
 }
 
 .avaliacao {
     display: flex;
     justify-content: end;
     padding-right: 2.3vw;
+    position: absolute;
+    margin-left: 11vw;
+    margin-top: 3.5vw;
 }
 
 .qtdAvaliacao {
