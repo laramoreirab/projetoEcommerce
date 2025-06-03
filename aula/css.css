@@ -434,13 +434,19 @@ span.size-20 {
     transform: scale(1.1);
 }
 
-img.prodCarrossel {
+.prodCarrossel img{
+    width: 14vw;
+}
+
+.prodCarrossel {
     padding-left: 1.6vw;
     padding-top: 1vw;
     width: 16vw;
     height: 16vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
-
 p.nomeProdutos {
     font-weight: 800;
     padding-top: 0.2vw;
