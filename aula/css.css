@@ -434,7 +434,7 @@ span.size-20 {
     transform: scale(1.1);
 }
 
-.prodCarrossel img{
+.prodCarrossel img {
     width: 14vw;
 }
 
@@ -447,6 +447,7 @@ span.size-20 {
     justify-content: center;
     display: flex;
 }
+
 p.nomeProdutos {
     font-weight: 800;
     padding-top: 0.2vw;
@@ -1363,16 +1364,6 @@ p.precoProdutos {
     margin-top: 1vw;
 }
 
-
-
-
-
-
-
-
-
-
-
 /*-------------------------------Pagamento----------------------------------*/
 
 .tituloPagamento {
@@ -1854,24 +1845,88 @@ footer {
 
 /* ------------------------------ Página de Registro ---------------------------------------------- */
 
-.txt-cadastre-se{
+.txtcadastro {
+    text-align: center;
+    margin-top: 3vh;
+
 }
 
+.iconesregistro {
+    margin-left: 43.5vw;
+    display: flex;
+    gap: 2.5vh;
+    position: absolute;
+    margin-top: 3vw;
+}
 
+.txtcadastre-se-usando {
+    text-align: center;
+    margin-top: 5.2vw;
+    font-size: 1vw;
+}
 
+.box-nome-completo-cadastro {
+    background-color: transparent;
+    margin-left: 40vw;
+    margin-top: 2vw;
+    width: 19vw;
+    height: 6.5vh;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-color: #858484;
+    border-width: thin;
+    font-size: 1vw;
+    padding-left: 1vw;
+}
 
+.box-email-cadastro {
+    background-color: transparent;
+    margin-left: 40vw;
+    margin-top: 2vw;
+    width: 19vw;
+    height: 6.5vh;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-color: #858484;
+    border-width: thin;
+    font-size: 1vw;
+    padding-left: 1vw;
+}
 
+.box-senha-cadastro {
+    background-color: transparent;
+    margin-left: 40vw;
+    margin-top: 2vw;
+    width: 19vw;
+    height: 6.5vh;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-color: #858484;
+    border-width: thin;
+    font-size: 1vw;
+    padding-left: 1vw;
+}
 
+.alinhar-checkbox-registro {
+    display: flex;
+    justify-content: space-between;
+    width: 22vw;
+    margin-left: 39vw;
+    margin-top: 2vw;
+}
 
-
-
-
-
-
-
-
-
-
+.btt-cadastrar {
+    height: 6.5vh;
+    width: 16vw;
+    background-color: #cfcfcf;
+    border-radius: 0.5rem;
+    border: 0;
+    font-size: 1vw;
+    margin-bottom: 1.5vw;
+    margin-top: 2vw;
+    margin-left: 42vw;
+    cursor: pointer;
+}
 
 
 
@@ -1884,18 +1939,21 @@ footer {
     background: #f8f8f8;
     background-repeat: no-repeat;
 }
-.titulologin{
+
+.titulologin {
     margin-top: 3vh;
     text-align: center;
     padding-bottom: 3vh;
 }
-.containerLogin{
+
+.containerLogin {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.boxLogin1{
+
+.boxLogin1 {
     background-color: transparent;
     margin-bottom: 3vh;
     width: 19vw;
@@ -1907,7 +1965,8 @@ footer {
     font-size: 1vw;
     padding-left: 1vw;
 }
-.boxLogin2{
+
+.boxLogin2 {
     background-color: transparent;
     width: 19vw;
     height: 6.5vh;
@@ -1918,16 +1977,19 @@ footer {
     font-size: 1vw;
     padding-left: 1vw;
 }
-.esqueceuSenha{
+
+.esqueceuSenha {
     font-size: 2vh;
     padding-top: 0.8vw;
     padding-bottom: 1vw;
 }
-.cliqueAqui{
+
+.cliqueAqui {
     text-decoration: none;
     color: #003cff;
 }
-.entrar{
+
+.entrar {
     height: 6.5vh;
     width: 16vw;
     background-color: #cfcfcf;
@@ -1935,41 +1997,53 @@ footer {
     border: 0;
     font-size: 1vw;
     margin-bottom: 1.5vw;
+    cursor: pointer;
+    margin-left: 2vw;
 }
-.continueCom{
+
+.continueCom {
     display: flex;
     align-items: center;
 }
-p.continue{
+
+p.continue {
     font-size: 2vh;
     padding-left: 1.2vh;
     padding-right: 1.2vh;
 }
-hr.line1{
+
+hr.line1 {
     width: 11vh;
 }
-hr.line2{
+
+hr.line2 {
     width: 11vh;
 }
-.iconesLogin{
+
+.iconesLogin {
     margin-top: 6vh;
     margin-bottom: 6.5vh;
     display: flex;
     gap: 2.5vh;
 }
-i.fa-brands{
+
+i.fa-brands {
     font-size: 5.5vh;
 }
-i.fa-apple{
+
+i.fa-apple {
     font-size: 6.3vh;
 }
-i.fa-instagram{
+
+i.fa-instagram {
     font-size: 6vh;
 }
-.naoTemConta{
+
+.naoTemConta {
     font-size: 2.2vh;
 }
-.registro{
+
+.registro {
     text-decoration: none;
     color: #333333d7;
     font-weight: bolder;
