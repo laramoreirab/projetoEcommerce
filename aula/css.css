@@ -486,6 +486,10 @@ p.precoProdutos {
 
 }
 
+.superiorProdutos a{
+    text-decoration:none;
+}
+
 .categoriaProduto {
     background-color: #d9d9d9;
     width: 3.8vw;
@@ -733,6 +737,8 @@ p.precoProdutos {
     text-align: center;
     position: absolute;
 }
+
+
 
 .imgaddcarrinho {
     margin-top: 29.5vw;

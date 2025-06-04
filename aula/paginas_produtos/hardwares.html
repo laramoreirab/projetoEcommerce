@@ -55,9 +55,11 @@
             <div class="conteinerlinha">
                 <!---------------------------------primeiro produto da linha ------------------------------------------------->
                 <div class="fundoProdutos">
-                    <div class="prodCarrossel"><img src="../produtos/hardwares/Memória_RAM_Team_Group_Vulcan_16GB_(2x8GB)_DDR5_5200MHz_CL40.jpg" alt=""></div>
+                    <div class="prodCarrossel"><img
+                            src="../produtos/hardwares/Memória_RAM_Team_Group_Vulcan_16GB_(2x8GB)_DDR5_5200MHz_CL40.jpg"
+                            alt=""></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('memoria1').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Hardwares</p>
                         </div>
@@ -72,11 +74,17 @@
                     </div>
                 </div>
 
+                <form id="memoria1" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Memória RAM Team Group Vulcan 16GB (2x8GB) DDR5 5200MHz CL40">
+                    <input type="hidden" name="preco" value=" R$ 409,99 ">
+                    <input type="hidden" name="img" value="produtos/hardwares/Memória_RAM_Team_Group_Vulcan_16GB_(2x8GB)_DDR5_5200MHz_CL40.jpg">
+                </form>
                 <!----------------------------segundo produto da linha ---------------------------------------->
                 <div class="fundoProdutos">
-                    <div class="prodCarrossel"><img src="../produtos/hardwares/Memória_DDR5_6400MHz_G.Skill_Trident_Z5_RGB.jpg" alt=""></div>
+                    <div class="prodCarrossel"><img
+                            src="../produtos/hardwares/Memória_DDR5_6400MHz_G.Skill_Trident_Z5_RGB.jpg" alt=""></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                    <a href="#" onclick="document.getElementById('memoria2').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Hardwares</p>
                         </div>
@@ -91,12 +99,20 @@
                     </div>
                 </div>
 
+
+                <form id="memoria2" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Memória DDR5 6400MHz G.Skill Trident Z5 RGB">
+                    <input type="hidden" name="preco" value=" R$ 1619,00 ">
+                    <input type="hidden" name="img" value="produtos/hardwares/Memória_DDR5_6400MHz_G.Skill_Trident_Z5_RGB.jpg">
+                </form>
                 <!------------------------------terceiro produto da linha-------------------------------------->
 
                 <div class="fundoProdutos">
-                    <div class="prodCarrossel"><img src="../produtos/hardwares/Memória_RAM_Team_T-Force_XTREEM_ARGB_DDR4_16GB_(2x8GB)_3600MHz_CL18.jpg" alt=""></div>
+                    <div class="prodCarrossel"><img
+                            src="../produtos/hardwares/Memória_RAM_Team_T-Force_XTREEM_ARGB_DDR4_16GB_(2x8GB)_3600MHz_CL18.jpg"
+                            alt=""></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('memoria3').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Hardwares</p>
                         </div>
@@ -111,9 +127,16 @@
                     </div>
                 </div>
 
+                <form id="memoria3" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Memória RAM Team T-Force XTREEM ARGB DDR4 16GB (2x8GB) 3600MHz CL18">
+                    <input type="hidden" name="preco" value=" R$ 1435,49 ">
+                    <input type="hidden" name="img" value="produtos/hardwares/Memória_RAM_Team_T-Force_XTREEM_ARGB_DDR4_16GB_(2x8GB)_3600MHz_CL18.jpg">
+                </form>
+
                 <!-----------------------------quarto produto da linha----------------------------------------->
                 <div class="fundoProdutos">
-                    <div class="prodCarrossel"><img src="../produtos/outros/ps5.webp" alt=""></div>
+                    <div class="prodCarrossel"><img
+                            src="../produtos/hardwares/Memória_DDR4_G.Skill_Ripjaws_V_F4-3200C16.jpg" alt=""></div>
                     <div class="superiorProdutos">
                         <span class="material-symbols-outlined"> shopping_cart</span>
                         <div class="categoriaProduto">
@@ -130,11 +153,18 @@
                     </div>
                 </div>
             </div>
+
+            <form id="memoria3" action="adicionar.php" method="post" style="display: none;">
+                <input type="hidden" name="nome" value="Memória DDR4 G.Skill Ripjaws V F4-3200C16">
+                <input type="hidden" name="preco" value=" R$ 379,99 ">
+                <input type="hidden" name="img" value="produtos/hardwares/Memória_DDR4_G.Skill_Ripjaws_V_F4-3200C16.jpg">
+            </form>
             <!---------segunda linha---------------------------------------------------------------------------------->
             <div class="conteinerlinha">
                 <!---------------------------------primeiro produto da linha ------------------------------------------------->
                 <div class="fundoProdutos">
-                    <div class="prodCarrossel"><img src="../produtos/outros/ps5.webp" alt=""></div>
+                    <div class="prodCarrossel"><img src="../produtos/hardwares/AMD_Ryzen_9_7950X3D_4.2GHz_AM5.jpg"
+                            alt=""></div>
                     <div class="superiorProdutos">
                         <span class="material-symbols-outlined"> shopping_cart</span>
                         <div class="categoriaProduto">
@@ -150,10 +180,15 @@
                         <p class="qtdAvaliacao">4.8 Avaliaram</p>
                     </div>
                 </div>
-
+            <form id="memoria3" action="adicionar.php" method="post" style="display: none;">
+                <input type="hidden" name="nome" value="Memória DDR4 G.Skill Ripjaws V F4-3200C16">
+                <input type="hidden" name="preco" value=" R$ 379,99 ">
+                <input type="hidden" name="img" value="produtos/hardwares/Memória_DDR4_G.Skill_Ripjaws_V_F4-3200C16.jpg">
+            </form>
                 <!----------------------------segundo produto da linha ---------------------------------------->
                 <div class="fundoProdutos">
-                    <div class="prodCarrossel"><img src="../produtos/outros/ps5.webp" alt=""></div>
+                    <div class="prodCarrossel"><img src="../produtos/hardwares/Intel_Core_i9-13900K_2.2GHz_LGA1700.jpg"
+                            alt=""></div>
                     <div class="superiorProdutos">
                         <span class="material-symbols-outlined"> shopping_cart</span>
                         <div class="categoriaProduto">
@@ -173,7 +208,7 @@
                 <!------------------------------terceiro produto da linha-------------------------------------->
 
                 <div class="fundoProdutos">
-                    <div class="prodCarrossel"><img src="../produtos/outros/ps5.webp" alt=""></div>
+                    <div class="prodCarrossel"><img src="../produtos/hardwares/AMD_Ryzen_7_7800X3D.jpg" alt=""></div>
                     <div class="superiorProdutos">
                         <span class="material-symbols-outlined"> shopping_cart</span>
                         <div class="categoriaProduto">
@@ -192,7 +227,7 @@
 
                 <!-----------------------------quarto produto da linha----------------------------------------->
                 <div class="fundoProdutos">
-                    <div class="prodCarrossel"><img src="../produtos/outros/ps5.webp" alt=""></div>
+                    <div class="prodCarrossel"><img src="../produtos/hardwares/Intel_Core_i7-13700.jpg" alt=""></div>
                     <div class="superiorProdutos">
                         <span class="material-symbols-outlined"> shopping_cart</span>
                         <div class="categoriaProduto">
@@ -213,7 +248,8 @@
             <div class="conteinerlinha">
                 <!---------------------------------primeiro produto da linha ------------------------------------------------->
                 <div class="fundoProdutos">
-                    <div class="prodCarrossel"><img src="../produtos/outros/ps5.webp" alt=""></div>
+                    <div class="prodCarrossel"><img src="../produtos/hardwares/Gigabyte_X670E_Aorus_Master.jpg" alt="">
+                    </div>
                     <div class="superiorProdutos">
                         <span class="material-symbols-outlined"> shopping_cart</span>
                         <div class="categoriaProduto">
@@ -232,7 +268,8 @@
 
                 <!----------------------------segundo produto da linha ---------------------------------------->
                 <div class="fundoProdutos">
-                    <div class="prodCarrossel"><img src="../produtos/outros/ps5.webp" alt=""></div>
+                    <div class="prodCarrossel"><img src="../produtos/hardwares/Asus_ROG_Crosshair_X670E_Hero.jpg"
+                            alt=""></div>
                     <div class="superiorProdutos">
                         <span class="material-symbols-outlined"> shopping_cart</span>
                         <div class="categoriaProduto">
@@ -252,7 +289,8 @@
                 <!------------------------------terceiro produto da linha-------------------------------------->
 
                 <div class="fundoProdutos">
-                    <div class="prodCarrossel"><img src="../produtos/outros/ps5.webp" alt=""></div>
+                    <div class="prodCarrossel"><img src="../produtos/hardwares/ASRock_X670E_Taichi_Carrara_AM5.jpg"
+                            alt=""></div>
                     <div class="superiorProdutos">
                         <span class="material-symbols-outlined"> shopping_cart</span>
                         <div class="categoriaProduto">
@@ -271,7 +309,8 @@
 
                 <!-----------------------------quarto produto da linha----------------------------------------->
                 <div class="fundoProdutos">
-                    <div class="prodCarrossel"><img src="../produtos/outros/ps5.webp" alt=""></div>
+                    <div class="prodCarrossel"><img src="../produtos/hardwares/MSI_MAG_X670E_Tomahawk_WiFi.jpg" alt="">
+                    </div>
                     <div class="superiorProdutos">
                         <span class="material-symbols-outlined"> shopping_cart</span>
                         <div class="categoriaProduto">
@@ -293,7 +332,8 @@
             <div class="conteinerlinha">
                 <!---------------------------------primeiro produto da linha ------------------------------------------------->
                 <div class="fundoProdutos">
-                    <div class="prodCarrossel"><img src="../produtos/outros/ps5.webp" alt=""></div>
+                    <div class="prodCarrossel"><img
+                            src="../produtos/hardwares/Gigabyte_GeForce_RTX_4070_Super_Windforce_OC.jpg" alt=""></div>
                     <div class="superiorProdutos">
                         <span class="material-symbols-outlined"> shopping_cart</span>
                         <div class="categoriaProduto">
@@ -310,9 +350,12 @@
                     </div>
                 </div>
 
+
+
                 <!----------------------------segundo produto da linha ---------------------------------------->
                 <div class="fundoProdutos">
-                    <div class="prodCarrossel"><img src="../produtos/outros/ps5.webp" alt=""></div>
+                    <div class="prodCarrossel"><img
+                            src="../produtos/hardwares/PNY_GeForce_RTX_4060_8GB_XLR8_Gaming_Verto.jpg" alt=""></div>
                     <div class="superiorProdutos">
                         <span class="material-symbols-outlined"> shopping_cart</span>
                         <div class="categoriaProduto">
@@ -332,7 +375,8 @@
                 <!------------------------------terceiro produto da linha-------------------------------------->
 
                 <div class="fundoProdutos">
-                    <div class="prodCarrossel"><img src="../produtos/outros/ps5.webp" alt=""></div>
+                    <div class="prodCarrossel"><img
+                            src="../produtos/hardwares/MSI_GeForce_RTX_5070_Ti_16GB_Ventus_3X_OC.jpg" alt=""></div>
                     <div class="superiorProdutos">
                         <span class="material-symbols-outlined"> shopping_cart</span>
                         <div class="categoriaProduto">
@@ -351,7 +395,8 @@
 
                 <!-----------------------------quarto produto da linha----------------------------------------->
                 <div class="fundoProdutos">
-                    <div class="prodCarrossel"><img src="../produtos/outros/ps5.webp" alt=""></div>
+                    <div class="prodCarrossel"><img
+                            src="../produtos/hardwares/Galax_GeForce_RTX_5080_16GB_1-Click_OC.jpg" alt=""></div>
                     <div class="superiorProdutos">
                         <span class="material-symbols-outlined"> shopping_cart</span>
                         <div class="categoriaProduto">
@@ -371,58 +416,58 @@
         </div>
     </div>
 
-     <footer>
-            <div class="footerNovosProdutos">
-                <h1>Pronto para receber nossos novos produtos?</h1>
-                <input type="email" name="emailfooter" placeholder="Seu Email">
-                <button type="submit">Enviar</button>
+    <footer>
+        <div class="footerNovosProdutos">
+            <h1>Pronto para receber nossos novos produtos?</h1>
+            <input type="email" name="emailfooter" placeholder="Seu Email">
+            <button type="submit">Enviar</button>
+        </div>
+        <div class="footerSobre">
+            <div class="sobref">
+                <li><a href="" class="negritosobre">Sobre</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Sobre Nós</a></li>
+                <li><a href="">Contate-nos</a></li>
             </div>
-            <div class="footerSobre">
-                <div class="sobref">
-                    <li><a href="" class="negritosobre">Sobre</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Sobre Nós</a></li>
-                    <li><a href="">Contate-nos</a></li>
+            <div class="suportef">
+                <li><a href="" class="negritosuporte">Suporte</a></li>
+                <li><a href="">Contate-nos</a></li>
+                <li><a href="">Entrega</a></li>
+                <li><a href="">Devolução</a></li>
+                <li><a href="">FAQ</a></li>
+            </div>
+            <div class="mexerCurriculo">
+                <div class="footerCurriculo">
+                    <p>Trabalhe conosco</p>
+                    <div class="botaocurriculo"><a href="">Envie seu curriculo aqui!</a></div>
                 </div>
-                <div class="suportef">
-                    <li><a href="" class="negritosuporte">Suporte</a></li>
-                    <li><a href="">Contate-nos</a></li>
-                    <li><a href="">Entrega</a></li>
-                    <li><a href="">Devolução</a></li>
-                    <li><a href="">FAQ</a></li>
-                </div>
-                <div class="mexerCurriculo">
-                    <div class="footerCurriculo">
-                        <p>Trabalhe conosco</p>
-                        <div class="botaocurriculo"><a href="">Envie seu curriculo aqui!</a></div>
+            </div>
+        </div>
+        <div class="footerf">
+            <div class="footerredes">
+                <div class="tamanhof">
+                    <div class="blocosfooter">
+                        <a href="#">Cookies</a>
+                        <a href="#" class="espacoblocos">Condições de uso</a>
+                    </div>
+                    <div class="blocosfooter">
+                        <a href="#">©2025 etech.com.br</a>
+                        <a href="#" class="espacoblocos">Privacidade</a>
+                    </div>
+                    <div class="blocosfooter">
+                        <a href="#">Nossas redes sociais</a>
+                        <div class="imgbloco">
+                            <a href="#"><img src="icones/youtube-logo.png"></a>
+                            <a href="#"><img src="icones/instagram-logo.png"></a>
+                            <a href="#"><img src="icones/x-logo.png"></a>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
-            <div class="footerf">
-                <div class="footerredes">
-                    <div class="tamanhof">
-                        <div class="blocosfooter">
-                            <a href="#">Cookies</a>
-                            <a href="#" class="espacoblocos">Condições de uso</a>
-                        </div>
-                        <div class="blocosfooter">
-                            <a href="#">©2025 etech.com.br</a>
-                            <a href="#" class="espacoblocos">Privacidade</a>
-                        </div>
-                        <div class="blocosfooter">
-                            <a href="#">Nossas redes sociais</a>
-                            <div class="imgbloco">
-                                <a href="#"><img src="icones/youtube-logo.png"></a>
-                                <a href="#"><img src="icones/instagram-logo.png"></a>
-                                <a href="#"><img src="icones/x-logo.png"></a>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        </div>
+    </footer>
 
 </body>
 <script>  // script feito para borrar o fundo quando o mouse passar por cima do header
