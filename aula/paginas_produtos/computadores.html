@@ -60,7 +60,7 @@
                     <div class="prodCarrossel"><img src="../produtos/pcs/optilexi5.jpg" alt="" ></div>
                     
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('computador1').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProdutoPC">
                             <p class="categoria">Computadores</p>
                         </div>
@@ -75,11 +75,16 @@
                     </div>
                 </div>
 
+                <form id="computador1" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Dell OptiPlex Small Desktop Core i5-14500">
+                    <input type="hidden" name="preco" value=" R$ 4797,00 ">
+                    <input type="hidden" name="img" value="produtos/pcs/optilexi5.jpg">
+                </form>                
                 <!----------------------------segundo produto da linha ---------------------------------------->
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/pcs/optilexi3.jpg" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('computador2').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProdutoPC">
                             <p class="categoria">Computadores</p>
                         </div>
@@ -94,12 +99,17 @@
                     </div>
                 </div>
 
+                <form id="computador2" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Dell OptiPlex Micro Core i3-12100T">
+                    <input type="hidden" name="preco" value=" R$ 3497,00 ">
+                    <input type="hidden" name="img" value="produtos/pcs/optilexi3.jpg">
+                </form>            
                 <!------------------------------terceiro produto da linha-------------------------------------->
 
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/pcs/optilexi7.jpg" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('computador3').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProdutoPC">
                             <p class="categoria">Computadores</p>
                         </div>
@@ -114,11 +124,16 @@
                     </div>
                 </div>
 
+                <form id="computador3" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Dell OptiPlex Small Desktop Core i7-14700">
+                    <input type="hidden" name="preco" value=" R$ 8648,00">
+                    <input type="hidden" name="img" value="produtos/pcs/optilexi7.jpg">
+                </form>            
                 <!-----------------------------quarto produto da linha----------------------------------------->
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/pcs/desktopInspiron.jpg" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('computador4').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProdutoPC">
                             <p class="categoria">Computadores</p>
                         </div>
@@ -132,6 +147,12 @@
                         <p class="qtdAvaliacao">4.2 Avaliaram</p>
                     </div>
                 </div>
+
+                <form id="computador4" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Dell Inspiron Small Desktop Core i3-12100">
+                    <input type="hidden" name="preco" value=" R$ 3200,00 ">
+                    <input type="hidden" name="img" value="produtos/pcs/desktopInspiron.jpg">
+                </form>            
         </div>
 <!---------segunda linha---------------------------------------------------------------------------------->
         <div class="conteinerlinha">
@@ -139,7 +160,7 @@
             <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/pcs/acer.jpg" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('computador5').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProdutoPC">
                             <p class="categoria">Computadores</p>
                         </div>
@@ -154,11 +175,17 @@
                     </div>
                 </div>
 
+
+                <form id="computador5" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Acer Mini Desktop Core i5-12400T">
+                    <input type="hidden" name="preco" value=" R$ 4751,12 ">
+                    <input type="hidden" name="img" value="produtos/pcs/acer.jpg">
+                </form> 
 <!----------------------------segundo produto da linha ---------------------------------------->
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/pcs/thinkstationi7.jpg" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('computador6').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProdutoPC">
                             <p class="categoria">Computadores</p>
                         </div>
@@ -173,12 +200,17 @@
                     </div>
                 </div>
 
+                <form id="computador6" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Lenovo ThinkStation Core i7-14700">
+                    <input type="hidden" name="preco" value=" R$ 11263,99 ">
+                    <input type="hidden" name="img" value="produtos/pcs/thinkstationi7.jpg">
+                </form> 
 <!------------------------------terceiro produto da linha-------------------------------------->
 
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/pcs/thinkstationP3.jpg" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('computador7').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProdutoPC">
                             <p class="categoria">Computadores</p>
                         </div>
@@ -193,11 +225,16 @@
                     </div>
                 </div>
 
+                <form id="computador7" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Lenovo ThinkStation P3 Core i7-13700">
+                    <input type="hidden" name="preco" value=" R$ 9239,99 ">
+                    <input type="hidden" name="img" value="produtos/pcs/thinkstationP3.jpg">
+                </form> 
 <!-----------------------------quarto produto da linha----------------------------------------->
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/pcs/hpProSFF.jpg" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('computador8').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProdutoPC">
                             <p class="categoria">Computadores</p>
                         </div>
@@ -211,6 +248,12 @@
                         <p class="qtdAvaliacao">4.7 Avaliaram</p>
                     </div>
                 </div>
+
+                <form id="computador8" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="HP Pro SFF 280 G9 Core i3 - 13ª geração">
+                    <input type="hidden" name="preco" value=" R$ 2849,05">
+                    <input type="hidden" name="img" value="produtos/pcs/hpProSFF.jpg">
+                </form> 
         </div>
 <!----terceira linha----------------------------------------------------------------------------------------->
 <div class="conteinerlinha">
@@ -218,7 +261,7 @@
             <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/pcs/hpProi5.jpg" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('computador9').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProdutoPC">
                             <p class="categoria">Computadores</p>
                         </div>
@@ -233,11 +276,17 @@
                     </div>
                 </div>
 
+                <form id="computador9" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="HP Pro SFF 280 G9 Core i5 - 13ª geração">
+                    <input type="hidden" name="preco" value=" R$ 3770,55">
+                    <input type="hidden" name="img" value="produtos/pcs/hpProi5.jpg">
+                </form> 
+
                 <!----------------------------segundo produto da linha ---------------------------------------->
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/pcs/pcGamer.webp" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('computador10').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProdutoPC">
                             <p class="categoria">Computadores</p>
                         </div>
@@ -252,12 +301,17 @@
                     </div>
                 </div>
 
+                <form id="computador10" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="PC Gamer AMD Ryzen 5 5600G">
+                    <input type="hidden" name="preco" value=" R$ 3049,00">
+                    <input type="hidden" name="img" value="produtos/pcs/pcGamer.webp">
+                </form> 
                 <!------------------------------terceiro produto da linha-------------------------------------->
 
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/pcs/amdRayzen.jpg" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('computador11').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProdutoPC">
                             <p class="categoria">Computadores</p>
                         </div>
@@ -272,11 +326,16 @@
                     </div>
                 </div>
 
+                <form id="computador11" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="PC Gamer BluePC AMD Ryzen 5 8600G">
+                    <input type="hidden" name="preco" value=" R$ 3129,00">
+                    <input type="hidden" name="img" value="produtos/pcs/amdRayzen.jpg">
+                </form> 
                 <!-----------------------------quarto produto da linha----------------------------------------->
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/pcs/pcPoseidon.jpg" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('computador12').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProdutoPC">
                             <p class="categoria">Computadores</p>
                         </div>
@@ -290,6 +349,12 @@
                         <p class="qtdAvaliacao">4.7 Avaliaram</p>
                     </div>
                 </div>
+
+                <form id="computador12" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="PC Gamer Poseídon AMD Ryzen 7 5700X3D">
+                    <input type="hidden" name="preco" value=" R$ 5859,01">
+                    <input type="hidden" name="img" value="produtos/pcs/pcPoseidon.jpg">
+                </form> 
         </div>
 
 <!-----Quarta linha-------------------------------------------------------------------------------------------->
@@ -298,7 +363,7 @@
             <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/pcs/pcFobos.jpg" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('computador13').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProdutoPC">
                             <p class="categoria">Computadores</p>
                         </div>
@@ -313,11 +378,17 @@
                     </div>
                 </div>
 
+                <form id="computador13" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="PC Gamer Fobos II Intel i7-12700KF">
+                    <input type="hidden" name="preco" value=" R$ 8999,97">
+                    <input type="hidden" name="img" value="produtos/pcs/pcFobos.jpg">
+                </form>
+
                 <!----------------------------segundo produto da linha ---------------------------------------->
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/pcs/pcQuenubis.jpg" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('computador14').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProdutoPC">
                             <p class="categoria">Computadores</p>
                         </div>
@@ -332,12 +403,18 @@
                     </div>
                 </div>
 
+                <form id="computador14" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="PC Gamer Quenúbis VI AMD Ryzen 5 5600XT">
+                    <input type="hidden" name="preco" value=" R$ 8999,00">
+                    <input type="hidden" name="img" value="produtos/pcs/pcQuenubis.jpg">
+                </form>
+
                 <!------------------------------terceiro produto da linha-------------------------------------->
 
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/pcs/pcAorus.jpg" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('computador15').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProdutoPC">
                             <p class="categoria">Computadores</p>
                         </div>
@@ -352,11 +429,17 @@
                     </div>
                 </div>
 
+                <form id="computador15" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="PC Gamer Aorus League Lv3 Core i7-14700K">
+                    <input type="hidden" name="preco" value=" R$ 12599,97">
+                    <input type="hidden" name="img" value="produtos/pcs/pcAorus.jpg">
+                </form>
+
                 <!-----------------------------quarto produto da linha----------------------------------------->
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/pcs/pcHighflyer.jpg" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('computador16').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProdutoPC">
                             <p class="categoria">Computadores</p>
                         </div>
@@ -370,6 +453,13 @@
                         <p class="qtdAvaliacao">4.7 Avaliaram</p>
                     </div>
                 </div>
+
+                <form id="computador16" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="PC Gamer Highflyer AMD Ryzen 7 9800X3D">
+                    <input type="hidden" name="preco" value=" R$ 13733,63">
+                    <input type="hidden" name="img" value="produtos/pcs/pcHighflyer.jpg">
+                </form>
+
         </div>
     </div>
     </div>

@@ -57,7 +57,7 @@
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/celulares/iphone15pro.jpg" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('celular1').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Celulares</p>
                         </div>
@@ -72,11 +72,17 @@
                     </div>
                 </div>
 
+                <form id="celular1" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Apple iPhone 15 Pro (256 GB)">
+                    <input type="hidden" name="preco" value=" R$ 7399,00">
+                    <input type="hidden" name="img" value="produtos/celulares/iphone15pro.jpg">
+                </form>
+
                 <!----------------------------segundo produto da linha ---------------------------------------->
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/celulares/iphone16max.jpg" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('celular2').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Celulares</p>
                         </div>
@@ -91,19 +97,25 @@
                     </div>
                 </div>
 
+                <form id="celular2" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Apple iPhone 16 Pro Max (256 GB)">
+                    <input type="hidden" name="preco" value=" R$ 9499,00">
+                    <input type="hidden" name="img" value="produtos/celulares/iphone16max.jpg">
+                </form>
+
                 <!------------------------------terceiro produto da linha-------------------------------------->
 
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/celulares/iphone15.jpg" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('celular3').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Celulares</p>
                         </div>
                     </div>
                     <p class="nomeProdutos">Apple iPhone 15 (256 GB)</p>
                     <div class="preco">
-                        <p class="precoProdutos">R$ 4.999, 00</p>
+                        <p class="precoProdutos">R$ 4.999,00</p>
                     </div>
                     <div class="avaliacao">
                         <img src="../icones/star.png" alt="estrela" class="estrela">
@@ -111,11 +123,17 @@
                     </div>
                 </div>
 
+                <form id="celular3" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Apple iPhone 15 (256 GB)">
+                    <input type="hidden" name="preco" value=" R$ 4999,00">
+                    <input type="hidden" name="img" value="produtos/celulares/iphone15.jpg">
+                </form>
+
                 <!-----------------------------quarto produto da linha----------------------------------------->
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/celulares/iphone14.jpg" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('celular4').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Celulares</p>
                         </div>
@@ -129,6 +147,13 @@
                         <p class="qtdAvaliacao">4.7 Avaliaram</p>
                     </div>
                 </div>
+
+                <form id="celular4" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Apple iPhone 14 (256 GB)">
+                    <input type="hidden" name="preco" value=" R$ 4649,00">
+                    <input type="hidden" name="img" value="produtos/celulares/iphone14.jpg">
+                </form>
+
             </div>
             <!---------segunda linha---------------------------------------------------------------------------------->
             <div class="conteinerlinha">
@@ -136,7 +161,7 @@
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/celulares/galaxys25.jpg" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('celular5').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Celulares</p>
                         </div>
@@ -151,11 +176,17 @@
                     </div>
                 </div>
 
+                <form id="celular5" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Samsung Galaxy S25 Ultra (512 GB)">
+                    <input type="hidden" name="preco" value=" R$ 7874,47">
+                    <input type="hidden" name="img" value="produtos/celulares/galaxys25.jpg">
+                </form>
+
                 <!----------------------------segundo produto da linha ---------------------------------------->
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/celulares/galaxys24.jpg" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('celular6').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Celulares</p>
                         </div>
@@ -170,12 +201,18 @@
                     </div>
                 </div>
 
+                <form id="celular6" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Samsung Galaxy S24 (256 GB)">
+                    <input type="hidden" name="preco" value=" R$ 3499,00">
+                    <input type="hidden" name="img" value="produtos/celulares/galaxys24.jpg">
+                </form>
+
                 <!------------------------------terceiro produto da linha-------------------------------------->
 
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/celulares/galaxya56.jpg" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('celular7').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Celulares</p>
                         </div>
@@ -190,11 +227,17 @@
                     </div>
                 </div>
 
+                <form id="celular7" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Samsung Galaxy A56 (256 GB)">
+                    <input type="hidden" name="preco" value=" R$ 2177,00">
+                    <input type="hidden" name="img" value="produtos/celulares/galaxya56.jpg">
+                </form>
+
                 <!-----------------------------quarto produto da linha----------------------------------------->
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/celulares/galaxya36.png" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('celular8').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Celulares</p>
                         </div>
@@ -209,13 +252,20 @@
                     </div>
                 </div>
             </div>
+
+            <form id="celular8" action="adicionar.php" method="post" style="display: none;">
+                <input type="hidden" name="nome" value="Samsung Galaxy A36 (256 GB)">
+                <input type="hidden" name="preco" value=" R$ 2194,00">
+                <input type="hidden" name="img" value="produtos/celulares/galaxya36.png">
+            </form>
+
             <!----terceira linha----------------------------------------------------------------------------------------->
             <div class="conteinerlinha">
                 <!---------------------------------primeiro produto da linha ------------------------------------------------->
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/celulares/xiaomi14t.jpg" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('celular9').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Celulares</p>
                         </div>
@@ -230,11 +280,17 @@
                     </div>
                 </div>
 
+                <form id="celular9" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Xiaomi 14T (256 GB)">
+                    <input type="hidden" name="preco" value=" R$ 3649,00">
+                    <input type="hidden" name="img" value="produtos/celulares/xiaomi14t.jpg">
+                </form>
+    
                 <!----------------------------segundo produto da linha ---------------------------------------->
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/celulares/redmi14pro.jpg" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('celular10').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Celulares</p>
                         </div>
@@ -249,12 +305,18 @@
                     </div>
                 </div>
 
+                <form id="celular10" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Xiaomi Redmi Note 14 Pro 5G (256 GB)">
+                    <input type="hidden" name="preco" value=" R$ 1899,00">
+                    <input type="hidden" name="img" value="produtos/celulares/redmi14pro.jpg">
+                </form>
+    
                 <!------------------------------terceiro produto da linha-------------------------------------->
 
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/celulares/xiaomi15.jpg" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('celular11').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Celulares</p>
                         </div>
@@ -269,11 +331,17 @@
                     </div>
                 </div>
 
+                <form id="celular11" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Xiaomi 15 5G (256 GB)">
+                    <input type="hidden" name="preco" value=" R$ 3345,40">
+                    <input type="hidden" name="img" value="produtos/celulares/xiaomi15.jpg">
+                </form>
+    
                 <!-----------------------------quarto produto da linha----------------------------------------->
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/celulares/pocox7.jpg" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('celular12').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Celulares</p>
                         </div>
@@ -289,13 +357,19 @@
                 </div>
             </div>
 
+            <form id="celular12" action="adicionar.php" method="post" style="display: none;">
+                <input type="hidden" name="nome" value="Xiaomi POCO X7 Pro (512 GB)">
+                <input type="hidden" name="preco" value=" R$ 2549,00">
+                <input type="hidden" name="img" value="produtos/celulares/pocox7.jpg">
+            </form>
+
             <!-----Quarta linha-------------------------------------------------------------------------------------------->
             <div class="conteinerlinha">
                 <!---------------------------------primeiro produto da linha ------------------------------------------------->
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/celulares/edge60Fusion.jpg" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('celular13').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Celulares</p>
                         </div>
@@ -310,12 +384,18 @@
                     </div>
                 </div>
 
+                <form id="celular13" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Motorola Edge 60 Fusion (256 GB)">
+                    <input type="hidden" name="preco" value=" R$ 2699,10">
+                    <input type="hidden" name="img" value="produtos/celulares/edge60Fusion.jpg">
+                </form>
+    
                 <!----------------------------segundo produto da linha ---------------------------------------->
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/celulares/razr60.jpg" ></div>
                     
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('celular14').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Celulares</p>
                         </div>
@@ -330,12 +410,18 @@
                     </div>
                 </div>
 
+                <form id="celular14" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Motorola Razr 60 5G">
+                    <input type="hidden" name="preco" value=" R$ 4949,10">
+                    <input type="hidden" name="img" value="produtos/celulares/razr60.jpg">
+                </form>
+    
                 <!------------------------------terceiro produto da linha-------------------------------------->
 
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/celulares/motog55.jpg" alt="" ></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('celular15').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Celulares</p>
                         </div>
@@ -350,12 +436,18 @@
                     </div>
                 </div>
 
+                <form id="celular15" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Motorola Moto G55 (256 GB)">
+                    <input type="hidden" name="preco" value=" R$ 1439,10">
+                    <input type="hidden" name="img" value="produtos/celulares/motog55.jpg">
+                </form>
+    
                 <!-----------------------------quarto produto da linha----------------------------------------->
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/celulares/edge50ultra2.jpg" alt="" ></div>
 
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('celular16').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Celulares</p>
                         </div>
@@ -369,6 +461,13 @@
                         <p class="qtdAvaliacao">4.6 Avaliaram</p>
                     </div>
                 </div>
+                
+                <form id="celular16" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Motorola Edge 50 Ultra (512 GB)">
+                    <input type="hidden" name="preco" value=" R$ 3599,10">
+                    <input type="hidden" name="img" value="produtos/celulares/edge50ultra2.jpg">
+                </form>
+    
             </div>
         </div>
     </div>

@@ -71,7 +71,7 @@
     margin-left: 5%;
     border-bottom-left-radius: 1vw;
     border-bottom-right-radius: 1vw;
-    transform: translateY(-30%);
+    transform: translateY(-30.8%);
     transition: 0.5s;
 }
 
@@ -102,7 +102,7 @@ span.size-20 {
 .box:hover {
     /*quando colocar o mouse em cima do header inferior...*/
     transform: translateY(0);
-    /*ele continua na tela*/
+    /*continua na tela*/
 }
 
 
@@ -115,6 +115,7 @@ span.size-20 {
     justify-content: space-around;
     align-items: center;
     list-style: none;
+    
 }
 
 .box ul a {
