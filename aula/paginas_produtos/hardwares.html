@@ -102,7 +102,7 @@
 
                 <form id="memoria2" action="adicionar.php" method="post" style="display: none;">
                     <input type="hidden" name="nome" value="Memória DDR5 6400MHz G.Skill Trident Z5 RGB">
-                    <input type="hidden" name="preco" value=" R$ 1619,00 ">
+                    <input type="hidden" name="preco" value=" R$ 1619,49 ">
                     <input type="hidden" name="img" value="produtos/hardwares/Memória_DDR5_6400MHz_G.Skill_Trident_Z5_RGB.jpg">
                 </form>
                 <!------------------------------terceiro produto da linha-------------------------------------->
@@ -138,7 +138,7 @@
                     <div class="prodCarrossel"><img
                             src="../produtos/hardwares/Memória_DDR4_G.Skill_Ripjaws_V_F4-3200C16.jpg" alt=""></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('memoria4').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Hardwares</p>
                         </div>
@@ -154,7 +154,7 @@
                 </div>
             </div>
 
-            <form id="memoria3" action="adicionar.php" method="post" style="display: none;">
+            <form id="memoria4" action="adicionar.php" method="post" style="display: none;">
                 <input type="hidden" name="nome" value="Memória DDR4 G.Skill Ripjaws V F4-3200C16">
                 <input type="hidden" name="preco" value=" R$ 379,99 ">
                 <input type="hidden" name="img" value="produtos/hardwares/Memória_DDR4_G.Skill_Ripjaws_V_F4-3200C16.jpg">
@@ -166,7 +166,7 @@
                     <div class="prodCarrossel"><img src="../produtos/hardwares/AMD_Ryzen_9_7950X3D_4.2GHz_AM5.jpg"
                             alt=""></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('processador1').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Hardwares</p>
                         </div>
@@ -180,17 +180,17 @@
                         <p class="qtdAvaliacao">4.8 Avaliaram</p>
                     </div>
                 </div>
-            <form id="memoria3" action="adicionar.php" method="post" style="display: none;">
-                <input type="hidden" name="nome" value="Memória DDR4 G.Skill Ripjaws V F4-3200C16">
-                <input type="hidden" name="preco" value=" R$ 379,99 ">
-                <input type="hidden" name="img" value="produtos/hardwares/Memória_DDR4_G.Skill_Ripjaws_V_F4-3200C16.jpg">
+            <form id="processador1" action="adicionar.php" method="post" style="display: none;">
+                <input type="hidden" name="nome" value="AMD Ryzen 9 7950X3D 4.2GHz AM5">
+                <input type="hidden" name="preco" value=" R$ 4499,99 ">
+                <input type="hidden" name="img" value="produtos/hardwares/AMD_Ryzen_9_7950X3D_4.2GHz_AM5.jpg">
             </form>
                 <!----------------------------segundo produto da linha ---------------------------------------->
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/hardwares/Intel_Core_i9-13900K_2.2GHz_LGA1700.jpg"
                             alt=""></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('processador2').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Hardwares</p>
                         </div>
@@ -205,12 +205,17 @@
                     </div>
                 </div>
 
+                <form id="processador2" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Intel Core i9-13900K 2.2GHz LGA1700">
+                    <input type="hidden" name="preco" value=" R$ 3236,49 ">
+                    <input type="hidden" name="img" value="produtos/hardwares/Intel_Core_i9-13900K_2.2GHz_LGA1700.jpg">
+                </form>
                 <!------------------------------terceiro produto da linha-------------------------------------->
 
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/hardwares/AMD_Ryzen_7_7800X3D.jpg" alt=""></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('processador3').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Hardwares</p>
                         </div>
@@ -225,11 +230,16 @@
                     </div>
                 </div>
 
+                <form id="processador3" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="AMD Ryzen 7 7800X3D">
+                    <input type="hidden" name="preco" value=" R$ 2599,99 ">
+                    <input type="hidden" name="img" value="produtos/hardwares/AMD_Ryzen_7_7800X3D.jpg">
+                </form>
                 <!-----------------------------quarto produto da linha----------------------------------------->
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/hardwares/Intel_Core_i7-13700.jpg" alt=""></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('processador4').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Hardwares</p>
                         </div>
@@ -244,6 +254,12 @@
                     </div>
                 </div>
             </div>
+
+            <form id="processador4" action="adicionar.php" method="post" style="display: none;">
+                <input type="hidden" name="nome" value="Intel Core i7-13700">
+                <input type="hidden" name="preco" value=" R$ 2791,39 ">
+                <input type="hidden" name="img" value="produtos/hardwares/Intel_Core_i7-13700.jpg">
+            </form>
             <!----terceira linha----------------------------------------------------------------------------------------->
             <div class="conteinerlinha">
                 <!---------------------------------primeiro produto da linha ------------------------------------------------->
@@ -251,7 +267,7 @@
                     <div class="prodCarrossel"><img src="../produtos/hardwares/Gigabyte_X670E_Aorus_Master.jpg" alt="">
                     </div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('placamae1').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Hardwares</p>
                         </div>
@@ -266,12 +282,17 @@
                     </div>
                 </div>
 
+            <form id="placamae1" action="adicionar.php" method="post" style="display: none;">
+                <input type="hidden" name="nome" value="Gigabyte X670E Aorus Master">
+                <input type="hidden" name="preco" value=" R$ 4298,99 ">
+                <input type="hidden" name="img" value="produtos/hardwares/Gigabyte_X670E_Aorus_Master.jpg">
+            </form>
                 <!----------------------------segundo produto da linha ---------------------------------------->
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/hardwares/Asus_ROG_Crosshair_X670E_Hero.jpg"
                             alt=""></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('placamae2').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Hardwares</p>
                         </div>
@@ -286,13 +307,18 @@
                     </div>
                 </div>
 
+            <form id="placamae2" action="adicionar.php" method="post" style="display: none;">
+                <input type="hidden" name="nome" value="Asus ROG Crosshair X670E Hero">
+                <input type="hidden" name="preco" value=" R$ 4985,0">
+                <input type="hidden" name="img" value="produtos/hardwares/Asus_ROG_Crosshair_X670E_Hero.jpg">
+            </form>
                 <!------------------------------terceiro produto da linha-------------------------------------->
 
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/hardwares/ASRock_X670E_Taichi_Carrara_AM5.jpg"
                             alt=""></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('placamae3').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Hardwares</p>
                         </div>
@@ -307,12 +333,17 @@
                     </div>
                 </div>
 
+                <form id="placamae3" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="ASRock X670E Taichi Carrara AM5">
+                    <input type="hidden" name="preco" value=" R$ 5999,99">
+                    <input type="hidden" name="img" value="produtos/hardwares/ASRock_X670E_Taichi_Carrara_AM5.jpg">
+                </form>
                 <!-----------------------------quarto produto da linha----------------------------------------->
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img src="../produtos/hardwares/MSI_MAG_X670E_Tomahawk_WiFi.jpg" alt="">
                     </div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('placamae4').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Hardwares</p>
                         </div>
@@ -328,6 +359,11 @@
                 </div>
             </div>
 
+            <form id="placamae4" action="adicionar.php" method="post" style="display: none;">
+                <input type="hidden" name="nome" value="MSI MAG X670E Tomahawk WiFi">
+                <input type="hidden" name="preco" value=" R$ 1858,49">
+                <input type="hidden" name="img" value="produtos/hardwares/MSI_MAG_X670E_Tomahawk_WiFi.jpg">
+            </form>
             <!-----Quarta linha-------------------------------------------------------------------------------------------->
             <div class="conteinerlinha">
                 <!---------------------------------primeiro produto da linha ------------------------------------------------->
@@ -335,7 +371,7 @@
                     <div class="prodCarrossel"><img
                             src="../produtos/hardwares/Gigabyte_GeForce_RTX_4070_Super_Windforce_OC.jpg" alt=""></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('placadevideo1').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Hardwares</p>
                         </div>
@@ -351,13 +387,17 @@
                 </div>
 
 
-
+                <form id="placadevideo1" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Gigabyte GeForce RTX 4070 Super Windforce OC">
+                    <input type="hidden" name="preco" value=" R$ 4859,99">
+                    <input type="hidden" name="img" value="produtos/hardwares/Gigabyte_GeForce_RTX_4070_Super_Windforce_OC.jpg">
+                </form>
                 <!----------------------------segundo produto da linha ---------------------------------------->
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img
                             src="../produtos/hardwares/PNY_GeForce_RTX_4060_8GB_XLR8_Gaming_Verto.jpg" alt=""></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('placadevideo2').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Hardwares</p>
                         </div>
@@ -372,13 +412,18 @@
                     </div>
                 </div>
 
+                <form id="placadevideo2" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="PNY GeForce RTX 4060 8GB XLR8 Gaming Verto">
+                    <input type="hidden" name="preco" value=" R$ 2149,99">
+                    <input type="hidden" name="img" value="produtos/hardwares/PNY_GeForce_RTX_4060_8GB_XLR8_Gaming_Verto.jpg">
+                </form>
                 <!------------------------------terceiro produto da linha-------------------------------------->
 
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img
                             src="../produtos/hardwares/MSI_GeForce_RTX_5070_Ti_16GB_Ventus_3X_OC.jpg" alt=""></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('placadevideo3').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Hardwares</p>
                         </div>
@@ -393,12 +438,17 @@
                     </div>
                 </div>
 
+                <form id="placadevideo3" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="MSI GeForce RTX 5070 Ti 16GB Ventus 3X OC">
+                    <input type="hidden" name="preco" value=" R$ 6998,99">
+                    <input type="hidden" name="img" value="produtos/hardwares/MSI_GeForce_RTX_5070_Ti_16GB_Ventus_3X_OC.jpg">
+                </form>
                 <!-----------------------------quarto produto da linha----------------------------------------->
                 <div class="fundoProdutos">
                     <div class="prodCarrossel"><img
                             src="../produtos/hardwares/Galax_GeForce_RTX_5080_16GB_1-Click_OC.jpg" alt=""></div>
                     <div class="superiorProdutos">
-                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <a href="#" onclick="document.getElementById('placadevideo4').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
                         <div class="categoriaProduto">
                             <p class="categoria">Hardwares</p>
                         </div>
@@ -412,6 +462,11 @@
                         <p class="qtdAvaliacao">5.0 Avaliaram</p>
                     </div>
                 </div>
+                <form id="placadevideo4" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Galax GeForce RTX 5080 16GB 1-Click OC">
+                    <input type="hidden" name="preco" value=" R$ 10299,9">
+                    <input type="hidden" name="img" value="produtos/hardwares/Galax_GeForce_RTX_5080_16GB_1-Click_OC.jpg">
+                </form>
             </div>
         </div>
     </div>

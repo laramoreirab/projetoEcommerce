@@ -468,7 +468,7 @@ p.precoProdutos {
     justify-content: end;
     padding-right: 2.3vw;
     position: absolute;
-    margin-left: 11vw;
+    margin-left: 10.8vw;
     margin-top: 3.5vw;
 }
 
@@ -488,6 +488,7 @@ p.precoProdutos {
 
 .superiorProdutos a{
     text-decoration:none;
+    color:black;
 }
 
 .categoriaProduto {
