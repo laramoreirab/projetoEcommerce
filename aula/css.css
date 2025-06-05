@@ -266,16 +266,18 @@ span.size-20 {
 .fundoDoAnuncio p {
     /*mexe com a descrição do produto do anuncio (Headset)*/
     margin-left: 3.3vw;
+    width: 40vw;
     padding-top: 15vw;
     font-size: 1.2vw;
+    text-align: start;
 }
 
 .fundoDoAnuncio img {
     /*mexe com a imagem do anuncio (Headset)*/
     position: absolute;
-    height: 48vw;
-    left: 41vw;
-    bottom: 1vw;
+    height: 45.5vw;
+    left: 44vw;
+    bottom: 3vw;
 }
 
 
@@ -302,8 +304,8 @@ span.size-20 {
     /*mexe com a imagem do anuncio (foneIOS)*/
     position: absolute;
     height: 45vw;
-    left: 44vw;
-    bottom: 1vw;
+    left: 41vw;
+    bottom: 0.5vw;
 }
 
 .fundoDoAnuncio .tituloAnuncio3 {
@@ -1656,6 +1658,7 @@ footer {
     border-radius: 1.5vw;
     padding-left: 3vw;
     font-size: 1vw;
+    font-family: 'TT-norms', sans-serif;
 }
 
 .footerNovosProdutos input::placeholder {
@@ -1664,6 +1667,7 @@ footer {
 
 .footerNovosProdutos button {
     color: white;
+    font-family: 'TT-norms', sans-serif;
     background: #adb0b7;
     position: absolute;
     left: 31.5vw;
