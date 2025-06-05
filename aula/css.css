@@ -294,10 +294,11 @@ span.size-20 {
 
 .fundoDoAnuncio .p2 {
     /*mexe com a descrição do produto do anuncio (foneIOS)*/
-    margin-left: 3.3vw;
-    width: 45vw;
+     margin-left: 3.3vw;
+    width: 40vw;
     padding-top: 15vw;
     font-size: 1.2vw;
+    text-align: start;
 }
 
 .fundoDoAnuncio .img2 {
@@ -374,8 +375,9 @@ span.size-20 {
     /*mexe com a descrição do produto do anuncio (Iphone15)*/
     margin-left: 3.3vw;
     width: 40vw;
-    padding-top: 10vw;
+    padding-top: 15vw;
     font-size: 1.2vw;
+    text-align: start;
 }
 
 .fundoDoAnuncio .img5 {
