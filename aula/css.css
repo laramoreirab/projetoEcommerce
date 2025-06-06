@@ -330,9 +330,8 @@ span.size-20 {
 .fundoDoAnuncio .img3 {
     /*mexe com a imagem do anuncio (EchoDotAlexa)*/
     position: absolute;
-    height: 43vw;
-    left: 46vw;
-    bottom: 3vw;
+    height: 45vw;
+    left: 43vw;
 }
 
 .fundoDoAnuncio .tituloAnuncio4 {
@@ -349,8 +348,9 @@ span.size-20 {
     /*mexe com a descrição do produto do anuncio (Smart Watch)*/
     margin-left: 3.3vw;
     width: 40vw;
-    padding-top: 10vw;
+    padding-top: 15vw;
     font-size: 1.2vw;
+    text-align: start;
 }
 
 .fundoDoAnuncio .img4 {
