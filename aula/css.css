@@ -616,9 +616,6 @@ p.precoProdutos {
     border-radius: 1.5vw;
 }
 
-/*------------------Carrossel Explorar----------------------------------*/
-
-
 /*------------------Carrossel Promoções----------------------------------*/
 .centralizarPromo{
     text-align: center;
@@ -655,7 +652,10 @@ div.splide{
     overflow: hidden;
     padding: 2rem 0; /* ajuste conforme necessidade */
 }
-
+.splide__slide{
+    display: flex !important;
+    justify-content: center !important;
+}
 
 /*---------------------------------------pagina celulares-----------------------------------------------------*/
 
