@@ -616,6 +616,46 @@ p.precoProdutos {
     border-radius: 1.5vw;
 }
 
+/*------------------Carrossel Explorar----------------------------------*/
+
+
+/*------------------Carrossel Promoções----------------------------------*/
+.centralizarPromo{
+    text-align: center;
+    padding-top: 4vw;
+}
+.splide__arrow--prev{
+    background-color: transparent !important;
+}
+.splide__arrow--next{
+    background-color: transparent !important;
+}
+div.splide{
+    background-color: transparent !important;
+    padding-top: 3vw;
+}
+.containerCarrossel,
+.splide,
+.splide__track,
+.splide__list,
+.splide__slide {
+    background-color: transparent !important;
+}
+.splide__track{
+    overflow: visible!important;
+}
+.splide__pagination__page.is-active {
+    background: transparent !important;
+}
+.splide__pagination__page{
+    background-color: transparent !important;
+}
+.containerCarrossel {
+    width: 100%;
+    overflow: hidden;
+    padding: 2rem 0; /* ajuste conforme necessidade */
+}
+
 
 /*---------------------------------------pagina celulares-----------------------------------------------------*/
 

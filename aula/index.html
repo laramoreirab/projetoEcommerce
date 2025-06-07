@@ -165,62 +165,180 @@
         <h1 class="centralizarExplorar">Explorar</h1>
 
         <!---------------------------Carrossel de produtos------------------------------------>
-        <div class="containerProdutos">
-            <div class="fundoProdutos">
-                <img src="produtos/ps5.webp" alt="" class="prodCarrossel">
-                <div class="superiorProdutos">
-                    <span class="material-symbols-outlined"> shopping_cart</span>
-                    <div class="categoriaProduto">
-                        <p class="categoria">Outros</p>
+            <div class="containerCarrossel">
+            <div id="splide1"  class="splide" aria-label="Splide Carousel">
+                <div class="splide__arrows">
+		            <button class="splide__arrow splide__arrow--prev">
+			            <div class="botaoProxPromo">
+                            <span class="material-symbols-outlined size-20">
+                                arrow_back_ios
+                            </span>
+                        </div>
+		            <button class="splide__arrow splide__arrow--next">
+			            <div class="botaoVoltaPromo">
+                            <span class="material-symbols-outlined size-20">
+                                arrow_forward_ios
+                            </span>
+                        </div>
+		            </button>
+                </div>
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                    <div class="fundoProdutos">
+                    <div class="prodCarrossel"><img src="produtos/tablets/Lenovo_Tab_P12_Pro.jpg" alt="" ></div>
+                    <div class="superiorProdutos">
+                        <a href="#" onclick="document.getElementById('tablet6').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
+                        <div class="categoriaProduto">
+                            <p class="categoria">Tablets</p>
+                        </div>
+                    </div>
+                    <p class="nomeProdutos">Lenovo Tab P12 Pro</p>
+                    <div class="preco">
+                        <p class="precoProdutos">R$5.299,00</p>
+                    </div>
+                    <div class="avaliacao">
+                        <img src="icones/star.png" alt="estrela" class="estrela">
+                        <p class="qtdAvaliacao">4.7 Avaliaram</p>
                     </div>
                 </div>
-                <p class="nomeProdutos">PS5 Slim Digital Edition</p>
-                <div class="preco">
-                    <p class="precoProdutos">R$3599,99</p>
-                </div>
-                <div class="avaliacao">
-                    <img src="icones/star.png" alt="estrela" class="estrela">
-                    <p class="qtdAvaliacao">5.0 Avaliaram</p>
-                </div>
-            </div>
-
-            <div class="fundoProdutos">
-                <img src="produtos/ps5.webp" alt="" class="prodCarrossel">
-                <div class="superiorProdutos">
-                    <span class="material-symbols-outlined"> shopping_cart</span>
-                    <div class="categoriaProduto">
-                        <p class="categoria">Outros</p>
+               
+                <form id="tablet6" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Lenovo Tab P12 Pro">
+                    <input type="hidden" name="preco" value=" R$ 5299,00 ">
+                    <input type="hidden" name="img" value="produtos/tablets/Lenovo_Tab_P12_Pro.jpg">
+                </form>
+                        </li>
+                        <li class="splide__slide">
+                <div class="fundoProdutos">
+                    <div class="prodCarrossel"><img src="produtos/fones/redmibuds6Active.jpg" alt="" ></div>
+                    <div class="superiorProdutos">
+                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <div class="categoriaProduto">
+                            <p class="categoria">Fones</p>
+                        </div>
+                    </div>
+                    <p class="nomeProdutos">Xiaomi Redmi Buds 6 Active</p>
+                    <div class="preco">
+                        <p class="precoProdutos">R$ 149,99</p>
+                    </div>
+                    <div class="avaliacao">
+                        <img src="icones/star.png" alt="estrela" class="estrela">
+                        <p class="qtdAvaliacao">4.5 Avaliaram</p>
                     </div>
                 </div>
-                <p class="nomeProdutos">PS5 Slim Digital Edition</p>
-                <div class="preco">
-                    <p class="precoProdutos">R$3599,99</p>
-                </div>
-                <div class="avaliacao">
-                    <img src="icones/star.png" alt="estrela" class="estrela">
-                    <p class="qtdAvaliacao">5.0 Avaliaram</p>
-                </div>
-            </div>
-
-            <div class="fundoProdutos">
-                <img src="produtos/ps5.webp" alt="" class="prodCarrossel">
-                <div class="superiorProdutos">
-                    <span class="material-symbols-outlined"> shopping_cart</span>
-                    <div class="categoriaProduto">
-                        <p class="categoria">Outros</p>
+                        </li>
+                        <li class="splide__slide">
+                <div class="fundoProdutos">
+                    <div class="prodCarrossel"><img src="produtos/celulares/galaxys25.jpg" alt="" ></div>
+                    <div class="superiorProdutos">
+                        <a href="#" onclick="document.getElementById('celular5').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
+                        <div class="categoriaProduto">
+                            <p class="categoria">Celulares</p>
+                        </div>
+                    </div>
+                    <p class="nomeProdutos">Samsung Galaxy S25 Ultra (512 GB)</p>
+                    <div class="preco">
+                        <p class="precoProdutos">R$ 7.874,47</p>
+                    </div>
+                    <div class="avaliacao">
+                        <img src="icones/star.png" alt="estrela" class="estrela">
+                        <p class="qtdAvaliacao">5.0 Avaliaram</p>
                     </div>
                 </div>
-                <p class="nomeProdutos">PS5 Slim Digital Edition</p>
-                <div class="preco">
-                    <p class="precoProdutos">R$3599,99</p>
+
+                <form id="celular5" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Samsung Galaxy S25 Ultra (512 GB)">
+                    <input type="hidden" name="preco" value=" R$ 7874,47">
+                    <input type="hidden" name="img" value="produtos/celulares/galaxys25.jpg">
+                </form>
+                        </li>
+                        <li class="splide__slide">
+                <div class="fundoProdutos">
+                    <div class="prodCarrossel"><img src="produtos/hardwares/AMD_Ryzen_9_7950X3D_4.2GHz_AM5.jpg"
+                            alt=""></div>
+                    <div class="superiorProdutos">
+                        <a href="#" onclick="document.getElementById('processador1').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
+                        <div class="categoriaProduto">
+                            <p class="categoria">Hardwares</p>
+                        </div>
+                    </div>
+                    <p class="nomeProdutos">AMD Ryzen 9 7950X3D 4.2GHz AM5</p>
+                    <div class="preco">
+                        <p class="precoProdutos">R$4499,99</p>
+                    </div>
+                    <div class="avaliacao">
+                        <img src="icones/star.png" alt="estrela" class="estrela">
+                        <p class="qtdAvaliacao">4.8 Avaliaram</p>
+                    </div>
                 </div>
-                <div class="avaliacao">
-                    <img src="icones/star.png" alt="estrela" class="estrela">
-                    <p class="qtdAvaliacao">5.0 Avaliaram</p>
+            <form id="processador1" action="adicionar.php" method="post" style="display: none;">
+                <input type="hidden" name="nome" value="AMD Ryzen 9 7950X3D 4.2GHz AM5">
+                <input type="hidden" name="preco" value=" R$ 4499,99 ">
+                <input type="hidden" name="img" value="produtos/hardwares/AMD_Ryzen_9_7950X3D_4.2GHz_AM5.jpg">
+                        </li>
+                        <li class="splide__slide">
+               <!-----------------------------quarto produto da linha----------------------------------------->
+                <div class="fundoProdutos">
+                    <div class="prodCarrossel"><img src="produtos/pcs/pcHighflyer.jpg" alt="" ></div>
+                    <div class="superiorProdutos">
+                        <a href="#" onclick="document.getElementById('computador16').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
+                        <div class="categoriaProdutoPC">
+                            <p class="categoria">Computadores</p>
+                        </div>
+                        </div>
+                    <p class="nomeProdutos">PC Gamer Highflyer AMD Ryzen 7 9800X3D</p>
+                    <div class="preco">
+                        <p class="precoProdutos">R$ 13.733,63</p>
+                    </div>
+                    <div class="avaliacao">
+                        <img src="icones/star.png" alt="estrela" class="estrela">
+                        <p class="qtdAvaliacao">4.7 Avaliaram</p>
+                    </div>
+                </div>
+
+                <form id="computador16" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="PC Gamer Highflyer AMD Ryzen 7 9800X3D">
+                    <input type="hidden" name="preco" value=" R$ 13733,63">
+                    <input type="hidden" name="img" value="produtos/pcs/pcHighflyer.jpg">
+                </form>
+                        </li>
+                        <li class="splide__slide">
+                <div class="fundoProdutos">
+                    <div class="prodCarrossel"><img src="produtos/outros/outros12.png" alt="" ></div>
+                    <div class="superiorProdutos">
+                        <a href="#" onclick="document.getElementById('outros12').submit(); return false;"><span class="material-symbols-outlined">shopping_cart</span></a>
+                        <div class="categoriaProduto">
+                            <p class="categoria">Outros</p>
+                        </div>
+                    </div>
+                    <p class="nomeProdutos">PS5 Slim Digital Edition</p>
+                    <div class="preco">
+                        <p class="precoProdutos">R$3599,99</p>
+                    </div>
+                    <div class="avaliacao">
+                        <img src="icones/star.png" alt="estrela" class="estrela">
+                        <p class="qtdAvaliacao">5.0 Avaliaram</p>
+                    </div>
+                </div>
+            <form id="outros12" action="adicionar.php" method="post" style="display: none;">
+                <input type="hidden" name="nome" value="PS5 Slim Digital Edition">
+                <input type="hidden" name="preco" value=" R$ 3599,99 ">
+                <input type="hidden" name="img" value="produtos/outros/outros12.png">
+            </form>
+                        </li>
+                    </ul>
                 </div>
             </div>
-
         </div>
+        <script>
+            var splide = new Splide( '#splide1', {
+            type   : 'loop',
+            perPage: 4,
+            perMove: 1,
+            } );
+            splide.mount();
+        </script>
         <!---------------------------Anuncio Samsung------------------------------------>
         <div class="anuncioSamsung">
             <div class="fundoSamsungS24">
@@ -234,103 +352,229 @@
         </div>
 
         <!-----------------------------Menu Promoções--------------------------------------->
-        <h1 class="centralizarExplorar">Promoções</h1>
+        <h1 class="centralizarPromo">Promoções</h1>
 
         <!---------------------------Carrossel de produtos------------------------------------>
-        <div class="containerProdutos">
-            <div class="fundoProdutos">
-                <img src="produtos/ps5.webp" alt="" class="prodCarrossel">
-                <div class="superiorProdutos">
-                    <span class="material-symbols-outlined"> shopping_cart</span>
-                    <div class="categoriaProduto">
-                        <p class="categoria">Outros</p>
-                    </div>
+        <div class="containerCarrossel">
+            <div id="splide2"  class="splide" aria-label="Splide Carousel">
+                <div class="splide__arrows">
+		            <button class="splide__arrow splide__arrow--prev">
+			            <div class="botaoProxPromo">
+                            <span class="material-symbols-outlined size-20">
+                                arrow_back_ios
+                            </span>
+                        </div>
+		            <button class="splide__arrow splide__arrow--next">
+			            <div class="botaoVoltaPromo">
+                            <span class="material-symbols-outlined size-20">
+                                arrow_forward_ios
+                            </span>
+                        </div>
+		            </button>
                 </div>
-                <p class="nomeProdutos">PS5 Slim Digital Edition</p>
-                <div class="preco">
-                    <p class="precoProdutos">R$3599,99</p>
-                </div>
-                <div class="avaliacao">
-                    <img src="icones/star.png" alt="estrela" class="estrela">
-                    <p class="qtdAvaliacao">5.0 Avaliaram</p>
-                </div>
-            </div>
-
-            <div class="fundoProdutos">
-                <img src="produtos/ps5.webp" alt="" class="prodCarrossel">
-                <div class="superiorProdutos">
-                    <span class="material-symbols-outlined"> shopping_cart</span>
-                    <div class="categoriaProduto">
-                        <p class="categoria">Outros</p>
-                    </div>
-                </div>
-                <p class="nomeProdutos">PS5 Slim Digital Edition</p>
-                <div class="preco">
-                    <p class="precoProdutos">R$3599,99</p>
-                </div>
-                <div class="avaliacao">
-                    <img src="icones/star.png" alt="estrela" class="estrela">
-                    <p class="qtdAvaliacao">5.0 Avaliaram</p>
-                </div>
-            </div>
-
-            <div class="fundoProdutos">
-                <img src="produtos/ps5.webp" alt="" class="prodCarrossel">
-                <div class="superiorProdutos">
-                    <span class="material-symbols-outlined"> shopping_cart</span>
-                    <div class="categoriaProduto">
-                        <p class="categoria">Outros</p>
-                    </div>
-                </div>
-                <p class="nomeProdutos">PS5 Slim Digital Edition</p>
-                <div class="preco">
-                    <p class="precoProdutos">R$3599,99</p>
-                </div>
-                <div class="avaliacao">
-                    <img src="icones/star.png" alt="estrela" class="estrela">
-                    <p class="qtdAvaliacao">5.0 Avaliaram</p>
-                </div>
-            </div>
-
-        </div>
-
-
-        <div>
-            <div class="splide" aria-label="Splide Carousel">
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
-                            <div class="fundoProdutos">
-                                <img src="produtos/ps5.webp" alt="" class="prodCarrossel">
-                                    <div class="superiorProdutos">
-                                        <span class="material-symbols-outlined"> shopping_cart</span>
-                                        <div class="categoriaProduto">
-                                            <p class="categoria">Outros</p>
-                                        </div>
-                                    </div>
-                                <p class="nomeProdutos">PS5 Slim Digital Edition</p>
-                                    <div class="preco">
-                                        <p class="precoProdutos">R$3599,99</p>
-                                    </div>
-                                <div class="avaliacao">
-                                    <img src="icones/star.png" alt="estrela" class="estrela">
-                                    <p class="qtdAvaliacao">5.0 Avaliaram</p>
-                                </div>
-                            </div>
+                <div class="fundoProdutos">
+                    <div class="prodCarrossel"><img src="produtos/celulares/motog55.jpg" alt="" ></div>
+                    <div class="superiorProdutos">
+                        <a href="#" onclick="document.getElementById('celular15').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
+                        <div class="categoriaProduto">
+                            <p class="categoria">Celulares</p>
+                        </div>
+                    </div>
+                    <p class="nomeProdutos">Motorola Moto G55 (256 GB)</p>
+                    <div class="preco">
+                        <p class="precoProdutos">R$ 1.439,10</p>
+                    </div>
+                    <div class="avaliacao">
+                        <img src="icones/star.png" alt="estrela" class="estrela">
+                        <p class="qtdAvaliacao">4.7 Avaliaram</p>
+                    </div>
+                </div>
+
+                <form id="celular15" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Motorola Moto G55 (256 GB)">
+                    <input type="hidden" name="preco" value=" R$ 1439,10">
+                    <input type="hidden" name="img" value="produtos/celulares/motog55.jpg">
+                </form>
                         </li>
-                        <li class="splide__slide">02</li>
-                        <li class="splide__slide">03</li>
-                        <li class="splide__slide">04</li>
+                        <li class="splide__slide">
+                <div class="fundoProdutos">
+                    <div class="prodCarrossel"><img src="produtos/fones/vervebuds100.jpg" alt="" ></div>
+                    <div class="superiorProdutos">
+                        <span class="material-symbols-outlined"> shopping_cart</span>
+                        <div class="categoriaProduto">
+                            <p class="categoria">Fones</p>
+                        </div>
+                    </div>
+                    <p class="nomeProdutos">Motorola VerveBuds 100</p>
+                    <div class="preco">
+                        <p class="precoProdutos">R$ 199,00</p>
+                    </div>
+                    <div class="avaliacao">
+                        <img src="icones/star.png" alt="estrela" class="estrela">
+                        <p class="qtdAvaliacao">4.3 Avaliaram</p>
+                    </div>
+                </div>
+                        </li>
+                        <li class="splide__slide">
+                <div class="fundoProdutos">
+                    <div class="prodCarrossel"><img src="produtos/perifericos/perifericos5.png" alt="" ></div>
+                    <div class="superiorProdutos">
+                        <a href="#" onclick="document.getElementById('perifericos5').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
+                        <div class="categoriaProduto">
+                            <p class="categoria">Periféricos</p>
+                        </div>
+                    </div>
+                    <p class="nomeProdutos">Gabinete Gamer Husky Dome 100</p>
+                    <div class="preco">
+                        <p class="precoProdutos">R$139,90</p>
+                    </div>
+                    <div class="avaliacao">
+                        <img src="icones/star.png" alt="estrela" class="estrela">
+                        <p class="qtdAvaliacao">4.1 Avaliaram</p>
+                    </div>
+                </div>
+                <form id="perifericos5" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Gabinete Gamer Husky Dome 100">
+                    <input type="hidden" name="preco" value=" R$ 139,90 ">
+                    <input type="hidden" name="img" value="produtos/perifericos/perifericos5.png">
+                </form>
+                        </li>
+                        <li class="splide__slide">
+                                            <div class="fundoProdutos">
+                    <div class="prodCarrossel"><img src="produtos/perifericos/perifericos2.png" alt="" ></div>
+                    <div class="superiorProdutos">
+                        <a href="#" onclick="document.getElementById('perifericos2').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
+                        <div class="categoriaProduto">
+                            <p class="categoria">Periféricos</p>
+                        </div>
+                    </div>
+                    <p class="nomeProdutos">Headset Gamer HyperX Cloud Stinger 2</p>
+                    <div class="preco">
+                        <p class="precoProdutos">R$165,90</p>
+                    </div>
+                    <div class="avaliacao">
+                        <img src="icones/star.png" alt="estrela" class="estrela">
+                        <p class="qtdAvaliacao">4.0 Avaliaram</p>
+                    </div>
+                </div>
+                <form id="perifericos2" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Headset Gamer HyperX Cloud Stinger 2">
+                    <input type="hidden" name="preco" value=" R$ 165,90 ">
+                    <input type="hidden" name="img" value="produtos/perifericos/perifericos2.png">
+                </form>
+                        </li>
+                        <li class="splide__slide">
+                <div class="fundoProdutos">
+                    <div class="prodCarrossel"><img src="produtos/pcs/pcGamer.webp" alt="" ></div>
+                    <div class="superiorProdutos">
+                        <a href="#" onclick="document.getElementById('computador10').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
+                        <div class="categoriaProdutoPC">
+                            <p class="categoria">Computadores</p>
+                        </div>
+                        </div>
+                    <p class="nomeProdutos">PC Gamer AMD Ryzen 5 5600G</p> 
+                    <div class="preco">
+                        <p class="precoProdutos">R$ 3.049,00</p>
+                    </div>
+                    <div class="avaliacao">
+                        <img src="icones/star.png" alt="estrela" class="estrela">
+                        <p class="qtdAvaliacao">4.9 Avaliaram</p>
+                    </div>
+                </div>
+
+                <form id="computador10" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="PC Gamer AMD Ryzen 5 5600G">
+                    <input type="hidden" name="preco" value=" R$ 3049,00">
+                    <input type="hidden" name="img" value="produtos/pcs/pcGamer.webp">
+                </form> 
+                        </li>
+                        <li class="splide__slide">
+                <div class="fundoProdutos">
+                    <div class="prodCarrossel"><img src="produtos/tablets/Amazon_Fire_HD_10_Plus_(2023).jpg" alt="" ></div>
+                    <div class="superiorProdutos">
+                        <a href="#" onclick="document.getElementById('tablet7').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
+                        <div class="categoriaProduto">
+                            <p class="categoria">Tablets</p>
+                        </div>
+                    </div>
+                    <p class="nomeProdutos">Amazon Fire HD 10 Plus</p>
+                    <div class="preco">
+                        <p class="precoProdutos">R$1.199,00</p>
+                    </div>
+                    <div class="avaliacao">
+                        <img src="icones/star.png" alt="estrela" class="estrela">
+                        <p class="qtdAvaliacao">4.5 Avaliaram</p>
+                    </div>
+                </div>
+               
+                <form id="tablet7" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Amazon Fire HD 10 Plus">
+                    <input type="hidden" name="preco" value=" R$ 1199,00 ">
+                    <input type="hidden" name="img" value="produtos/tablets/Amazon_Fire_HD_10_Plus_(2023).jpg">
+                </form>
+                        </li>
+                        <li class="splide__slide">
+                <div class="fundoProdutos">
+                    <div class="prodCarrossel"><img src="produtos/outros/outros6.png" alt="" ></div>
+                    <div class="superiorProdutos">
+                        <a href="#" onclick="document.getElementById('outros6').submit(); return false;"><span class="material-symbols-outlined">shopping_cart</span></a>
+                        <div class="categoriaProduto">
+                            <p class="categoria">Outros</p>
+                        </div>
+                    </div>
+                    <p class="nomeProdutos">Projetor Portátil 4K 1080p com Wi-Fi</p>
+                    <div class="preco">
+                        <p class="precoProdutos">R$299,90</p>
+                    </div>
+                    <div class="avaliacao">
+                        <img src="icones/star.png" alt="estrela" class="estrela">
+                        <p class="qtdAvaliacao">5.0 Avaliaram</p>
+                    </div>
+                </div>
+                <form id="outros6" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="Projetor Portátil 4K 1080p com Wi-Fi">
+                    <input type="hidden" name="preco" value=" R$ 299,90 ">
+                    <input type="hidden" name="img" value="produtos/outros/outros6.png">
+                </form>
+                        </li>
+                        <li class="splide__slide">
+                <div class="fundoProdutos">
+                    <div class="prodCarrossel"><img src="produtos/outros/outros8.png" alt="" ></div>
+                    <div class="superiorProdutos">
+                        <a href="#" onclick="document.getElementById('outros8').submit(); return false;"><span class="material-symbols-outlined">shopping_cart</span></a>
+                        <div class="categoriaProduto">
+                            <p class="categoria">Outros</p>
+                        </div>
+                    </div>
+                    <p class="nomeProdutos">JBL Caixa de Som Bluetooth Go Essential</p>
+                    <div class="preco">
+                        <p class="precoProdutos">R$169,00</p>
+                    </div>
+                    <div class="avaliacao">
+                        <img src="icones/star.png" alt="estrela" class="estrela">
+                        <p class="qtdAvaliacao">5.0 Avaliaram</p>
+                    </div>
+                </div>
+            </div>
+            <form id="outros8" action="adicionar.php" method="post" style="display: none;">
+                <input type="hidden" name="nome" value="JBL Caixa de Som Bluetooth Go Essential">
+                <input type="hidden" name="preco" value=" R$ 169,00 ">
+                <input type="hidden" name="img" value="produtos/outros/outros8.png">
+            </form>
+                        </li>
                     </ul>
                 </div>
             </div>
-        </div>
+
         <script>
-            var splide = new Splide('.splide', {
-                perPage: 3,
-                rewind: true, // volta para o começo quando chega no final
-                gap: '1rem',  // espaço entre os slides (opcional)
-            });
+            var splide = new Splide( '#splide2', {
+            type   : 'loop',
+            perPage: 4,
+            perMove: 1,
+            } );
 
             splide.mount();
         </script>
